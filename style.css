@@ -88,3 +88,7 @@ color: transparent;
       height: 100%;
     }
   }
+  title{
+    left: 50%;
+    right: 50%;
+  }
