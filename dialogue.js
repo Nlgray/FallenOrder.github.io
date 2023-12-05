@@ -683,6 +683,387 @@ need to start the dice game
   */
   {
     id: 57,
+    text: "The recruit’s choice involved: Accepting Kingston’s wide array of shops.",
+    options: [{
+      continue: {cont: true},
+      nextText: 58,
+      character: 'Narrator'
+      }
+    ]
+  },
+  {
+    id: 58,
+    text: "Brilliant of ya rookie! *Pats heavily on the recruit’s back and grins* Now I reckon with the gold ya got, ya can only choose one of ‘em to shop at. So, I suggest ya go to each shop n hear ‘em all out. Ya can decline whatever shop keeper that sounds fishy. And Selphie! Get o’er here! We ain’t feedin’ yer addiction.",
+    options: [{
+      continue: {cont: true},
+      nextText: 59,
+      character: 'Braedon'
+      }
+    ]
+  },
+  {
+    id: 59,
+    text: "Hmmph! I wanted those trinkets. *Pouts then clears sadness* Anyway this is for the recruit, so they might as well choose what they want. ",
+    options: [{
+      continue: {cont: true},
+      nextText: 60,
+      character: 'Selphie'
+      }
+    ]
+  },
+  //first store
+{
+    id: 60,
+    text: "Then let us start with this shop... it seems to be called, “The Unlucky Bear”. Not a good sign, but might be a good shop.",
+    options: [{
+      continue: {cont: true},
+      nextText: 61,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 61,
+    text: "The group enters The Unlucky Bear and is greeted by a large individual, with pronounced posture. Clothed with a bold blue and pearly white garment while wearing small spectacles, you wonder, is he clearly to be trusted? And how is he seeing from such small eyewear?",
+    options: [{
+      continue: {cont: true},
+      nextText: 62,
+      character: 'Narrator'
+      }
+    ]
+  },
+{
+    id: 62,
+    text: "Hello, my name is Brooker Goodsman. I supervise this fine establisment. What can I interest you in? ",
+    options: [{
+      continue: {cont: true},
+      nextText: 63,
+      character: 'Brooker'
+      }
+    ]
+  },
+  {
+    id: 63,
+    text: "Yes, I would like your finest equipment and gear for my new founded recruit. Preferably armor would suffice.",
+    options: [{
+      continue: {cont: true},
+      nextText: 64,
+      character: 'Tesmond'
+      }
+    ]
+  },
+{
+    id: 64,
+    text: "Both Kingston and Selphie mysteriously vanished behind Tesmond and the recruit. Almost as if they were swallowed by every man’s adversary: CAPITALISM.",
+    options: [{
+      continue: {cont: true},
+      nextText: 65,
+      character: 'Narrator'
+      }
+    ]
+  },
+  {
+    id: 65,
+    text: "*Digging through wares* *Hands chestplate to the recruit* This is our top of the line steel and bronze chestplate. A best seller! ",
+    options: [{
+      continue: {cont: true},
+      nextText: 66,
+      character: 'Brooker'
+      }
+    ]
+  },
+  {
+    id: 66,
+    text: "Inspecting closely, the armor was engraved with various inscriptions or rather decorations. Decorated with horns from a wild Markhor for each shoulder. A lining of cheap bronze and shoddy skill. Almost as if a “factory in China” created this... not that I know what a factory is... and neither a China. ",
+    options: [{
+      continue: {cont: true},
+      nextText: 67,
+      character: 'Narrator'
+      }
+    ]
+  },
+//option for accepting and declining
+  {
+    id: 67,
+    text: "So, does this store satisfy your needs, recruit? [Accept] [Decline]",
+    options: [{
+        text: '[Accept]',
+      continue: {cont: true},
+      nextText: 71,
+      character: 'Narrator'
+      },
+      {
+        text: '[Decline]',
+        continue: {cont: true},
+      nextText: 68
+      }
+    ]
+  },
+  /*for declining option*/
+{
+    id: 68,
+    text: "And with a shake of the recruit’s head from left to right, the owner’s head turned droopy, knowing he had lost another customer. ",
+    options: [{
+      continue: {cont: true},
+      nextText: 69,
+      character: 'Narrator'
+      }
+    ]
+  },
+  {
+    id: 69,
+    text: "How unfortunate, well do come again! We have other wares in stock! Namely, a brand new pot for your crusty stove! Just look at that glisten!",
+    options: [{
+      continue: {cont: true},
+      nextText: 70,
+      character: 'Brooker'
+      }
+    ]
+  },
+  {
+    id: 70,
+    text: "As the rambling merchant went on and on about pots, pans, gadgets, trinkets, unnecessary items, and whatnot, the band of adventurers left... I would too from that damn annoying merchant... f%#k.",
+    options: [{
+      continue: {cont: true},
+      nextText: 74,
+      character: 'Narrator'
+      }
+    ]
+  },
+  //end of decline option and start of accept option
+{
+    id: 71,
+    text: "And with a shake of the recruit’s head from top to bottom, the owner’s eyes widen and sparkle.",
+    options: [{
+      continue: {cont: true},
+      nextText: 72,
+      character: 'Narrator'
+      }
+    ]
+  },
+  {
+    id: 72,
+    text: "Oh customer, what an excellent purchase you have just given yourself! *The recruit hands the gold* *Owner registers the armor as sold* ",
+    options: [{
+      continue: {cont: true},
+      nextText: 73,
+      character: 'Brooker'
+      }
+    ]
+  },
+  //bad ending return to option to accept or decline the 1st shop
+{
+    id: 73,
+    text: "SCAMMED: After walking away from the Unlucky Bear, the group discovered the purchased armor was not made of metal at all. It was made from wood, stained with brown for a copper design and grey for its steel appearance. You truly became the Unlucky Bear.",
+    options: [{
+      continue: {cont: true},
+      nextText: 67,
+      character: 'Narrator'
+      }
+    ]
+  },
+// start of 2nd shop
+  {
+    id: 74,
+    text: "What an awfully tacky shop that was. At least we did not purchase anything unnecessary... *Turns and stares at Selphie and Kingston with disgust*",
+    options: [{
+      continue: {cont: true},
+      nextText: 75,
+      character: 'Tesmond'
+      }
+    ]
+  },
+{
+    id: 76,
+    text: "*Holding useless trinkets* What? These will go great with my collection of interesting cubes!",
+    options: [{
+      continue: {cont: true},
+      nextText: 77,
+      character: 'Selphie'
+      }
+    ]
+  },
+  {
+    id: 77,
+    text: "*Holding cookware* Same here! These pots n pans will pair well with some good steak.",
+    options: [{
+      continue: {cont: true},
+      nextText: 78,
+      character: 'Braedon'
+      }
+    ]
+  },
+  {
+    id: 78,
+    text: "Fine, I will not question your purchases. Anyway, the next shop is the Hare’s Tinctures and Tonics. Are you serious Kingston? This is a potion shop!",
+    options: [{
+      continue: {cont: true},
+      nextText: 79,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 79,
+    text: "Ah quite yer yappin’ Tesmond! Just cause it’s a potion shop don’t mean it doesn’t have gear! Trust me! I know many great armor smiths who also work as alchemists.",
+    options: [{
+      continue: {cont: true},
+      nextText: 80,
+      character: 'Braedon'
+      }
+    ]
+  },
+{
+    id: 80,
+    text: "I agree with Kingston, it would not hurt to try the shop. Come recruit, let's head inside while those two argue.",
+    options: [{
+      continue: {cont: true},
+      nextText: 81,
+      character: 'Selphie'
+      }
+    ]
+  },
+  {
+    id: 81,
+    text: "While Tesmond and Kingston vigorously argue about the store’s credibility, Selphie and the recruit headed into the Hare’s Tinctures and Tonics. They saw an abundance of potions and armor scattered in disarray with nobody there to greet them. ",
+    options: [{
+      continue: {cont: true},
+      nextText: 82,
+      character: 'Narrator'
+      }
+    ]
+  },
+  {
+    id: 82,
+    text: "*Rose from behind the countertops* Hello, my name is Radcliff Newton. I specialize in potions, but as I see you birdbrains, I bet you need better armor than my highly valued potions. Quite stupendous, aren’t you? No matter, a customer is another person to take advantage of. *Walks to a pile of armor* Okay, I recommend this piece of armor. It is enchanted with very high durability, and a strong affinity to demonic powers. Wear it at your own risk. *Clasping hands in a sinister way* heheheheh.",
+    options: [{
+      continue: {cont: true},
+      nextText: 83,
+      character: 'Radcliff'
+      }
+    ]
+  },
+{
+    id: 83,
+    text: "*Whispers* I do not think it is wise to accept the chest plate, recruit. I get a looming feeling of dread and fright. Maybe we should go to the next shop?",
+    options: [{
+      continue: {cont: true},
+      nextText: 84,
+      character: 'Selphie'
+      }
+    ]
+  },
+  {
+    id: 84,
+    //text: "",
+    options: [{
+        text: '[Yes]',
+      continue: {cont: true},
+      nextText: 90,
+      character: 'Narrator'
+      },
+      {
+        text:'[No]',
+        continue: {cont: true},
+        nextText: 85,
+        character: 'Narrator'
+        }
+    ]
+  },
+{
+    id: 85,
+    text: "As Selphie was making her way to the door to exit the Hare’s Tinctures and Tonics, she turned around, seeing that the recruit took an interest at the piece of armor the skeptical salesman presented. And with a quick exchange, the recruit now owns this unknown breastplate.",
+    options: [{
+      continue: {cont: true},
+      nextText: 86,
+      character: 'Narrator'
+      }
+    ]
+  },
+  {
+    id: 86,
+    text: "*Selphie and the recruit walk out* *Ends squabble* Aye! Would ya look at that! Ain’t I always right! *Smirking at Tesmond* So, what ya get?",
+    options: [{
+      continue: {cont: true},
+      nextText: 87,
+      character: 'Braedon'
+      }
+    ]
+  },
+{
+    id: 87,
+    text: "It is a chest plate, but it might be dangerous.",
+    options: [{
+      continue: {cont: true},
+      nextText: 88,
+      character: 'Selphie'
+      }
+    ]
+  },
+  {
+    id: 88,
+    text: "Actually? In fairness it does not look possessed or rather demonic... now is it...?",
+    options: [{
+      continue: {cont: true},
+      nextText: 89,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 89,
+    text: "As a matter of fact, Tesmond’s question was answered the moment the recruit placed the breastplate onto his own body. POSSESSED: The demonic power surging through the recruit rejected its host, causing a misshape. The morphing armor engulfed the recruit’s mind and transformed them into a horrifying creature. Should have listened to the shopkeeper’s warning “Wear at your own risk.”",
+    options: [{
+      continue: {cont: true},
+      nextText: 74,
+      character: 'Narrator'
+      }
+    ]
+  },
+  //start of yes option for the second shop
+  {
+    id: 90,
+    text: "Selphie and the recruit left the Hare’s Tinctures and Tonics and came back towards the disorderly squabble between Kingston and Tesmond.",
+    options: [{
+      continue: {cont: true},
+      nextText: 91,
+      character: 'Narrator'
+      }
+    ]
+  },
+{
+    id: 91,
+    text: "*Ends squabble and looks at the recruit* Hah, Kingston! It seems that my intuition was correct. Selphie and the recruit did not acquire any equipment as they approach us. Almost as if a potion shop does not have any armor. *Irritated Kingston*",
+    options: [{
+      continue: {cont: true},
+      nextText: 92,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  // start of 3rd shop
+  {
+    id: 92,
+    text: "Tesmond is technically not correct with his assumption of the Hare’s Tinctures and Tonics’dealing with potions exclusively, but for the most part correct. The final store looked old and decayed, like the story of the big bad wolf who just blew one of the three pigs’ home and left... just to spite them.",
+    options: [{
+      continue: {cont: true},
+      nextText: 93,
+      character: 'Narrator'
+      }
+    ]
+  },
+  {
+    id: 93,
+    text: "Aight the final shop, the Blank Monkey! *Puts arm on the recruit’s shoulder* And have faith in me fledglin’! I swear on the celestial beings that this shop is the best. Now it may not look like it, but its charm is pushin’.",
+    options: [{
+      continue: {cont: true},
+      nextText: 94,
+      character: 'Tesmond'
+      }
+    ]
+  },
+{
+    id: 60,
     text: "",
     options: [{
       continue: {cont: true},
@@ -692,7 +1073,17 @@ need to start the dice game
     ]
   },
   {
-    id: 34,
+    id: 61,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+{
+    id: 62,
     text: "",
     options: [{
       continue: {cont: true},
@@ -702,7 +1093,1807 @@ need to start the dice game
     ]
   },
   {
-    id: 34,
+    id: 63,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+{
+    id: 64,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 65,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 66,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 67,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 57,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 58,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 58,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 59,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 59,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 60,
+      character: 'Tesmond'
+      }
+    ]
+  },
+{
+    id: 60,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 61,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+{
+    id: 62,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 63,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+{
+    id: 64,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 65,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 66,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 67,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+{
+    id: 57,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 58,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 58,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 59,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 59,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 60,
+      character: 'Tesmond'
+      }
+    ]
+  },
+{
+    id: 60,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 61,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+{
+    id: 62,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 63,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+{
+    id: 64,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 65,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 66,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 67,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+{
+    id: 57,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 58,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 58,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 59,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 59,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 60,
+      character: 'Tesmond'
+      }
+    ]
+  },
+{
+    id: 60,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 61,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+{
+    id: 62,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 63,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+{
+    id: 64,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 65,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 66,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 67,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 57,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 58,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 58,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 59,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 59,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 60,
+      character: 'Tesmond'
+      }
+    ]
+  },
+{
+    id: 60,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 61,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+{
+    id: 62,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 63,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+{
+    id: 64,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 65,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 66,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 67,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+{
+    id: 57,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 58,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 58,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 59,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 59,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 60,
+      character: 'Tesmond'
+      }
+    ]
+  },
+{
+    id: 60,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 61,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+{
+    id: 62,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 63,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+{
+    id: 64,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 65,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 66,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 67,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+{
+    id: 57,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 58,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 58,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 59,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 59,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 60,
+      character: 'Tesmond'
+      }
+    ]
+  },
+{
+    id: 60,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 61,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+{
+    id: 62,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 63,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+{
+    id: 64,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 65,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 66,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 67,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 57,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 58,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 58,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 59,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 59,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 60,
+      character: 'Tesmond'
+      }
+    ]
+  },
+{
+    id: 60,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 61,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+{
+    id: 62,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 63,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+{
+    id: 64,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 65,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 66,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 67,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+{
+    id: 57,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 58,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 58,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 59,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 59,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 60,
+      character: 'Tesmond'
+      }
+    ]
+  },
+{
+    id: 60,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 61,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+{
+    id: 62,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 63,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+{
+    id: 64,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 65,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 66,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 67,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+{
+    id: 57,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 58,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 58,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 59,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 59,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 60,
+      character: 'Tesmond'
+      }
+    ]
+  },
+{
+    id: 60,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 61,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+{
+    id: 62,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 63,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+{
+    id: 64,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 65,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 66,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 67,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 57,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 58,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 58,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 59,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 59,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 60,
+      character: 'Tesmond'
+      }
+    ]
+  },
+{
+    id: 60,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 61,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+{
+    id: 62,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 63,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+{
+    id: 64,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 65,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 66,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 67,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+{
+    id: 57,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 58,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 58,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 59,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 59,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 60,
+      character: 'Tesmond'
+      }
+    ]
+  },
+{
+    id: 60,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 61,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+{
+    id: 62,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 63,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+{
+    id: 64,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 65,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 66,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 67,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+{
+    id: 57,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 58,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 58,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 59,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 59,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 60,
+      character: 'Tesmond'
+      }
+    ]
+  },
+{
+    id: 60,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 61,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+{
+    id: 62,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 63,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+{
+    id: 64,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 65,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 66,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 67,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 57,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 58,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 58,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 59,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 59,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 60,
+      character: 'Tesmond'
+      }
+    ]
+  },
+{
+    id: 60,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 61,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+{
+    id: 62,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 63,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+{
+    id: 64,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 65,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 66,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 67,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 57,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 58,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 58,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 59,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 59,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 60,
+      character: 'Tesmond'
+      }
+    ]
+  },
+{
+    id: 60,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 61,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+{
+    id: 62,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 63,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+{
+    id: 64,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 65,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 66,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 67,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+{
+    id: 57,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 58,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 58,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 59,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 59,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 60,
+      character: 'Tesmond'
+      }
+    ]
+  },
+{
+    id: 60,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 61,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+{
+    id: 62,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 63,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+{
+    id: 64,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 65,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 66,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 67,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 57,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 58,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 58,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 59,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 59,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 60,
+      character: 'Tesmond'
+      }
+    ]
+  },
+{
+    id: 60,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 61,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+{
+    id: 62,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 63,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+{
+    id: 64,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 65,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 66,
+    text: "",
+    options: [{
+      continue: {cont: true},
+      nextText: 35,
+      character: 'Tesmond'
+      }
+    ]
+  },
+  {
+    id: 67,
     text: "",
     options: [{
       continue: {cont: true},
@@ -712,3 +2903,6 @@ need to start the dice game
     ]
   },
 ];
+
+questions()
+addEventListener("click", displayQuestions, false);
