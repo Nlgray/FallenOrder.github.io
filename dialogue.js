@@ -59,7 +59,7 @@ const q = document.getElementById('carcheck');
 
  //
     id: 2,
-    text: 'Well, that was true till the Ol boy Andurath reappear’d back in Pleamore. ',
+    text: "Well, that was true till the Ol boy Andurath reappear’d back in Pleamore. ",
     options: [
       {
         text: 'yes',
@@ -71,7 +71,7 @@ const q = document.getElementById('carcheck');
   },
   {
     id: 3,
-    text: 'Ah Kingston, you’ve finally arrived. Now that everyone is here, let me reintroduce ourselves to the recruit. *Moves everyone into position* We are the Fearless Chevaliers, a guild comprised of the most accomplished mortals in all the 7 regions of Camuth. I am Tesmond Ulgar, the guildmaster, the dashing swordsman, the heroic... ',
+    text: 'Ah Kingston, you\’ve finally arrived. Now that everyone is here, let me reintroduce ourselves to the recruit. *Moves everyone into position* We are the Fearless Chevaliers, a guild comprised of the most accomplished mortals in all the 7 regions of Camuth. I am Tesmond Ulgar, the guildmaster, the dashing swordsman, the heroic... ',
     options: [
       {
         text: 'yes',
@@ -84,7 +84,7 @@ const q = document.getElementById('carcheck');
   },
   {
     id: 4,
-    text: '*Pushes away Tesmond* Sorry about that. My name is Sephie Levi. I am the elementalist for the “guild”, well more like the party of adventurers. I don’t know how Tesmond always comes up with the most extravagant and exaggerated story. ',
+    text: '*Pushes away Tesmond* Sorry about that. My name is Sephie Levi. I am the elementalist for the “guild”, well more like the party of adventurers. I don\’t know how Tesmond always comes up with the most extravagant and exaggerated story. ',
     options: [
     {
         text: 'yes',
@@ -97,15 +97,17 @@ const q = document.getElementById('carcheck');
   {
     id: 5,
     text: 'Okay, true that our tiny band is not yet as outstretched as a guild, but it will be! Just you wait and see Selphie. We are going to be swimming in Camuth gold within our own domicile with an army waiting for ME to lead. ',
-    text: 'yes',
-    continue: {cont: true},
-    nextText: 6,
-    character: 'Tesmond'
+    options:[{
+        text: 'yes',
+        continue: {cont: true},
+        nextText: 6,
+        character: 'Tesmond'
+    }]
   },
   {
   
     id: 6,
-    text: 'Ain’t that quite aspirin’ Tes. Anyway kiddo, the names Braedon Kingston. I’m the warrior of this merry gang. Or ya can refer to me as yer sturdy meat shield. Hahahahaha... ',
+    text: "Ain\’t that quite aspirin’ Tes. Anyway kiddo, the names Braedon Kingston. I\’m the warrior of this merry gang. Or ya can refer to me as yer sturdy meat shield. Hahahahaha... ",
     options: [
       {
         text: 'yes',
@@ -155,20 +157,20 @@ const q = document.getElementById('carcheck');
   },
   {
     //inital question
-    id: 11,
+    id: 10,
     text: 'I would like to investigate the disturbance in Pelna Forest. ',
     options: [
       {
         text: 'yes',
         continue: {cont: true},
-        nextText: 12,
+        nextText: 11,
         character:'Tesmond'
       }
     ]
   },
   {
     //yes to question 1
-    id: 12,
+    id: 11,
     text: 'I do not know; I am leaning on the caverns. We might get some good loot! ',
     options: [
       {
@@ -180,76 +182,76 @@ const q = document.getElementById('carcheck');
     ]
   },
   {
-    id: 13,
+    id: 12,
     text: 'It doesn’t matter to me. How ‘bout we give the recruit the option? ',
     options: [
       {
         text: 'yes',
         continue: {cont: true},
-        nextText: 14,
+        nextText: 13,
         character: 'Braedon'
       }
     ]
   },
   {
-    id: 14,
+    id: 13,
     text: 'That is a great idea!',
     options: [
     {
         text: 'yes',
         continue: {cont: true},
-        nextText: 15,
+        nextText: 14,
         character: 'Selphie'
       }
     ]
   },
   {
     //inital question
-    id: 15,
+    id: 14,
     text: 'Now this is a great team exercise! One of the many reasons why we are the “Fearless Chevaliers!” *Selphie and Kingston pulled Tesmond aside and “properly” addressed Tesmond that their group is not named “The Fearless Chevaliers” * ',
     options: [
       {
         text: 'yes',
         continue: {cont: true},
-        nextText: 16,
+        nextText: 15,
         character: 'Tesmond'
       }
     ]
   },
   {
     //yes to question 1
-    id: 16,
+    id: 15,
     text: 'While Tesmond was being detained and interrogated, out of the 2 options, the recruit choose...',
     options: [
       {
         text: 'Pelna Forest',
         continue: {cont: true},
-        nextText: 17,
+        nextText: 16,
         character: 'Narrator'
       },
       {
         text: 'Caverns',
         continue: {cont: true},
-        nextText: 19,
+        nextText: 18,
         character: 'Narrator'
       }
     ]
   },
   {
-    id: 17,
+    id: 16,
     text: 'The recruit chose to take: Investigate Pelna Forest and its disturbance. ',
     options: [
       {
         text: 'yes',
         continue: {cont: true},
-        nextText: 18,
+        nextText: 17,
         character: 'Narrator'
       }
 
     ]
   },
   {
-    id: 18,
+    id: 17,
     text: '*Pops out from being lectured by Selphie and Kingston* Then Pelna Forest it is!',
     options: [
     {
@@ -261,21 +263,21 @@ const q = document.getElementById('carcheck');
     ]
   },
   {
-    id: 19,
+    id: 18,
     text:'The recruit chose to take: Discover the Caverns. ',
     options: [{
       continue: {cont: true},
-      nextText: 20,
+      nextText: 19,
       character: 'Narrator'
     }
   ]
   },
   {
-    id: 20,
+    id: 19,
     text: '*Turns around after lecturing Tesmond* Great answer recruit! Okay everyone stop the incomprehensible talking and let us get ready for the Caverns! ',
      options: [{ 
       continue: {cont: true},
-      nextText: 49, //when the player chooses the caverns
+      nextText: 150, //when the player chooses the caverns
       character: 'Selphie'
     }
   ]
