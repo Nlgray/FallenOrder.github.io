@@ -143,7 +143,7 @@ const q = document.getElementById('carcheck');
   },
   {
     id: 9,
-    text: 'Bah, did ya think I just went in the guild to flirt with the GuildMaster n forget to grab any quests? *Everyone faced Kingston with a nod* Almost! Bahahahahah. Well, I grabbed two. *Opens and lays 2 quests on the table* 1 quest wants us to explore these newly ‘scovered caverns and the other wants to figure out the racket o’er at Pelna Forest. So, whats the vote? ',
+    text: 'Bah, did ya think I just went in the guild to flirt with the Guild Master n forget to grab any quests? *Everyone faced Kingston with a nod* Almost! Bahahahahah. Well, I grabbed two. *Opens and lays both quests on the table* one quest wants us to explore these newly ‘scovered caverns and the other wants to figure out the racket o’er at Pelna Forest. So, whats the vote? ',
     options: [
     {
         text: 'yes',
