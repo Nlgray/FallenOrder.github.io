@@ -1,0 +1,95 @@
+<html>
+
+<head>
+    <title>Firebase_form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <style>
+        body {
+            background-image: ("Login/Login.jpg");
+        }
+    </style>
+    <div class="box">
+        <div class="form">
+            <h2>Login Form</h2>
+            <form>
+                <div class="inputbox">
+                    <input type="text" value="" id="username" required>
+                    <span>username</span>
+                </div>
+                <div class="inputbox">
+                    <input type="email" value="" id="email" required>
+                    <span>E-mail</span>
+                </div>
+                <div class="inputbox">
+                    <input type="password" value="" id="password" required>
+                    <span>password</span>
+                </div>
+                <input type="submit" value="submit" class="sub" id="submit">
+            </form>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/10.6.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.6.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.6.0/firebase-auth-compat.js"></script>
+
+    <script>
+        // Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyDnT30VTKNDPBc1k_76Wm1JN2btkXP1w6Y",
+            authDomain: "database-202f5.firebaseapp.com",
+            projectId: "database-202f5",
+            storageBucket: "database-202f5.appspot.com",
+            messagingSenderId: "937823630545",
+            appId: "1:937823630545:web:a3e3ebf6a72060c35981f0"
+        };
+
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+
+        //get ref to database services
+        const db = firebase.firestore();
+        //db.collection("userest").add({item:"good"});
+
+        document.getElementById("submit").addEventListener('click', function (e) {
+            e.preventDefault();
+            
+            var username = document.getElementById("username").value;
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+            console.log(email,password);
+            console.log(firebase.auth());
+            firebase.auth().signInWithEmailAndPassword(email, password).then((_success) => {
+                // Signed in
+                // ...
+                console.log('login in');
+                let user = firebase.auth().currentUser;
+
+                //user.updateProfile({ displayName: "Not sure" });
+                if (user != null) {
+                    username = user.username;
+                    email = user.email;
+                    password = user.password
+                    photoUrl = user.photoURL;
+                    emailVerified = user.emailVerified;
+                    console.log(username, email, emailVerified);
+                    
+                alert("Login Sucessfull  !");
+                    window.location.href = 'index.html';
+                }
+            })
+                .catch((error) => {
+                    var errorCode = error.code;
+                    var errorMessage = error.message;
+                    console.log(errorMessage);
+                });
+
+        })
+
+    </script>
+</body>
+
+</html>
