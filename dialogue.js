@@ -44,7 +44,7 @@ const q2 = [
   {
     //intro story
 
-    //
+    // Begin intro IMG
     id: 1,
     text: 'Before the lands of our time were molded into existence, a great calamity befell every being known within the grand cities of Camuth. The Dark Lord Palentheous Irzaline summoned his vast army of minions onto the peaceful citizens around the continent. Only a few brave souls dare challenge this irreversible catastrophe, they were known as the Knights of the Fallen Order. They overcame many of the Dark Lord’s warlords: Paluth the wretched butcher, Molgon the horrid warlock, Thaulrod the devastating mortar, Zyroneeuch the tinkering puppeteer, and Andurath the knightmare. As the Knights of the Fallen Order defeated each warlord, one by one, they emerged towards their final fight with the Dark Lord Palentheous Irzaline. The fight was victorious yet costed heavily. Many knights died during the battle, and many others died after. Only a few knights still rest in tranquility... ',
     options: [
@@ -54,12 +54,14 @@ const q2 = [
         nextText: 2
       }
     ]
-  }, {
+  }, 
+  // End intro IMG
+  {
     // move to the tavern
 
-    //
+    // Tavern1 IMG
     id: 2,
-    text: "Well, that was true till the Ol boy Andurath reappear’d back in Pleamore. ",
+    text: "Well, that was true till the Ol boy Andurath reappear\’d back in Pleamore. ",
     options: [
       {
         text: 'yes',
@@ -107,7 +109,7 @@ const q2 = [
   {
 
     id: 6,
-    text: "Ain\’t that quite aspirin’ Tes. Anyway kiddo, the names Braedon Kingston. I\’m the warrior of this merry gang. Or ya can refer to me as yer sturdy meat shield. Hahahahaha... ",
+    text: "Ain\’t that quite aspirin\’ Tes. Anyway kiddo, the names Braedon Kingston. I\’m the warrior of this merry gang. Or ya can refer to me as yer sturdy meat shield. Hahahahaha... ",
     options: [
       {
         text: 'yes',
@@ -143,9 +145,12 @@ const q2 = [
 
     ]
   },
+  // End Tavern1 IMG
+
+  // Begin Tavern2 IMG
   {
     id: 9,
-    text: 'Bah, did ya think I just went in the guild to flirt with the Guild Master n forget to grab any quests? *Everyone faced Kingston with a nod* Almost! Bahahahahah. Well, I grabbed two. *Opens and lays both quests on the table* one quest wants us to explore these newly ‘scovered caverns and the other wants to figure out the racket o’er at Pelna Forest. So, whats the vote? ',
+    text: 'Bah, did ya think I just went in the guild to flirt with the Guild Master n forget to grab any quests? *Everyone faced Kingston with a nod* Almost! Bahahahahah. Well, I grabbed two. *Opens and lays both quests on the table* one quest wants us to explore these newly \‘scovered caverns and the other wants to figure out the racket o’er at Pelna Forest. So, whats the vote? ',
     options: [
       {
         text: 'yes',
@@ -250,6 +255,9 @@ const q2 = [
 
     ]
   },
+  // End Tavern2 IMG
+
+  // Begin Tavern1 IMG
   {
     id: 17,
     text: '*Pops out from being lectured by Selphie and Kingston* Then Pelna Forest it is!',
@@ -262,6 +270,9 @@ const q2 = [
       }
     ]
   },
+  // End Tavern1 IMG
+
+  // Begin Tavern2 IMG
   {
     id: 18,
     text: 'The recruit chose to take: Discover the Caverns. ',
@@ -272,6 +283,9 @@ const q2 = [
     }
     ]
   },
+  // End Tavern2 IMG
+
+  // Begin Tavern1 IMG
   {
     id: 19,
     text: '*Turns around after lecturing Tesmond* Great answer recruit! Okay everyone stop the incomprehensible talking and let us get ready for the Caverns! ',
@@ -282,9 +296,12 @@ const q2 = [
     }
     ]
   },
+  // End Tavern1 IMG
+
   /* start of village 
   needs 15 total options witht the last being a choice to choose the game
   */
+ // Begin Tavern1 IMG
   {
     id: 20,
     text: 'Alright, is everyone well equipped and ready? *Everyone gestures, except you*',
@@ -307,7 +324,7 @@ const q2 = [
   },
   {
     id: 22,
-    text: "Aight. Let's get this a move on. N ya betta not go shoppin’ for hours on end Selphie like last time. I don’t want the same incident where we began shoppin’ during Father Sun and came back to our home till Mother Moon appear’d. ",
+    text: "Aight. Let's get this a move on. N ya betta not go shoppin\’ for hours on end Selphie like last time. I don\’t want the same incident where we began shoppin\’ during Father Sun and came back to our home till Mother Moon appear\’d. ",
     options: [{
       continue: { cont: true },
       nextText: 23,
@@ -315,6 +332,9 @@ const q2 = [
     }
     ]
   },
+  // End Tavern1 IMG
+
+  // Begin Stagcross1 IMG
   {
     id: 23,
     text: "The group exits the Tavern, named the Drunken Sow, and entered onto the streets of Stagcross. While strolling through the open air of commerce and festivity, Kingston and Selphie found their target... a store, well... various stores... and a mysterious vendor.",
@@ -327,7 +347,7 @@ const q2 = [
   },
   {
     id: 24,
-    text: "Aight young recruit. Ya can choose one of the three. Don’t really care, but they seem fi...",
+    text: "Aight young recruit. Ya can choose one of the three. Don\’t really care, but they seem fi...",
     options: [{
       continue: { cont: true },
       nextText: 25,
@@ -417,7 +437,7 @@ const q2 = [
   },
   {
     id: 33,
-    text: "*Scoffs at Tesmond and whispers*Ain’t ya just a swell leader...",
+    text: "*Scoffs at Tesmond and whispers*Ain\’t ya just a swell leader...",
     options: [{
       continue: { cont: true },
       nextText: 34,
@@ -427,7 +447,7 @@ const q2 = [
   },
   {
     id: 34,
-    text: "*Confused and oblivious from Kingston’s statement* What? Anyway, because this trip is for you recruit, how about you decide which choice best fits your needs. The gambling game with Selphie or the three shops with Kingston?",
+    text: "*Confused and oblivious from Kingston\’s statement* What? Anyway, because this trip is for you recruit, how about you decide which choice best fits your needs. The gambling game with Selphie or the three shops with Kingston?",
     options: [{
       continue: { cont: true },
       nextText: 35,
@@ -453,12 +473,16 @@ const q2 = [
     }
     ]
   },
+  // End Stagcross1 IMG
+
   /*
   Begin village gamble game; needs to open the game
   */
+ // Begin Gamble1 IMG
+ // Use Dice1 - Dice6
   {
     id: 36,
-    text: "The recruit’s choice involved: Accepting Selphie’s addiction, SPENDING MONEY.",
+    text: "The recruit\’s choice involved: Accepting Selphie\’s addiction, SPENDING MONEY.",
     options: [{
       continue: { cont: true },
       nextText: 37,
@@ -477,9 +501,9 @@ const q2 = [
     ]
   },
   {
-    //set the game picture to morning
+    //set the game picture to morning (Gamble1 IMG)
     id: 38,
-    text: "The rules are simple. All you have to do is roll this dice. If the dice lands on 1 – 4, you lose and you give me one of your valuables. If the dice lands on 5 – 6, you win and you can pick whatever I have!",
+    text: "The rules are simple. All you have to do is roll this dice. If the dice lands on 1 through 4, you lose and you give me one of your valuables. If the dice lands on 5 through 6, you win and you can pick whatever I have!",
     options: [{
       continue: { cont: true },
       nextText: 39,
@@ -489,7 +513,7 @@ const q2 = [
   },
   {
     id: 39,
-    text: "Here goes another mistake of my lifetime. Kiddo, don’t just stand there, time to roll the die. ",
+    text: "Here goes another mistake of my lifetime. Kiddo, don\’t just stand there, time to roll the die. ",
     options: [{
       continue: { cont: true },
       nextText: 40,
@@ -504,7 +528,7 @@ const q2 = [
   {
     //if user wins 1st try
     id: 40,
-    text: "Holy Stars, offsprings of Father Sun and Mother Moon! How’d ya pull it off in one try?",
+    text: "Holy Stars, offsprings of Father Sun and Mother Moon! How\’d ya pull it off in one try?",
     options: [{
       continue: { cont: true },
       nextText: 41,
@@ -543,7 +567,10 @@ const q2 = [
     }
     ]
   },
+  // End Gamble1 IMG
+
   //choices for during 2nd - 4th roll
+  // Change to Gamble2 IMG on 3rd roll
   {
     id: 44,
     text: "At least ya got it in the end.",
@@ -585,10 +612,13 @@ const q2 = [
     }
     ]
   },
+  // End Gamble2 IMG
+
   //start of dialogue for 5th roll
+  // Begin Gamble3 IMG
   {
     id: 48,
-    text: "See what ya did! I told ya’ll so! Now we got nothin’ and lost everythin’!",
+    text: "See what ya did! I told ya\’ll so! Now we got nothin\’ and lost everythin\’!",
     options: [{
       continue: { cont: true },
       nextText: 49,
@@ -626,6 +656,9 @@ const q2 = [
     }
     ]
   },
+  // End Gamble3 IMG
+
+  // Begin Stagcross2 IMG
   {
     //bad ending for the gambling game insert goes back to beginning  village
     id: 52,
@@ -637,10 +670,12 @@ const q2 = [
     }
     ]
   },
+  // End Stagcross2 IMG
   {
     //end of gambling game without losing dialogue
+    // Use either Gamble1 or Gamble2 depending on when user wins (1st - 2nd: Gamble1) (3rd - 4th: Gamble2)
     id: 53,
-    text: "The recruit points toward the glowing metal breastplate. Its aura emanated throughout the entire merchant’s cart, causing a fascination to spur throughout every person’s being, especially through Braedon Kingston.",
+    text: "The recruit points toward the glowing metal breastplate. Its aura emanated throughout the entire merchant\’s cart, causing a fascination to spur throughout every person\’s being, especially through Braedon Kingston.",
     options: [{
       continue: { cont: true },
       nextText: 54,
@@ -650,7 +685,7 @@ const q2 = [
   },
   {
     id: 54,
-    text: "*Kingston’s eyes widen* Quite the interesting item you chose for yourself young child. This chestplate here was previously owned by a knight. Seemed like he didn’t want to keep it, so he gave it to me as well as the idea for the gambling game. *Gives chestplate to recruit* *Waves goodbye and pushes merchant trolley away*",
+    text: "*Kingston\’s eyes widen* Quite the interesting item you chose for yourself young child. This chestplate here was previously owned by a knight. Seemed like he didn\’t want to keep it, so he gave it to me as well as the idea for the gambling game. *Gives chestplate to recruit* *Waves goodbye and pushes merchant trolley away*",
     options: [{
       continue: { cont: true },
       nextText: 55,
@@ -679,13 +714,16 @@ const q2 = [
     }
     ]
   },
+  // End Gamble1 or Gamble2 IMG
+
   /*
   start of village scammer game
   need to move to after the village
   */
+ // Begin Stagcross1 IMG
   {
     id: 57,
-    text: "The recruit’s choice involved: Accepting Kingston’s wide array of shops.",
+    text: "The recruit\’s choice involved: Accepting Kingston\’s wide array of shops.",
     options: [{
       continue: { cont: true },
       nextText: 58,
@@ -695,7 +733,7 @@ const q2 = [
   },
   {
     id: 58,
-    text: "Brilliant of ya rookie! *Pats heavily on the recruit’s back and grins* Now I reckon with the gold ya got, ya can only choose one of ‘em to shop at. So, I suggest ya go to each shop n hear ‘em all out. Ya can decline whatever shop keeper that sounds fishy. And Selphie! Get o’er here! We ain’t feedin’ yer addiction.",
+    text: "Brilliant of ya rookie! *Pats heavily on the recruit\’s back and grins* Now I reckon with the gold ya got, ya can only choose one of \‘em to shop at. So, I suggest ya go to each shop n hear \‘em all out. Ya can decline whatever shop keeper that sounds fishy. And Selphie! Get o\’er here! We ain\’t feedin\’ yer addiction.",
     options: [{
       continue: { cont: true },
       nextText: 59,
@@ -724,6 +762,9 @@ const q2 = [
     }
     ]
   },
+  // End Stagcross1 IMG
+
+  // Begin Store1 IMG
   {
     id: 61,
     text: "The group enters The Unlucky Bear and is greeted by a large individual, with pronounced posture. Clothed with a bold blue and pearly white garment while wearing small spectacles, you wonder, is he clearly to be trusted? And how is he seeing from such small eyewear?",
@@ -756,7 +797,7 @@ const q2 = [
   },
   {
     id: 64,
-    text: "Both Kingston and Selphie mysteriously vanished behind Tesmond and the recruit. Almost as if they were swallowed by every man’s adversary: CAPITALISM.",
+    text: "Both Kingston and Selphie mysteriously vanished behind Tesmond and the recruit. Almost as if they were swallowed by every man\’s adversary: CAPITALISM.",
     options: [{
       continue: { cont: true },
       nextText: 65,
@@ -804,7 +845,7 @@ const q2 = [
   /*for declining option*/
   {
     id: 68,
-    text: "And with a shake of the recruit’s head from left to right, the owner’s head turned droopy, knowing he had lost another customer. ",
+    text: "And with a shake of the recruit\’s head from left to right, the owner\’s head turned droopy, knowing he had lost another customer. ",
     options: [{
       continue: { cont: true },
       nextText: 69,
@@ -835,7 +876,7 @@ const q2 = [
   //end of decline option and start of accept option
   {
     id: 71,
-    text: "And with a shake of the recruit’s head from top to bottom, the owner’s eyes widen and sparkle.",
+    text: "And with a shake of the recruit\’s head from top to bottom, the owner\’s eyes widen and sparkle.",
     options: [{
       continue: { cont: true },
       nextText: 72,
@@ -853,6 +894,9 @@ const q2 = [
     }
     ]
   },
+  // End Store1 IMG
+
+  // Begin scammed IMG
   //bad ending return to option to accept or decline the 1st shop
   {
     id: 73,
@@ -864,7 +908,10 @@ const q2 = [
     }
     ]
   },
+  // End scammed IMG
+
   // start of 2nd shop
+  // Begin Stagcross1 IMG
   {
     id: 74,
     text: "What an awfully tacky shop that was. At least we did not purchase anything unnecessary... *Turns and stares at Selphie and Kingston with disgust*",
@@ -897,7 +944,7 @@ const q2 = [
   },
   {
     id: 78,
-    text: "Fine, I will not question your purchases. Anyway, the next shop is the Hare’s Tinctures and Tonics. Are you serious Kingston? This is a potion shop!",
+    text: "Fine, I will not question your purchases. Anyway, the next shop is the Hare\’s Tinctures and Tonics. Are you serious Kingston? This is a potion shop!",
     options: [{
       continue: { cont: true },
       nextText: 79,
@@ -907,7 +954,7 @@ const q2 = [
   },
   {
     id: 79,
-    text: "Ah quite yer yappin’ Tesmond! Just cause it’s a potion shop don’t mean it doesn’t have gear! Trust me! I know many great armor smiths who also work as alchemists.",
+    text: "Ah quite yer yappin\’ Tesmond! Just cause it\’s a potion shop don\’t mean it doesn\’t have gear! Trust me! I know many great armor smiths who also work as alchemists.",
     options: [{
       continue: { cont: true },
       nextText: 80,
@@ -925,9 +972,12 @@ const q2 = [
     }
     ]
   },
+  // End Stagcross1 IMG
+
+  // Begin Store2 IMG
   {
     id: 81,
-    text: "While Tesmond and Kingston vigorously argue about the store’s credibility, Selphie and the recruit headed into the Hare’s Tinctures and Tonics. They saw an abundance of potions and armor scattered in disarray with nobody there to greet them. ",
+    text: "While Tesmond and Kingston vigorously argue about the store\’s credibility, Selphie and the recruit headed into the Hare\’s Tinctures and Tonics. They saw an abundance of potions and armor scattered in disarray with nobody there to greet them. ",
     options: [{
       continue: { cont: true },
       nextText: 82,
@@ -937,7 +987,7 @@ const q2 = [
   },
   {
     id: 82,
-    text: "*Rose from behind the countertops* Hello, my name is Radcliff Newton. I specialize in potions, but as I see you birdbrains, I bet you need better armor than my highly valued potions. Quite stupendous, aren’t you? No matter, a customer is another person to take advantage of. *Walks to a pile of armor* Okay, I recommend this piece of armor. It is enchanted with very high durability, and a strong affinity to demonic powers. Wear it at your own risk. *Clasping hands in a sinister way* heheheheh.",
+    text: "*Rose from behind the countertops* Hello, my name is Radcliff Newton. I specialize in potions, but as I see you birdbrains, I bet you need better armor than my highly valued potions. Quite stupendous, aren\’t you? No matter, a customer is another person to take advantage of. *Walks to a pile of armor* Okay, I recommend this piece of armor. It is enchanted with very high durability, and a strong affinity to demonic powers. Wear it at your own risk. *Clasping hands in a sinister way* heheheheh.",
     options: [{
       continue: { cont: true },
       nextText: 83,
@@ -974,7 +1024,7 @@ const q2 = [
   },
   {
     id: 85,
-    text: "As Selphie was making her way to the door to exit the Hare’s Tinctures and Tonics, she turned around, seeing that the recruit took an interest at the piece of armor the skeptical salesman presented. And with a quick exchange, the recruit now owns this unknown breastplate.",
+    text: "As Selphie was making her way to the door to exit the Hare\’s Tinctures and Tonics, she turned around, seeing that the recruit took an interest at the piece of armor the skeptical salesman presented. And with a quick exchange, the recruit now owns this unknown breastplate.",
     options: [{
       continue: { cont: true },
       nextText: 86,
@@ -982,9 +1032,12 @@ const q2 = [
     }
     ]
   },
+  // End Store2 IMG
+
+  // Begin Stagcross1 IMG
   {
     id: 86,
-    text: "*Selphie and the recruit walk out* *Ends squabble* Aye! Would ya look at that! Ain’t I always right! *Smirking at Tesmond* So, what ya get?",
+    text: "*Selphie and the recruit walk out* *Ends squabble* Aye! Would ya look at that! Ain\’t I always right! *Smirking at Tesmond* So, what ya get?",
     options: [{
       continue: { cont: true },
       nextText: 87,
@@ -1012,9 +1065,12 @@ const q2 = [
     }
     ]
   },
+  // End Stagcross1
+
+  // Begin posssessed IMG
   {
     id: 89,
-    text: "As a matter of fact, Tesmond’s question was answered the moment the recruit placed the breastplate onto his own body. POSSESSED: The demonic power surging through the recruit rejected its host, causing a misshape. The morphing armor engulfed the recruit’s mind and transformed them into a horrifying creature. Should have listened to the shopkeeper’s warning “Wear at your own risk.”",
+    text: "As a matter of fact, Tesmond\’s question was answered the moment the recruit placed the breastplate onto his own body. POSSESSED: The demonic power surging through the recruit rejected its host, causing a misshape. The morphing armor engulfed the recruit\’s mind and transformed them into a horrifying creature. Should have listened to the shopkeeper’s warning “Wear at your own risk.”",
     options: [{
       continue: { cont: true },
       nextText: 74,
@@ -1022,10 +1078,13 @@ const q2 = [
     }
     ]
   },
+  // End possessed IMG
+
+  // Begin Stagcross1 IMG
   //start of yes option for the second shop
   {
     id: 90,
-    text: "Selphie and the recruit left the Hare’s Tinctures and Tonics and came back towards the disorderly squabble between Kingston and Tesmond.",
+    text: "Selphie and the recruit left the Hare\’s Tinctures and Tonics and came back towards the disorderly squabble between Kingston and Tesmond.",
     options: [{
       continue: { cont: true },
       nextText: 91,
@@ -1046,7 +1105,7 @@ const q2 = [
   // start of 3rd shop
   {
     id: 92,
-    text: "Tesmond is technically not correct with his assumption of the Hare’s Tinctures and Tonics’dealing with potions exclusively, but for the most part correct. The final store looked old and decayed, like the story of the big bad wolf who just blew one of the three pigs’ home and left... just to spite them.",
+    text: "Tesmond is technically not correct with his assumption of the Hare\’s Tinctures and Tonics\’ dealing with potions exclusively, but for the most part correct. The final store looked old and decayed, like the story of the big bad wolf who just blew one of the three pigs\’ home and left... just to spite them.",
     options: [{
       continue: { cont: true },
       nextText: 93,
@@ -1056,7 +1115,7 @@ const q2 = [
   },
   {
     id: 93,
-    text: "Aight the final shop, the Blank Monkey! *Puts arm on the recruit’s shoulder* And have faith in me fledglin’! I swear on the celestial beings that this shop is the best. Now it may not look like it, but its charm is pushin’.",
+    text: "Aight the final shop, the Blank Monkey! *Puts arm on the recruit\’s shoulder* And have faith in me fledglin\’! I swear on the celestial beings that this shop is the best. Now it may not look like it, but its charm is pushin\’.",
     options: [{
       continue: { cont: true },
       nextText: 94,
@@ -1097,6 +1156,9 @@ const q2 = [
     }
     ]
   },
+  // End Stagcross1 IMG
+
+  // Begin Store3 IMG
   {
     id: 98,
     text: "As Kingston and the recruit enter the Blank Monkey, the air of dust and desolation filled the room, walls barely clinging onto its frame, contained in a tight and confined space with only a few goods displayed in the middle of the store. Behind the counter, the sound of continuous dings from the blacksmith’s relentless hammering echoed throughout the store.",
@@ -1109,7 +1171,7 @@ const q2 = [
   },
   {
     id: 99,
-    text: "Greetings customer! Hol’ on for just one second. *Stops smithing, and enters the same room* My name is Ekur Yozu. What would like from this humble shop? *Smiles* ",
+    text: "Greetings customer! Hol\’ on for just one second. *Stops smithing, and enters the same room* My name is Ekur Yozu. What would like from this humble shop? *Smiles* ",
     options: [{
       continue: { cont: true },
       nextText: 101,
@@ -1117,6 +1179,8 @@ const q2 = [
     }
     ]
   },
+
+  // Unfinished
   {
     id: 100,
     text: "",
@@ -1127,6 +1191,8 @@ const q2 = [
     }
     ]
   },
+  // Unfinished
+
   {
     id: 101,
     text: "Yes, my companion here needs some proper good armor! Any suggestions?",
@@ -1166,7 +1232,7 @@ const q2 = [
   },
   {
     id: 104,
-    text: "As the recruit was about to decline the shopkeeper’s armor...",
+    text: "As the recruit was about to decline the shopkeeper\’s armor...",
     options: [{
       continue: { cont: true },
       nextText: 105,
@@ -1176,7 +1242,7 @@ const q2 = [
   },
   {
     id: 105,
-    text: "We’ll take it! *Smiles at the recruit* I knew this shop had remarkable wares. Megalodon skin is hard to come by, ya must’ve gotten it for a hefty price.",
+    text: "We\’ll take it! *Smiles at the recruit* I knew this shop had remarkable wares. Megalodon skin is hard to come by, ya must\’ve gotten it for a hefty price.",
     options: [{
       continue: { cont: true },
       nextText: 106,
@@ -1214,9 +1280,12 @@ const q2 = [
     }
     ]
   },
+  // End Store3 IMG
+
+  // Begin Stagcross1 IMG
   {
     id: 109,
-    text: "Now that we’re done shoppin’, lets grab the others and get ready for Pelna Forest!",
+    text: "Now that we\’re done shoppin\’, lets grab the others and get ready for Pelna Forest!",
     options: [{
       continue: { cont: true },
       nextText: 35,
@@ -1224,6 +1293,9 @@ const q2 = [
     }
     ]
   },
+  // End Stagcross1 IMG
+
+  // Begin Stagcross3 IMG or Stagcross4 IMG if user wins gamble game 3rd or 4th try
   //start of end of village
   {
     id: 110,
@@ -1247,7 +1319,7 @@ const q2 = [
   },
   {
     id: 112,
-    text: "Whatever is the problem, Selphie? I know ya like ya gold, but now addin’ on the fact ya get a sinkin’ feelin’ ‘bout Pelna Forest? *Takes a minute to think, turns to Tesmond and gestures an agreement, then turns to the recruit* Aight, rookie, final offer. Wanna keep goin’ to Pelna Forest or take the trip to the Caverns? Ya choice! Hahahahah.",
+    text: "Whatever is the problem, Selphie? I know ya like ya gold, but now addin\’ on the fact ya get a sinkin\’ feelin\’ \‘bout Pelna Forest? *Takes a minute to think, turns to Tesmond and gestures an agreement, then turns to the recruit* Aight, rookie, final offer. Wanna keep goin\’ to Pelna Forest or take the trip to the Caverns? Ya choice! Hahahahah.",
     options: [{
       continue: { cont: true },
       nextText: 113,
@@ -1285,7 +1357,7 @@ const q2 = [
   },
   {
     id: 115,
-    text: "FORWARD we go! Ya take the lead on this one rookie. *Pats heavily on the recruit’s back and grins* Hahahaha",
+    text: "FORWARD we go! Ya take the lead on this one rookie. *Pats heavily on the recruit\’s back and grins* Hahahaha",
     options: [{
       continue: { cont: true },
       nextText: 116,
@@ -1327,7 +1399,7 @@ const q2 = [
   },
   {
     id: 119,
-    text: "*Whispers to himself* Man... I really wanted to go to Pelna Forest. Could’ve gotten a few elven babes.",
+    text: "*Whispers to himself* Man... I really wanted to go to Pelna Forest. Could\’ve gotten a few elven babes.",
     options: [{
       continue: { cont: true },
       nextText: 120,
@@ -1337,7 +1409,7 @@ const q2 = [
   },
   {
     id: 120,
-    text: "*Pops at Tesmond’s shoulder* What did you say? *Grins*",
+    text: "*Pops at Tesmond\’s shoulder* What did you say? *Grins*",
     options: [{
       continue: { cont: true },
       nextText: 121,
@@ -1365,9 +1437,12 @@ const q2 = [
     }
     ]
   },
+  // End Stagcross3 or Stagcross4 IMG
+
   /*
   start of caverns
   */
+ // Begin Caverns1 IMG
   {
     id: 124,
     text: "At long last! A long trip ensued for our group of adventurers to the entrance of the Caverns. Its dark, concealed entrance conveyed an unfathomable fear towards Tesmond, Selphie, and the recruit. But, with a quick motion, Kingston held a torch and lit it overhead.",
@@ -1400,7 +1475,7 @@ const q2 = [
   },
   {
     id: 127,
-    text: "Hummph! Okay, maybe I will. Come Kingston, let us lead this party of frightened deer. *Grabs Kingston’s torch* *Starts sprinting into the Caverns*",
+    text: "Hummph! Okay, maybe I will. Come Kingston, let us lead this party of frightened deer. *Grabs Kingston\’s torch* *Starts sprinting into the Caverns*",
     options: [{
       continue: { cont: true },
       nextText: 128,
@@ -1410,7 +1485,7 @@ const q2 = [
   },
   {
     id: 128,
-    text: "Hol' up missie! *Beckons Tesmond and the recruit* Hurry up! We’re gonna lose her before ya know it! *Lights another torch*",
+    text: "Hol' up missie! *Beckons Tesmond and the recruit* Hurry up! We\’re gonna lose her before ya know it! *Lights another torch*",
     options: [{
       continue: { cont: true },
       nextText: 129,
@@ -1428,9 +1503,12 @@ const q2 = [
     }
     ]
   },
+  // End Caverns1 IMG
+
+  // Begin Caverns2 IMG
   {
     id: 130,
-    text: "*Stops running* Damn it! The path is split in two ways! If ya hadn’t gotten Sephie all riled up just ‘cause she wanted to do this quest, we wouldn’t be in this mess!",
+    text: "*Stops running* Damn it! The path is split in two ways! If ya hadn\’t gotten Sephie all riled up just \‘cause she wanted to do this quest, we wouldn\’t be in this mess!",
     options: [{
       continue: { cont: true },
       nextText: 131,
@@ -1549,7 +1627,7 @@ const q2 = [
   },
   {
     id: 141,
-    text: "Then right it is! Let’s hurry before something happens to Selphie!",
+    text: "Then right it is! Let\’s hurry before something happens to Selphie!",
     options: [{
       continue: { cont: true },
       nextText: 142,
@@ -1557,9 +1635,12 @@ const q2 = [
     }
     ]
   },
+  // End Caverns2 IMG
+
   /*
   start cavern maze game left
   */
+ // Begin Maze1
   {
     id: 142,
     text: "Kingston, Tesmond, and the recruit dashed towards the left passage in search of Selphie. 1 minute went by, then 2, then 10 minutes, then 30 minutes, until Kingston realized...",
@@ -1572,7 +1653,7 @@ const q2 = [
   },
   {
     id: 143,
-    text: "Where is Selphie? We searched for countless minutes and still hadn’t found her! *Thinks, then realizes* Can’t be! *Turns to Tesmond and the recruit* *Groans* Well, it looks like we are in a maze.",
+    text: "Where is Selphie? We searched for countless minutes and still hadn\’t found her! *Thinks, then realizes* Can\’t be! *Turns to Tesmond and the recruit* *Groans* Well, it looks like we are in a maze.",
     options: [{
       continue: { cont: true },
       nextText: 144,
@@ -1637,7 +1718,10 @@ const q2 = [
     }
     ]
   },
+  // End Maze1 IMG
+
   //decide to go left but has to go forward
+  // Begin Maze3 IMG
   {
     id: 149,
     text: "*Everyone sprints, then halts* Seems like a dead end, let's head back and go forwards instead!",
@@ -1648,7 +1732,10 @@ const q2 = [
     }
     ]
   },
+  // End Maze3 IMG
+
   //decide to go forward
+  // Begin Maze2 IMG
   {
     id: 150,
     text: "*Everyone sprints* This path appears correct; I hear Selphie getting closer. *Halts* Now another fork in our path, left or right?",
@@ -1676,7 +1763,10 @@ const q2 = [
     }
     ]
   },
+  // End Maze2 IMG
+
   //take 2nd left
+  // Begin Maze3 IMG
   {
     id: 152,
     text: "Then let us proceed left. *Hastily ran, then stops* Tsk! An obstruction. *Turns around and starts rushing* Time to head back and go on the other path. ",
@@ -1687,7 +1777,10 @@ const q2 = [
     }
     ]
   },
+  // End Maze3 IMG
+
   //go right
+  // Begin Maze2 IMG
   {
     id: 153,
     text: "Alright! She is getting louder. SELPHIE! SHOUT BACK! *Sees Selphie* HEY TURN AROUND! *Waves arms*",
@@ -1698,6 +1791,9 @@ const q2 = [
     }
     ]
   },
+  // End Maze2 IMG
+
+  // Begin Maze4 IMG
   {
     id: 154,
     text: "Finally, the group found Selphie. As they breathed heavily from rushing to find her, Selphie pointed towards an interesting container...",
@@ -1710,7 +1806,7 @@ const q2 = [
   },
   {
     id: 155,
-    text: "*Pant* *Pant* Selphie! Ya scared us! Don’t go runnin’ off like that ever again! *Pant* And Tesmond, ya better apologize!",
+    text: "*Pant* *Pant* Selphie! Ya scared us! Don\’t go runnin\’ off like that ever again! *Pant* And Tesmond, ya better apologize!",
     options: [{
       continue: { cont: true },
       nextText: 156,
@@ -1730,7 +1826,7 @@ const q2 = [
   },
   {
     id: 157,
-    text: "*Arms crossed* Very well, that apology satisfies me... for now. *Points forward* Anyways look, I found a chest! I can’t open it, so maybe you can? *Looks at recruit*",
+    text: "*Arms crossed* Very well, that apology satisfies me... for now. *Points forward* Anyways look, I found a chest! I can\’t open it, so maybe you can? *Looks at recruit*",
     options: [{
       continue: { cont: true },
       nextText: 158,
@@ -1740,7 +1836,7 @@ const q2 = [
   },
   {
     id: 158,
-    text: "Let me interrupt ya Selphie. That chest could be trapped. Who knows what’ll happen. Are ya sure ya still wanna open it?",
+    text: "Let me interrupt ya Selphie. That chest could be trapped. Who knows what\’ll happen. Are ya sure ya still wanna open it?",
     options: [{
       continue: { cont: true },
       nextText: 159,
@@ -1750,7 +1846,7 @@ const q2 = [
   },
   {
     id: 159,
-    text: "Of course! There is no possibility that this chest is forged to trap others! Even our recruit agrees, isn’t that right?",
+    text: "Of course! There is no possibility that this chest is forged to trap others! Even our recruit agrees, isn\’t that right?",
     options: [{
       continue: { cont: true },
       nextText: 160,
@@ -1777,7 +1873,7 @@ const q2 = [
   },
   {
     id: 161,
-    text: "The recruit bobs his head in complete ignorance to Kingston’s warnings.",
+    text: "The recruit bobs his head in complete ignorance to Kingston\’s warnings.",
     options: [{
       continue: { cont: true },
       nextText: 162,
@@ -1805,6 +1901,9 @@ const q2 = [
     }
     ]
   },
+  // End Maze4 IMG
+
+  // Begin mimicked IMG
   {
     id: 164,
     text: "Unfortunately, as Kingston exclaimed everyone to pause, the recruit opened the chest. GET MIMICKED: And with a quick snarl, the inanimate chest turned alive. *Crunch* *Crack* goes the recruit.",
@@ -1815,6 +1914,9 @@ const q2 = [
     }
     ]
   },
+  // End mimicked IMG
+
+  // Begin Maze4 IMG
   {
     id: 165,
     text: "The recruit swayed his head in disapproval. For he was more interested in traveling deeper in this abyssal labyrinth. ",
@@ -1827,7 +1929,7 @@ const q2 = [
   },
   {
     id: 166,
-    text: "Seems like he ain’t followin’ yer commands, Selphie. Well, in my opinion, he’s right. We got more priorities, like figurin’ out how this maze ends.",
+    text: "Seems like he ain\’t followin\’ yer commands, Selphie. Well, in my opinion, he\’s right. We got more priorities, like figurin\’ out how this maze ends.",
     options: [{
       continue: { cont: true },
       nextText: 167,
@@ -1865,9 +1967,12 @@ const q2 = [
     }
     ]
   },
+  // End Maze4 IMG
+
+  // Begin Maze2 IMG
   {
     id: 170,
-    text: "*Halts* Another split. Aight rook, ya haven’t failed us yet. So, what is it? Left or right?",
+    text: "*Halts* Another split. Aight rook, ya haven\’t failed us yet. So, what is it? Left or right?",
     options: [{
       continue: { cont: true },
       nextText: 58,
@@ -1894,7 +1999,7 @@ const q2 = [
   },
   {
     id: 172,
-    text: "The recruit points: Left. Even when they knew the previous left turns led to hindrances, but what's stopping them. Not me, that’s for sure... well more like I can’t even if I wanted too.",
+    text: "The recruit points: Left. Even when they knew the previous left turns led to hindrances, but what's stopping them. Not me, that\’s for sure... well more like I can\’t even if I wanted too.",
     options: [{
       continue: { cont: true },
       nextText: 173,
@@ -1922,6 +2027,9 @@ const q2 = [
     }
     ]
   },
+  // End Maze2 IMG
+
+  // Begin Maze5 IMG
   {
     id: 175,
     text: "There is another chest, but this time its lifted high onto a pedestal adorned with an engraving. *Leans in to look closer* This engraving appears to be a hand and... a sun?",
@@ -1944,7 +2052,7 @@ const q2 = [
   },
   {
     id: 177,
-    text: "Aight aight, let me see. *Looks intently* Can it be? *Points* the hand n sun represents Father Sun’s right hand. It usually symbolizes protection n might. This symbol is only worn on the paladins I’ve seen back in Atlamond, the undersea city. Interestin’ how’d it got here. *Looks at the recruit* I don’t think this chest is trapped, so ya can open it rook!",
+    text: "Aight aight, let me see. *Looks intently* Can it be? *Points* the hand n sun represents Father Sun\’s right hand. It usually symbolizes protection n might. This symbol is only worn on the paladins I\’ve seen back in Atlamond, the undersea city. Interestin\’ how\’d it got here. *Looks at the recruit* I don\’t think this chest is trapped, so ya can open it rook!",
     options: [{
       continue: { cont: true },
       nextText: 178,
@@ -1977,7 +2085,7 @@ const q2 = [
   },
   {
     id: 180,
-    text: "Yep, gauntlets. By through his actions, the gauntlets proves a knight’s valor n protection to the world.Ya can keep it, rook. It’s size is too small for me.",
+    text: "Yep, gauntlets. By through his actions, the gauntlets proves a knight\’s valor n protection to the world.Ya can keep it, rook. It\’s size is too small for me.",
     options: [{
       continue: { cont: true },
       nextText: 181,
@@ -1997,7 +2105,7 @@ const q2 = [
   },
   {
     id: 182,
-    text: "Yes! This’ll piece is a treasure meant for the highest order. Not somethin’ ya find anywhere. *Turns around* Now that we got ourselves some loot, let’s go back the other way, got the feelin’ it might be the way out.",
+    text: "Yes! This\’ll piece is a treasure meant for the highest order. Not somethin\’ ya find anywhere. *Turns around* Now that we got ourselves some loot, let\’s go back the other way, got the feelin\’ it might be the way out.",
     options: [{
       continue: { cont: true },
       nextText: 183,
