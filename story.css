@@ -1,0 +1,15 @@
+div img{
+    position: absolute;
+    bottom: 2.5%;
+    z-index: -1;
+    width: 100%;
+    max-height: 25%;
+    /*left: 25%;*/
+}
+
+/*changes the position of the dialogue*/
+p.dialogue{
+    position: absolute;
+    bottom: 2.5%;
+    z-index: 1;
+}
