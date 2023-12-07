@@ -1609,7 +1609,7 @@ const q2 = [
     text: "Then left it is! *Points at Tesmond* And I do not want to hear you make a smirking remark! We got to get Selphie first!",
     options: [{
       continue: { cont: true },
-      nextText: 60,
+      nextText: 142,
       character: 'Tesmond'
     }
     ]
@@ -1630,7 +1630,7 @@ const q2 = [
     text: "Then right it is! Let\’s hurry before something happens to Selphie!",
     options: [{
       continue: { cont: true },
-      nextText: 142,
+      nextText: 183,
       character: 'Braedon'
     }
     ]
@@ -2105,10 +2105,10 @@ const q2 = [
   },
   {
     id: 182,
-    text: "Yes! This\’ll piece is a treasure meant for the highest order. Not somethin\’ ya find anywhere. *Turns around* Now that we got ourselves some loot, let\’s go back the other way, got the feelin\’ it might be the way out.",
+    text: "Yes! This'll piece is a treasure meant for the highest order. Not somethin\’ ya find anywhere. *Turns around* Now that we got ourselves some loot, let\’s go back the other way, got the feelin\’ it might be the way out.",
     options: [{
       continue: { cont: true },
-      nextText: 183,
+      nextText: 204,
       character: 'Tesmond'
     }
     ]
@@ -2212,7 +2212,7 @@ const q2 = [
     options: [{
       //text: '',
       continue: { cont: true },
-      nextText: 35,
+      nextText: 192,
       character: 'Narrator'
     }
     ]
@@ -2222,7 +2222,7 @@ const q2 = [
     text: "*Ignores Tesmond* Selphie! *Runs to her* Are ya injured?",
     options: [{
       continue: { cont: true },
-      nextText: 58,
+      nextText: 193,
       character: 'Braedon'
     }
     ]
@@ -2232,7 +2232,7 @@ const q2 = [
     text: "I am fine. Minor injuries, nothing fatal.",
     options: [{
       continue: { cont: true },
-      nextText: 59,
+      nextText: 194,
       character: 'Selphie'
     }
     ]
@@ -2242,491 +2242,516 @@ const q2 = [
     text: "That’s good! That we lost ya! *Pauses and looks around* Now that everyone is here, let's see why these monsters were so adamant ‘bout this place...",
     options: [{
       continue: { cont: true },
-      nextText: 60,
+      nextText: 195,
       character: 'Braedon'
     }
     ]
   },
   {
     id: 195,
-    text: "",
+    text: "For hours, the party of adventurers searched thoroughly in the kobolds’ den. Then, the recruit looked up.",
     options: [{
       continue: { cont: true },
-      nextText: 35,
-      character: 'Tesmond'
+      nextText: 196,
+      character: 'Narrator'
     }
     ]
   },
   {
     id: 196,
-    text: "",
+    text: "Fascinating... even for mere beasts the thought of hiding their pilfered goods above our heads is rather clever.",
     options: [{
       continue: { cont: true },
-      nextText: 35,
+      nextText: 197,
       character: 'Tesmond'
     }
     ]
   },
   {
     id: 197,
-    text: "",
+    text: "*Climbs up* Ah! Everyone! Come up, I found an item quite riveting!",
     options: [{
       continue: { cont: true },
-      nextText: 35,
-      character: 'Tesmond'
+      nextText: 198,
+      character: 'Selphie'
     }
     ]
   },
   {
     id: 198,
-    text: "",
+    text: "Gauntlets?",
     options: [{
       continue: { cont: true },
-      nextText: 35,
+      nextText: 199,
       character: 'Tesmond'
     }
     ]
   },
   {
     id: 199,
-    text: "",
+    text: "Interestin'! These gauntlets here were only worn by the paladins I've seen back in Atlamond, the undersea city. They represent might n protection. I wonder how'd it got here. *Looks around* Well, seein' how we're 'quipped with the best gear, I bet we should give this to the rook!",
     options: [{
       continue: { cont: true },
-      nextText: 35,
-      character: 'Tesmond'
+      nextText: 200,
+      character: 'Braedon'
     }
     ]
   },
   {
     id: 200,
-    text: "",
+    text: "Are we genuinely keeping such a gaudy piece of armor?",
     options: [{
       continue: { cont: true },
-      nextText: 35,
+      nextText: 201,
       character: 'Tesmond'
     }
     ]
   },
   {
     id: 201,
-    text: "",
+    text: "Ya dang right! This’ll piece is a treasure meant for the highest order. Not somethin’ ya find anywhere. *Turns around* Now, is everyone done lootin’?",
     options: [{
       continue: { cont: true },
-      nextText: 35,
-      character: 'Tesmond'
+      nextText: 202,
+      character: 'Braedon'
     }
     ]
   },
   {
     id: 202,
-    text: "",
+    text: "*Scooping treasure* Yes! But unfortunately, I am unable to gather all the treasure.",
     options: [{
       continue: { cont: true },
-      nextText: 35,
-      character: 'Tesmond'
+      nextText: 203,
+      character: 'Selphie'
     }
     ]
   },
   {
     id: 203,
-    text: "",
+    text: "Bah! We don't need 'em, Selphie! Aight! Time to go deeper in this cavern... hopefully we're near the end. ",
     options: [{
       continue: { cont: true },
-      nextText: 58,
-      character: 'Tesmond'
+      nextText: 204,
+      character: 'Braedon'
     }
     ]
   },
+/*
+start of cavern conclusion
+*/
   {
     id: 204,
-    text: "",
+    text: "After their long encounter inside the caverns, the group of adventurers emerged from the darkness into the bright luminescence of Father Sun.",
     options: [{
       continue: { cont: true },
-      nextText: 59,
-      character: 'Tesmond'
+      nextText: 205,
+      character: 'Narrator'
     }
     ]
   },
   {
     id: 205,
-    text: "",
+    text: "At long last! We have surfaced back to the outside. And it is quite shining!",
     options: [{
       continue: { cont: true },
-      nextText: 60,
+      nextText: 206,
       character: 'Tesmond'
     }
     ]
   },
   {
     id: 206,
-    text: "",
+    text: "That's how it is when yer down underground fer too long! Hahaha! *Growls* Ah! It appears that my hunger acts like a wild animal! *Turns to everyone* Why don't we go back to the guild to accept payment for the quest n go devour some food?",
     options: [{
       continue: { cont: true },
-      nextText: 35,
-      character: 'Tesmond'
+      nextText: 207,
+      character: 'Braedon'
     }
     ]
   },
   {
     id: 207,
-    text: "",
+    text: "That sounds like a lovely idea! Let us go now.",
     options: [{
       continue: { cont: true },
-      nextText: 35,
-      character: 'Tesmond'
+      nextText: 208,
+      character: 'Selphie'
     }
     ]
   },
   {
     id: 208,
-    text: "",
+    text: "Wait... is it just me, or are we in Pelna Forest? The exit of the caverns stretches underground into Pelna Forest.",
     options: [{
       continue: { cont: true },
-      nextText: 35,
+      nextText: 209,
       character: 'Tesmond'
     }
     ]
   },
   {
     id: 209,
-    text: "",
+    text: "Hmm... looks like yer right Tesmond! *Thinks* Ya know, now that we're here, we could finish that other quest; investigate Pelna Forest n its disturbance before we go back.",
     options: [{
       continue: { cont: true },
-      nextText: 35,
+      nextText: 210,
       character: 'Tesmond'
     }
     ]
   },
   {
     id: 210,
-    text: "",
+    text: "Hmmmm... *Slightly sweats* I do believe there is no reason to go any further. Most importantly we are starving, so it is better for us to go back and recover.",
     options: [{
       continue: { cont: true },
-      nextText: 35,
-      character: 'Tesmond'
+      nextText: 211,
+      character: 'Selphie'
     }
     ]
   },
   {
     id: 211,
-    text: "",
+    text: "Now hold on Selphie that's nonsense! Besides, I got us some dried meat in case we’re in a terrible situation. How 'bout you rook? Wanna end it here or keep goin'?",
     options: [{
       continue: { cont: true },
-      nextText: 35,
-      character: 'Tesmond'
+      nextText: 212,
+      character: 'Braedon'
     }
     ]
   },
   {
     id: 212,
-    text: "",
+    text: "Continue or End",
     options: [{
+      text: '[Continue]',
       continue: { cont: true },
-      nextText: 35,
-      character: 'Tesmond'
+      nextText: 213,
+      character: 'Narrator'
+    },
+    {
+      text: '[End]',
+      continue: { cont: true },
+      nextText: 217,
+      character: 'Narrator'
     }
     ]
   },
+  /*
+  choose to continue
+  */
   {
     id: 213,
-    text: "",
+    text: "In excitement, the recruit accepted Kingston's invitation to thrust ahead onto their next quest: Investigate Pelna Forest and its disturbance.",
     options: [{
       continue: { cont: true },
-      nextText: 35,
-      character: 'Tesmond'
+      nextText: 214,
+      character: 'Narrator'
     }
     ]
   },
   {
     id: 214,
-    text: "",
+    text: "Then it's settled! Let's first sit down n recover 'fore our next adventure.",
     options: [{
       continue: { cont: true },
-      nextText: 58,
-      character: 'Tesmond'
+      nextText: 215,
+      character: 'Braedon'
     }
     ]
   },
   {
     id: 215,
-    text: "",
+    text: "*Sigh* I much rather feast on sirloin and tender poultry than this preserved meat...",
     options: [{
       continue: { cont: true },
-      nextText: 59,
+      nextText: 216,
       character: 'Tesmond'
     }
     ]
   },
   {
     id: 216,
-    text: "",
+    text: "I am not going to enjoy this...",
     options: [{
       continue: { cont: true },
-      nextText: 60,
+      nextText: 220,
       character: 'Tesmond'
     }
     ]
   },
+  /*
+  if choose to end
+  */
   {
     id: 217,
-    text: "",
+    text: "Aight! Then let's march back down to Stagcross!",
     options: [{
       continue: { cont: true },
-      nextText: 35,
-      character: 'Tesmond'
+      nextText: 218,
+      character: 'Braedon'
     }
     ]
   },
   {
     id: 218,
-    text: "",
+    text: "Delicious sirloin and tender poultry, here I come!",
     options: [{
       continue: { cont: true },
-      nextText: 35,
+      nextText: 219,
       character: 'Tesmond'
     }
     ]
   },
   {
     id: 219,
-    text: "",
+    text: "*Relieved sigh* Okay, let us so.",
     options: [{
       continue: { cont: true },
-      nextText: 35,
-      character: 'Tesmond'
+      nextText: 270,
+      character: 'Selphie'
     }
     ]
   },
+  /*
+  forest intro
+  */
   {
     id: 220,
-    text: "",
+    text: "The rustling of leaves trailed behind our fabled adventurers. *Stomp* *Crackle* *Pause* our adventurers went and went until they confronted a hidden village deep within Pelna Forest",
     options: [{
       continue: { cont: true },
-      nextText: 35,
-      character: 'Tesmond'
+      nextText: 221,
+      character: 'Narrator'
     }
     ]
   },
   {
     id: 221,
-    text: "",
+    text: "*Looks around* Now this is a lovely village. I wonder who these people livin' here are?",
     options: [{
       continue: { cont: true },
-      nextText: 35,
-      character: 'Tesmond'
+      nextText: 222,
+      character: 'Braedon'
     }
     ]
   },
   {
     id: 222,
-    text: "",
+    text: "As Kingston looked closer... he saw the inhabitants within Pelna Forest... elves of all races. Sky elves flying carefree, water elves treading through water, wood elves building, and many more.",
     options: [{
       continue: { cont: true },
-      nextText: 35,
-      character: 'Tesmond'
+      nextText: 223,
+      character: 'Narrator'
     }
     ]
   },
   {
     id: 223,
-    text: "",
+    text: "*Looks at village* *Looks back to Selphie* So this is the reason for your worry... you must have a history with this village.",
     options: [{
       continue: { cont: true },
-      nextText: 35,
+      nextText: 224,
       character: 'Tesmond'
     }
     ]
   },
   {
     id: 224,
-    text: "",
+    text: "No no... there is no correlation with me or this village. Nothing ha-…",
     options: [{
       continue: { cont: true },
-      nextText: 35,
+      nextText: 225,
       character: 'Tesmond'
     }
     ]
   },
   {
     id: 225,
-    text: "",
+    text: "*Walks up* Hello travelers! I am Ulymar Levi, head of Pelna Forest, prophet to Evergreen Uavine. How may I assist you- SELPHIE? Where have you been, my child? ",
     options: [{
       continue: { cont: true },
-      nextText: 58,
-      character: 'Tesmond'
+      nextText: 226,
+      character: 'Ulymar'
     }
     ]
   },
   {
     id: 226,
-    text: "",
+    text: "*Sweats* Hello... Father... how have you been?",
     options: [{
       continue: { cont: true },
-      nextText: 59,
-      character: 'Tesmond'
+      nextText: 227,
+      character: 'Selphie'
     }
     ]
   },
   {
     id: 227,
-    text: "",
+    text: "HUH? *Looks back and forth between Selphie and Ulymar* Well, ya do look akin. Should've known she was yers Ulymar.",
     options: [{
       continue: { cont: true },
-      nextText: 60,
-      character: 'Tesmond'
+      nextText: 228,
+      character: 'Braedon'
     }
     ]
   },
   {
     id: 228,
-    text: "",
+    text: "HUH?",
     options: [{
       continue: { cont: true },
-      nextText: 35,
+      nextText: 229,
       character: 'Tesmond'
     }
     ]
   },
   {
     id: 229,
-    text: "",
+    text: "HUH? You know my Father?",
     options: [{
       continue: { cont: true },
-      nextText: 35,
-      character: 'Tesmond'
+      nextText: 230,
+      character: 'Selphie'
     }
     ]
   },
   {
     id: 230,
-    text: "",
+    text: "Yes, Braedon Kingston helped me in years prior, but we should move into my residence to talk further. Come.",
     options: [{
       continue: { cont: true },
-      nextText: 35,
-      character: 'Tesmond'
+      nextText: 231,
+      character: 'Ulymar'
     }
     ]
   },
   {
     id: 231,
-    text: "",
+    text: "*Turns to recruit* Well recruit... I pressume we should accompany them.",
     options: [{
       continue: { cont: true },
-      nextText: 35,
+      nextText: 232,
       character: 'Tesmond'
     }
     ]
   },
+  /*
+  start forest memorization game
+  */
   {
     id: 232,
-    text: "",
+    text: "Here we are. Please, make yourselves comfortable while I prepare with sustenance. Selphie... would you mind assisting me?",
     options: [{
       continue: { cont: true },
-      nextText: 35,
-      character: 'Tesmond'
+      nextText: 233,
+      character: 'Ulymar'
     }
     ]
   },
   {
     id: 233,
-    text: "",
+    text: "Sure Father... *Whispers* oh my stars... I wonder what he is going to say... *Walks away*",
     options: [{
       continue: { cont: true },
-      nextText: 35,
+      nextText: 234,
       character: 'Tesmond'
     }
     ]
   },
   {
     id: 234,
-    text: "",
+    text: "Quite earthy... decoration the elves embellish themselves.",
     options: [{
       continue: { cont: true },
-      nextText: 35,
+      nextText: 235,
       character: 'Tesmond'
     }
     ]
   },
   {
     id: 235,
-    text: "",
+    text: "Yep! Heard they enjoy the native landscape compared to modern times, especially when they have such long life spans. Everything we do goes by too fast for 'em.",
     options: [{
       continue: { cont: true },
-      nextText: 35,
-      character: 'Tesmond'
+      nextText: 236,
+      character: 'Braedon'
     }
     ]
   },
   {
     id: 236,
-    text: "",
+    text: "*Walks in* That indeed it does. *Hands everyone tea* I remember the times before the Great Calamity my great, great grandfather spoke about. He was the first chosen guardian to oversee Evergreen Uavine, the creation of Father Sun and Mother Moon. He was blessed and tasked to protect and assist all that live on Camuth, or specifically Urth with his wisdom. His existence bears a significant role during the Great Calamity. ",
     options: [{
       continue: { cont: true },
-      nextText: 58,
-      character: 'Tesmond'
+      nextText: 237,
+      character: 'Ulymar'
     }
     ]
   },
   {
     id: 237,
-    text: "",
+    text: "How so?",
     options: [{
       continue: { cont: true },
-      nextText: 59,
+      nextText: 238,
       character: 'Tesmond'
     }
     ]
   },
   {
     id: 238,
-    text: "",
+    text: "Without Evergreen Uavine, the Knights of the Fallen Order would have never survived Dark Lord Palentheous Irzaline's regime. Pelna Forest was one of the last few remaining strongholds against the dark forces largely due to Evergreen Uavine's blessing.",
     options: [{
       continue: { cont: true },
-      nextText: 60,
-      character: 'Tesmond'
+      nextText: 239,
+      character: 'Ulymar'
     }
     ]
   },
   {
     id: 239,
-    text: "",
+    text: "Okay Father that is enough. Surely everyone knows that story.",
     options: [{
       continue: { cont: true },
-      nextText: 35,
-      character: 'Tesmond'
+      nextText: 240,
+      character: 'Selphie'
     }
     ]
   },
   {
     id: 240,
-    text: "",
+    text: "The world changes rapidly my dear. It is better to always remind every person of their history rather than forget. But you are correct, we have other matters to discuss no doubt... let us talk with Evergreen Uavine.",
     options: [{
       continue: { cont: true },
-      nextText: 35,
-      character: 'Tesmond'
+      nextText: 241,
+      character: 'Ulymar'
     }
     ]
   },
   {
     id: 241,
-    text: "",
+    text: "The band of adventurers guided by Ulymar Levi exited the residence and walked towards the end of the village to a large gate. This large gate was guarded by a mass of elves which when opened, led the path to Evergreen Uavine.",
     options: [{
       continue: { cont: true },
-      nextText: 35,
-      character: 'Tesmond'
+      nextText: 242,
+      character: 'Narrator'
     }
     ]
   },
   {
     id: 242,
-    text: "",
+    text: "Hmmmmmm... Ahhhh... adventurers of the newest age... I have waited for your arrival. I am Evergreen Uavine as you were told by Ulymar Levi. Hmmmm... the world has shaken once more... the reappearance of Andurath the knightmare is upon us. And with his coming, the emergence of a fatal catastrophe will strike once more. To prevent such passing, I must entrust the powers of old to anew. Which is why I startled the fauna of these lands... in search of a champion. Young child... your eyes glimmer with bravery yet you are inexperienced. For me to give such a relic to yourself... I must test you...",
     options: [{
       continue: { cont: true },
-      nextText: 35,
-      character: 'Tesmond'
+      nextText: 243,
+      character: 'Evergreen'
     }
     ]
   },
+  /*
+  starts the game
+  */
   {
     id: 243,
     text: "",
@@ -3089,6 +3114,1206 @@ const q2 = [
   },
   {
     id: 67,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 35,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 221,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 35,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 222,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 35,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 223,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 35,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 224,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 35,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 225,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 58,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 226,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 59,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 227,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 60,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 228,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 35,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 229,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 35,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 230,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 35,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 231,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 35,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 232,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 35,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 233,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 35,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 234,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 35,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 235,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 35,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 236,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 58,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 237,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 59,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 238,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 60,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 239,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 35,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 240,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 35,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 241,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 35,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 242,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 35,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 243,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 35,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 244,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 35,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 245,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 35,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 246,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 35,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 247,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 58,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 248,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 59,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 249,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 60,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 250,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 35,
+      character: 'Tesmond'
+    }
+    ]
+  },
+{
+    id: 221,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 35,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 222,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 35,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 223,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 35,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 224,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 35,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 225,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 58,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 226,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 59,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 227,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 60,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 228,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 35,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 229,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 35,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 230,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 35,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 231,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 35,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 232,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 35,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 233,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 35,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 234,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 35,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 235,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 35,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 236,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 58,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 237,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 59,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 238,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 60,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 239,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 35,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 240,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 35,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 241,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 35,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 242,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 35,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 243,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 35,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 244,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 35,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 245,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 35,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 246,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 35,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 247,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 58,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 248,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 59,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 249,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 60,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 250,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 35,
+      character: 'Tesmond'
+    }
+    ]
+  },
+{
+    id: 221,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 35,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 222,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 35,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 223,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 35,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 224,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 35,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 225,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 58,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 226,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 59,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 227,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 60,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 228,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 35,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 229,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 35,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 230,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 35,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 231,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 35,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 232,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 35,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 233,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 35,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 234,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 35,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 235,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 35,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 236,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 58,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 237,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 59,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 238,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 60,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 239,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 35,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 240,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 35,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 241,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 35,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 242,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 35,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 243,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 35,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 244,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 35,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 245,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 35,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 246,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 35,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 247,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 58,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 248,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 59,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 249,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 60,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 250,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 35,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 221,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 35,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 222,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 35,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 223,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 35,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 224,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 35,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 225,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 58,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 226,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 59,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 227,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 60,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 228,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 35,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 229,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 35,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 230,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 35,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 231,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 35,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 232,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 35,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 233,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 35,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 234,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 35,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 235,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 35,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 236,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 58,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 237,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 59,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 238,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 60,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 239,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 35,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 240,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 35,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 241,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 35,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 242,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 35,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 243,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 35,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 244,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 35,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 245,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 35,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 246,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 35,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 247,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 58,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 248,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 59,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 249,
+    text: "",
+    options: [{
+      continue: { cont: true },
+      nextText: 60,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 250,
     text: "",
     options: [{
       continue: { cont: true },
