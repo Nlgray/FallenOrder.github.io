@@ -54,7 +54,7 @@ const q2 = [
         nextText: 2
       }
     ]
-  }, 
+  },
   // End intro IMG
   {
     // move to the tavern
@@ -301,7 +301,7 @@ const q2 = [
   /* start of village 
   needs 15 total options witht the last being a choice to choose the game
   */
- // Begin Tavern1 IMG
+  // Begin Tavern1 IMG
   {
     id: 20,
     text: 'Alright, is everyone well equipped and ready? *Everyone gestures, except you*',
@@ -478,8 +478,8 @@ const q2 = [
   /*
   Begin village gamble game; needs to open the game
   */
- // Begin Gamble1 IMG
- // Use Dice1 - Dice6
+  // Begin Gamble1 IMG
+  // Use Dice1 - Dice6
   {
     id: 36,
     text: "The recruit\’s choice involved: Accepting Selphie\’s addiction, SPENDING MONEY.",
@@ -720,7 +720,7 @@ const q2 = [
   start of village scammer game
   need to move to after the village
   */
- // Begin Stagcross1 IMG
+  // Begin Stagcross1 IMG
   {
     id: 57,
     text: "The recruit\’s choice involved: Accepting Kingston\’s wide array of shops.",
@@ -1442,7 +1442,7 @@ const q2 = [
   /*
   start of caverns
   */
- // Begin Caverns1 IMG
+  // Begin Caverns1 IMG
   {
     id: 124,
     text: "At long last! A long trip ensued for our group of adventurers to the entrance of the Caverns. Its dark, concealed entrance conveyed an unfathomable fear towards Tesmond, Selphie, and the recruit. But, with a quick motion, Kingston held a torch and lit it overhead.",
@@ -1586,7 +1586,7 @@ const q2 = [
       character: 'Narrator'
     },
     {
-      text:'[Right]',
+      text: '[Right]',
       continue: { cont: true },
       nextText: 140,
       character: 'Narrator'
@@ -1609,7 +1609,7 @@ const q2 = [
     text: "Then left it is! *Points at Tesmond* And I do not want to hear you make a smirking remark! We got to get Selphie first!",
     options: [{
       continue: { cont: true },
-      nextText: 60,
+      nextText: 142,
       character: 'Tesmond'
     }
     ]
@@ -1630,7 +1630,7 @@ const q2 = [
     text: "Then right it is! Let\’s hurry before something happens to Selphie!",
     options: [{
       continue: { cont: true },
-      nextText: 142,
+      nextText: 183,
       character: 'Braedon'
     }
     ]
@@ -1640,7 +1640,7 @@ const q2 = [
   /*
   start cavern maze game left
   */
- // Begin Maze1
+  // Begin Maze1
   {
     id: 142,
     text: "Kingston, Tesmond, and the recruit dashed towards the left passage in search of Selphie. 1 minute went by, then 2, then 10 minutes, then 30 minutes, until Kingston realized...",
@@ -2105,10 +2105,10 @@ const q2 = [
   },
   {
     id: 182,
-    text: "Yes! This\’ll piece is a treasure meant for the highest order. Not somethin\’ ya find anywhere. *Turns around* Now that we got ourselves some loot, let\’s go back the other way, got the feelin\’ it might be the way out.",
+    text: "Yes! This'll piece is a treasure meant for the highest order. Not somethin\’ ya find anywhere. *Turns around* Now that we got ourselves some loot, let\’s go back the other way, got the feelin\’ it might be the way out.",
     options: [{
       continue: { cont: true },
-      nextText: 183,
+      nextText: 204,
       character: 'Tesmond'
     }
     ]
@@ -2212,7 +2212,7 @@ const q2 = [
     options: [{
       //text: '',
       continue: { cont: true },
-      nextText: 35,
+      nextText: 192,
       character: 'Narrator'
     }
     ]
@@ -2222,7 +2222,7 @@ const q2 = [
     text: "*Ignores Tesmond* Selphie! *Runs to her* Are ya injured?",
     options: [{
       continue: { cont: true },
-      nextText: 58,
+      nextText: 193,
       character: 'Braedon'
     }
     ]
@@ -2232,7 +2232,7 @@ const q2 = [
     text: "I am fine. Minor injuries, nothing fatal.",
     options: [{
       continue: { cont: true },
-      nextText: 59,
+      nextText: 194,
       character: 'Selphie'
     }
     ]
@@ -2242,861 +2242,3058 @@ const q2 = [
     text: "That’s good! That we lost ya! *Pauses and looks around* Now that everyone is here, let's see why these monsters were so adamant ‘bout this place...",
     options: [{
       continue: { cont: true },
-      nextText: 60,
+      nextText: 195,
       character: 'Braedon'
     }
     ]
   },
   {
     id: 195,
-    text: "",
+    text: "For hours, the party of adventurers searched thoroughly in the kobolds’ den. Then, the recruit looked up.",
     options: [{
       continue: { cont: true },
-      nextText: 35,
-      character: 'Tesmond'
+      nextText: 196,
+      character: 'Narrator'
     }
     ]
   },
   {
     id: 196,
-    text: "",
+    text: "Fascinating... even for mere beasts the thought of hiding their pilfered goods above our heads is rather clever.",
     options: [{
       continue: { cont: true },
-      nextText: 35,
+      nextText: 197,
       character: 'Tesmond'
     }
     ]
   },
   {
     id: 197,
-    text: "",
+    text: "*Climbs up* Ah! Everyone! Come up, I found an item quite riveting!",
     options: [{
       continue: { cont: true },
-      nextText: 35,
-      character: 'Tesmond'
+      nextText: 198,
+      character: 'Selphie'
     }
     ]
   },
   {
     id: 198,
-    text: "",
+    text: "Gauntlets?",
     options: [{
       continue: { cont: true },
-      nextText: 35,
+      nextText: 199,
       character: 'Tesmond'
     }
     ]
   },
   {
     id: 199,
-    text: "",
+    text: "Interestin'! These gauntlets here were only worn by the paladins I've seen back in Atlamond, the undersea city. They represent might n protection. I wonder how'd it got here. *Looks around* Well, seein' how we're 'quipped with the best gear, I bet we should give this to the rook!",
     options: [{
       continue: { cont: true },
-      nextText: 35,
-      character: 'Tesmond'
+      nextText: 200,
+      character: 'Braedon'
     }
     ]
   },
   {
     id: 200,
-    text: "",
+    text: "Are we genuinely keeping such a gaudy piece of armor?",
     options: [{
       continue: { cont: true },
-      nextText: 35,
+      nextText: 201,
       character: 'Tesmond'
     }
     ]
   },
   {
     id: 201,
-    text: "",
+    text: "Ya dang right! This’ll piece is a treasure meant for the highest order. Not somethin’ ya find anywhere. *Turns around* Now, is everyone done lootin’?",
     options: [{
       continue: { cont: true },
-      nextText: 35,
-      character: 'Tesmond'
+      nextText: 202,
+      character: 'Braedon'
     }
     ]
   },
   {
     id: 202,
-    text: "",
+    text: "*Scooping treasure* Yes! But unfortunately, I am unable to gather all the treasure.",
     options: [{
       continue: { cont: true },
-      nextText: 35,
-      character: 'Tesmond'
+      nextText: 203,
+      character: 'Selphie'
     }
     ]
   },
   {
     id: 203,
-    text: "",
+    text: "Bah! We don't need 'em, Selphie! Aight! Time to go deeper in this cavern... hopefully we're near the end. ",
     options: [{
       continue: { cont: true },
-      nextText: 58,
-      character: 'Tesmond'
+      nextText: 204,
+      character: 'Braedon'
     }
     ]
   },
+  /*
+  start of cavern conclusion
+  */
   {
     id: 204,
-    text: "",
+    text: "After their long encounter inside the caverns, the group of adventurers emerged from the darkness into the bright luminescence of Father Sun.",
     options: [{
       continue: { cont: true },
-      nextText: 59,
-      character: 'Tesmond'
+      nextText: 205,
+      character: 'Narrator'
     }
     ]
   },
   {
     id: 205,
-    text: "",
+    text: "At long last! We have surfaced back to the outside. And it is quite shining!",
     options: [{
       continue: { cont: true },
-      nextText: 60,
+      nextText: 206,
       character: 'Tesmond'
     }
     ]
   },
   {
     id: 206,
-    text: "",
+    text: "That's how it is when yer down underground fer too long! Hahaha! *Growls* Ah! It appears that my hunger acts like a wild animal! *Turns to everyone* Why don't we go back to the guild to accept payment for the quest n go devour some food?",
     options: [{
       continue: { cont: true },
-      nextText: 35,
-      character: 'Tesmond'
+      nextText: 207,
+      character: 'Braedon'
     }
     ]
   },
   {
     id: 207,
-    text: "",
+    text: "That sounds like a lovely idea! Let us go now.",
     options: [{
       continue: { cont: true },
-      nextText: 35,
-      character: 'Tesmond'
+      nextText: 208,
+      character: 'Selphie'
     }
     ]
   },
   {
     id: 208,
-    text: "",
+    text: "Wait... is it just me, or are we in Pelna Forest? The exit of the caverns stretches underground into Pelna Forest.",
     options: [{
       continue: { cont: true },
-      nextText: 35,
+      nextText: 209,
       character: 'Tesmond'
     }
     ]
   },
   {
     id: 209,
-    text: "",
+    text: "Hmm... looks like yer right Tesmond! *Thinks* Ya know, now that we're here, we could finish that other quest; investigate Pelna Forest n its disturbance before we go back.",
     options: [{
       continue: { cont: true },
-      nextText: 35,
+      nextText: 210,
       character: 'Tesmond'
     }
     ]
   },
   {
     id: 210,
-    text: "",
+    text: "Hmmmm... *Slightly sweats* I do believe there is no reason to go any further. Most importantly we are starving, so it is better for us to go back and recover.",
     options: [{
       continue: { cont: true },
-      nextText: 35,
-      character: 'Tesmond'
+      nextText: 211,
+      character: 'Selphie'
     }
     ]
   },
   {
     id: 211,
-    text: "",
+    text: "Now hold on Selphie that's nonsense! Besides, I got us some dried meat in case we’re in a terrible situation. How 'bout you rook? Wanna end it here or keep goin'?",
     options: [{
       continue: { cont: true },
-      nextText: 35,
-      character: 'Tesmond'
+      nextText: 212,
+      character: 'Braedon'
     }
     ]
   },
   {
     id: 212,
-    text: "",
+    text: "Continue or End",
     options: [{
+      text: '[Continue]',
       continue: { cont: true },
-      nextText: 35,
-      character: 'Tesmond'
+      nextText: 213,
+      character: 'Narrator'
+    },
+    {
+      text: '[End]',
+      continue: { cont: true },
+      nextText: 217,
+      character: 'Narrator'
     }
     ]
   },
+  /*
+  choose to continue
+  */
   {
     id: 213,
-    text: "",
+    text: "In excitement, the recruit accepted Kingston's invitation to thrust ahead onto their next quest: Investigate Pelna Forest and its disturbance.",
     options: [{
       continue: { cont: true },
-      nextText: 35,
-      character: 'Tesmond'
+      nextText: 214,
+      character: 'Narrator'
     }
     ]
   },
   {
     id: 214,
-    text: "",
+    text: "Then it's settled! Let's first sit down n recover 'fore our next adventure.",
     options: [{
       continue: { cont: true },
-      nextText: 58,
-      character: 'Tesmond'
+      nextText: 215,
+      character: 'Braedon'
     }
     ]
   },
   {
     id: 215,
-    text: "",
+    text: "*Sigh* I much rather feast on sirloin and tender poultry than this preserved meat...",
     options: [{
       continue: { cont: true },
-      nextText: 59,
+      nextText: 216,
       character: 'Tesmond'
     }
     ]
   },
   {
     id: 216,
-    text: "",
+    text: "I am not going to enjoy this...",
     options: [{
       continue: { cont: true },
-      nextText: 60,
+      nextText: 220,
       character: 'Tesmond'
     }
     ]
   },
+  /*
+  if choose to end
+  */
   {
     id: 217,
-    text: "",
+    text: "Aight! Then let's march back down to Stagcross!",
     options: [{
       continue: { cont: true },
-      nextText: 35,
-      character: 'Tesmond'
+      nextText: 218,
+      character: 'Braedon'
     }
     ]
   },
   {
     id: 218,
-    text: "",
+    text: "Delicious sirloin and tender poultry, here I come!",
     options: [{
       continue: { cont: true },
-      nextText: 35,
+      nextText: 219,
       character: 'Tesmond'
     }
     ]
   },
   {
     id: 219,
-    text: "",
+    text: "*Relieved sigh* Okay, let us so.",
     options: [{
       continue: { cont: true },
-      nextText: 35,
-      character: 'Tesmond'
+      nextText: 270,
+      character: 'Selphie'
     }
     ]
   },
+  /*
+  forest intro
+  */
   {
     id: 220,
-    text: "",
+    text: "The rustling of leaves trailed behind our fabled adventurers. *Stomp* *Crackle* *Pause* our adventurers went and went until they confronted a hidden village deep within Pelna Forest",
     options: [{
       continue: { cont: true },
-      nextText: 35,
-      character: 'Tesmond'
+      nextText: 221,
+      character: 'Narrator'
     }
     ]
   },
   {
     id: 221,
-    text: "",
+    text: "*Looks around* Now this is a lovely village. I wonder who these people livin' here are?",
     options: [{
       continue: { cont: true },
-      nextText: 35,
-      character: 'Tesmond'
+      nextText: 222,
+      character: 'Braedon'
     }
     ]
   },
   {
     id: 222,
-    text: "",
+    text: "As Kingston looked closer... he saw the inhabitants within Pelna Forest... elves of all races. Sky elves flying carefree, water elves treading through water, wood elves building, and many more.",
     options: [{
       continue: { cont: true },
-      nextText: 35,
-      character: 'Tesmond'
+      nextText: 223,
+      character: 'Narrator'
     }
     ]
   },
   {
     id: 223,
-    text: "",
+    text: "*Looks at village* *Looks back to Selphie* So this is the reason for your worry... you must have a history with this village.",
     options: [{
       continue: { cont: true },
-      nextText: 35,
+      nextText: 224,
       character: 'Tesmond'
     }
     ]
   },
   {
     id: 224,
-    text: "",
+    text: "No no... there is no correlation with me or this village. Nothing ha-…",
     options: [{
       continue: { cont: true },
-      nextText: 35,
+      nextText: 225,
       character: 'Tesmond'
     }
     ]
   },
   {
     id: 225,
-    text: "",
+    text: "*Walks up* Hello travelers! I am Ulymar Levi, head of Pelna Forest, prophet to Evergreen Uavine. How may I assist you- SELPHIE? Where have you been, my child? ",
     options: [{
       continue: { cont: true },
-      nextText: 58,
-      character: 'Tesmond'
+      nextText: 226,
+      character: 'Ulymar'
     }
     ]
   },
   {
     id: 226,
-    text: "",
+    text: "*Sweats* Hello... Father... how have you been?",
     options: [{
       continue: { cont: true },
-      nextText: 59,
-      character: 'Tesmond'
+      nextText: 227,
+      character: 'Selphie'
     }
     ]
   },
   {
     id: 227,
-    text: "",
+    text: "HUH? *Looks back and forth between Selphie and Ulymar* Well, ya do look akin. Should've known she was yers Ulymar.",
     options: [{
       continue: { cont: true },
-      nextText: 60,
-      character: 'Tesmond'
+      nextText: 228,
+      character: 'Braedon'
     }
     ]
   },
   {
     id: 228,
-    text: "",
+    text: "HUH?",
     options: [{
       continue: { cont: true },
-      nextText: 35,
+      nextText: 229,
       character: 'Tesmond'
     }
     ]
   },
   {
     id: 229,
-    text: "",
+    text: "HUH? You know my Father?",
     options: [{
       continue: { cont: true },
-      nextText: 35,
-      character: 'Tesmond'
+      nextText: 230,
+      character: 'Selphie'
     }
     ]
   },
   {
     id: 230,
-    text: "",
+    text: "Yes, Braedon Kingston helped me in years prior, but we should move into my residence to talk further. Come.",
     options: [{
       continue: { cont: true },
-      nextText: 35,
-      character: 'Tesmond'
+      nextText: 231,
+      character: 'Ulymar'
     }
     ]
   },
   {
     id: 231,
-    text: "",
+    text: "*Turns to recruit* Well recruit... I pressume we should accompany them.",
     options: [{
       continue: { cont: true },
-      nextText: 35,
+      nextText: 232,
       character: 'Tesmond'
     }
     ]
   },
+  /*
+  start forest memorization game
+  */
   {
     id: 232,
-    text: "",
+    text: "Here we are. Please, make yourselves comfortable while I prepare with sustenance. Selphie... would you mind assisting me?",
     options: [{
       continue: { cont: true },
-      nextText: 35,
-      character: 'Tesmond'
+      nextText: 233,
+      character: 'Ulymar'
     }
     ]
   },
   {
     id: 233,
-    text: "",
+    text: "Sure Father... *Whispers* oh my stars... I wonder what he is going to say... *Walks away*",
     options: [{
       continue: { cont: true },
-      nextText: 35,
+      nextText: 234,
       character: 'Tesmond'
     }
     ]
   },
   {
     id: 234,
-    text: "",
+    text: "Quite earthy... decoration the elves embellish themselves.",
     options: [{
       continue: { cont: true },
-      nextText: 35,
+      nextText: 235,
       character: 'Tesmond'
     }
     ]
   },
   {
     id: 235,
-    text: "",
+    text: "Yep! Heard they enjoy the native landscape compared to modern times, especially when they have such long life spans. Everything we do goes by too fast for 'em.",
     options: [{
       continue: { cont: true },
-      nextText: 35,
-      character: 'Tesmond'
+      nextText: 236,
+      character: 'Braedon'
     }
     ]
   },
   {
     id: 236,
-    text: "",
+    text: "*Walks in* That indeed it does. *Hands everyone tea* I remember the times before the Great Calamity my great, great grandfather spoke about. He was the first chosen guardian to oversee Evergreen Uavine, the creation of Father Sun and Mother Moon. He was blessed and tasked to protect and assist all that live on Camuth, or specifically Urth with his wisdom. His existence bears a significant role during the Great Calamity. ",
     options: [{
       continue: { cont: true },
-      nextText: 58,
-      character: 'Tesmond'
+      nextText: 237,
+      character: 'Ulymar'
     }
     ]
   },
   {
     id: 237,
-    text: "",
+    text: "How so?",
     options: [{
       continue: { cont: true },
-      nextText: 59,
+      nextText: 238,
       character: 'Tesmond'
     }
     ]
   },
   {
     id: 238,
-    text: "",
+    text: "Without Evergreen Uavine, the Knights of the Fallen Order would have never survived Dark Lord Palentheous Irzaline's regime. Pelna Forest was one of the last few remaining strongholds against the dark forces largely due to Evergreen Uavine's blessing.",
     options: [{
       continue: { cont: true },
-      nextText: 60,
-      character: 'Tesmond'
+      nextText: 239,
+      character: 'Ulymar'
     }
     ]
   },
   {
     id: 239,
-    text: "",
+    text: "Okay Father that is enough. Surely everyone knows that story.",
     options: [{
       continue: { cont: true },
-      nextText: 35,
-      character: 'Tesmond'
+      nextText: 240,
+      character: 'Selphie'
     }
     ]
   },
   {
     id: 240,
-    text: "",
+    text: "The world changes rapidly my dear. It is better to always remind every person of their history rather than forget. But you are correct, we have other matters to discuss no doubt... let us talk with Evergreen Uavine.",
     options: [{
       continue: { cont: true },
-      nextText: 35,
-      character: 'Tesmond'
+      nextText: 241,
+      character: 'Ulymar'
     }
     ]
   },
   {
     id: 241,
-    text: "",
+    text: "The band of adventurers guided by Ulymar Levi exited the residence and walked towards the end of the village to a large gate. This large gate was guarded by a mass of elves which when opened, led the path to Evergreen Uavine.",
     options: [{
       continue: { cont: true },
-      nextText: 35,
-      character: 'Tesmond'
+      nextText: 242,
+      character: 'Narrator'
     }
     ]
   },
   {
     id: 242,
-    text: "",
+    text: "Hmmmmmm... Ahhhh... adventurers of the newest age... I have waited for your arrival. I am Evergreen Uavine as you were told by Ulymar Levi. Hmmmm... the world has shaken once more... the reappearance of Andurath the knightmare is upon us. And with his coming, the emergence of a fatal catastrophe will strike once more. To prevent such passing, I must entrust the powers of old to anew. Which is why I startled the fauna of these lands... in search of a champion. Young child... your eyes glimmer with bravery yet you are inexperienced. For me to give such a relic to yourself... I must test you...",
     options: [{
       continue: { cont: true },
-      nextText: 35,
-      character: 'Tesmond'
+      nextText: 243,
+      character: 'Evergreen'
     }
     ]
   },
+  /*
+  starts the game put it in a separate file
+
+  moved to forest conclusion
+  */
   {
     id: 243,
-    text: "",
+    text: "It seems Evergreen Uavine has decided... what will you do now?",
     options: [{
       continue: { cont: true },
-      nextText: 35,
-      character: 'Tesmond'
+      nextText: 244,
+      character: 'Ulymar'
     }
     ]
   },
+  /*
+  if user beats the memorization game
+  */
   {
     id: 244,
-    text: "",
+    text: "Well, it seems this whole adventure was decided by our chosen hero so he's gonna choose. *Pats back* Hahahaha! My boy! Looks like life with yer is gonna be full of surprises.",
     options: [{
       continue: { cont: true },
-      nextText: 35,
-      character: 'Tesmond'
+      nextText: 245,
+      character: 'Braedon'
     }
     ]
   },
   {
     id: 245,
-    text: "",
+    text: "That it is. Who would have thought I would come back here, especially to confront my Father?",
     options: [{
       continue: { cont: true },
-      nextText: 35,
-      character: 'Tesmond'
+      nextText: 246,
+      character: 'Selphie'
     }
     ]
   },
   {
     id: 246,
-    text: "",
+    text: "Young child... as I communicate within your mind... I must mention... for better or for worse... please venture deeper into Pelna Forest... for a shrine built in memory of a knight of the Fallen Order is occupied...",
     options: [{
       continue: { cont: true },
-      nextText: 35,
-      character: 'Tesmond'
+      nextText: 247,
+      character: 'Evergreen'
     }
     ]
   },
+
   {
     id: 247,
-    text: "",
+    text: "Well, everything is finished here. Shall we head back to Stagcross everyone?",
     options: [{
       continue: { cont: true },
-      nextText: 58,
+      nextText: 248,
       character: 'Tesmond'
     }
     ]
   },
   {
     id: 248,
-    text: "",
+    text: "Yes or No",
     options: [{
+      text: '[Yes]',
       continue: { cont: true },
-      nextText: 59,
-      character: 'Tesmond'
+      nextText: 249,
+      character: 'Narrator'
+    },
+    {
+      text: '[No]',
+      continue: { cont: true },
+      nextText: 250,
+      character: 'Narrator'
     }
     ]
   },
+  //yes option
   {
     id: 249,
-    text: "",
+    text: "Aight! LETSAGOOOOOO! Bahahahahaha!",
     options: [{
       continue: { cont: true },
-      nextText: 60,
-      character: 'Tesmond'
+      nextText: 289,
+      character: 'Braedon'
     }
     ]
   },
+  //no option
   {
     id: 250,
-    text: "",
+    text: "What! We finished our quest, what else we gotta do, rook? Look at rocks?",
     options: [{
       continue: { cont: true },
-      nextText: 35,
+      nextText: 251,
+      character: 'Braedon'
+    }
+    ]
+  },
+  {
+    id: 251,
+    text: "Yes, recruit. What other objective entices you?",
+    options: [{
+      continue: { cont: true },
+      nextText: 252,
       character: 'Tesmond'
     }
     ]
   },
   {
-    id: 61,
-    text: "",
+    id: 252,
+    text: "With a sharp turn to his left, the recruit points deeper into Pelna Forest. With my experience, people like the recruit know something... it must be involving a plot armor deal.",
     options: [{
       continue: { cont: true },
-      nextText: 35,
+      nextText: 253,
+      character: 'Narrator'
+    }
+    ]
+  },
+  {
+    id: 253,
+    text: "What is deeper in Pelna Forest recruit? I see no need to-",
+    options: [{
+      continue: { cont: true },
+      nextText: 254,
+      character: 'Selphie'
+    }
+    ]
+  },
+  {
+    id: 254,
+    text: "A shrine is located there. Before you were born Selphie, we built a shrine for the lost knights of the Fallen Order. I suggest everyone go, especially when the chosen hero proposes it.",
+    options: [{
+      continue: { cont: true },
+      nextText: 255,
+      character: 'Ulymar'
+    }
+    ]
+  },
+  {
+    id: 255,
+    text: "Then deeper we go! This could help me resolve a few things...",
+    options: [{
+      continue: { cont: true },
+      nextText: 256,
+      character: 'Braedon'
+    }
+    ]
+  },
+  /*
+  lake intro
+  */
+  {
+    id: 256,
+    text: "Our adventurers trudged through the thick forest to discover the shrine built for the lost knights of the Fallen Order.",
+    options: [{
+      continue: { cont: true },
+      nextText: 257,
+      character: 'Narrator'
+    }
+    ]
+  },
+  {
+    id: 257,
+    text: "How much longer till we achieve our destination? My sense of time has perceived this trip as prolonging...",
+    options: [{
+      continue: { cont: true },
+      nextText: 258,
       character: 'Tesmond'
     }
     ]
   },
   {
-    id: 62,
-    text: "",
+    id: 258,
+    text: "Stop yer whinin'. I bet we're already close to the shrine.",
     options: [{
       continue: { cont: true },
-      nextText: 35,
+      nextText: 259,
+      character: 'Braedon'
+    }
+    ]
+  },
+  {
+    id: 259,
+    text: "And how do you discern that fact?",
+    options: [{
+      continue: { cont: true },
+      nextText: 260,
       character: 'Tesmond'
     }
     ]
   },
   {
-    id: 63,
-    text: "",
+    id: 260,
+    text: "By everyone else's reaction.",
     options: [{
       continue: { cont: true },
-      nextText: 35,
+      nextText: 261,
+      character: 'Braedon'
+    }
+    ]
+  },
+  {
+    id: 261,
+    text: "Everyone stopped, they saw a flash of blue that overcame the landscape. The glistening sounds of streams grew louder. Then the unfolding waterfall appeared in front of the group where the dazzling site of the shrine sat in the center of lake...",
+    options: [{
+      continue: { cont: true },
+      nextText: 262,
+      character: 'Narrator'
+    }
+    ]
+  },
+  {
+    id: 262,
+    text: "Wow! What a marvelous location!",
+    options: [{
+      continue: { cont: true },
+      nextText: 263,
+      character: 'Selphie'
+    }
+    ]
+  },
+  {
+    id: 263,
+    text: "*Grins* Whaddya say, Tesmond? Are we there yet?",
+    options: [{
+      continue: { cont: true },
+      nextText: 264,
       character: 'Tesmond'
     }
     ]
   },
   {
-    id: 64,
-    text: "",
+    id: 264,
+    text: "Hmm... fine. Anywho, why must we gaze in front of the shrine, shall we go in and observe instead?",
     options: [{
       continue: { cont: true },
-      nextText: 35,
+      nextText: 265,
       character: 'Tesmond'
     }
     ]
   },
   {
-    id: 65,
-    text: "",
+    id: 265,
+    text: "Yes! I hope there is treasure!",
     options: [{
       continue: { cont: true },
-      nextText: 35,
+      nextText: 266,
+      character: 'Selphie'
+    }
+    ]
+  },
+  {
+    id: 266,
+    text: "Selphie... ya don't wanna disrespect the dead now do ya? Now I suggest ya leave everythin' alone.",
+    options: [{
+      continue: { cont: true },
+      nextText: 267,
+      character: 'Braedon'
+    }
+    ]
+  },
+  {
+    id: 267,
+    text: "Humph... okay.",
+    options: [{
+      continue: { cont: true },
+      nextText: 268,
+      character: 'Selphie'
+    }
+    ]
+  },
+  /*
+  lake scenarios
+  */
+  {
+    id: 268,
+    text: "What a beautiful interior! *Goes around and looks*",
+    options: [{
+      continue: { cont: true },
+      nextText: 269,
+      character: 'Selphie'
+    }
+    ]
+  },
+  {
+    id: 269,
+    text: "Ya got that right. For the ones who saved the world I expected as much. Imma go around and see these memorials. *Walks away*",
+    options: [{
+      continue: { cont: true },
+      nextText: 270,
+      character: 'Braedon'
+    }
+    ]
+  },
+  {
+    id: 270,
+    text: "Same as for me. Recruit, whatsoever is the need for you in this shrine, I encourage you to start now. *Walks away* ",
+    options: [{
+      continue: { cont: true },
+      nextText: 271,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  //need a conditional statement for this one and also to give the leggings
+  {
+    id: 271,
+    text: "And so, the recruit looked. Why is this shrine necessary to visit? What is its importance? Why was the recruit called the chosen hero? Many questions filled the recruit’s head... gO To tHE rOoM... The startled recruit questions to spoke, but there was no reply...",
+    options: [{
+      continue: { cont: true },
+      nextText: 272,
+      character: 'Narrator'
+    }
+    ]
+  },
+  //if completed the village gamble game with the chestplate
+  {
+    id: 272,
+    text: "Then a pulsating noise surrounded the recruit... It starts to beat faster... and faster... then it stopped. What was that noise, the recruit questioned? Being lost in thought at that moment, the recruit realized they were in front of an unfinished monument in the room the mysterious voice called. The monument was dressed with greaves and boots.",
+    options: [{
+      continue: { cont: true },
+      nextText: 276,
+      character: 'Narrator'
+    }
+    ]
+  },
+//end of if user has chestplate
+  {
+    id: 273,
+    text: "… The helm of insight lit up, illuminating the room. *Whispers* dO iT... TaKe hOLd... Of tHe lEGgiNgS oF sWIftNeSS... the voice faded away, as well as the light shining from the helm. Now with a sense of composure, the recruit deduced Evergreen Uavine sent the recruit to the shrine to wear the leggings of swiftness.",
+    options: [{
+      continue: { cont: true },
+      nextText: 274,
+      character: 'Narrator'
+    }
+    ]
+  },
+//if completed cavern with the gauntlets
+  {
+    id: 274,
+    text: "Suddenly the recruit’s arms moved onto the leggings. Now for sure the recruit knows this was Evergreen Uavine's wish. ",
+    options: [{
+      continue: { cont: true },
+      nextText: 276,
+      character: 'Narrator'
+    }
+    ]
+  },
+//if the user has completed both chestplate and gauntlets
+  {
+    id: 275,
+    text: "“I know what my task is” the recruit answered... “I understand Evergreen Uavine”. “I will become a hero”...",
+    options: [{
+      continue: { cont: true },
+      nextText: 276,
+      character: 'Narrator'
+    }
+    ]
+  },
+  //back to regular dialogue choices
+  {
+    id: 276,
+    text: "Hello recruit *Waves* Are you here? *Recruit nods* Good, well I am done inspecting this shrine. *Looks at recruit* And it seems you are done as well. Let us gather everyone else. Hope Kingston does not get infuriated at you “borrowing” those leggings.",
+    options: [{
+      continue: { cont: true },
+      nextText: 277,
       character: 'Tesmond'
     }
     ]
   },
   {
-    id: 66,
-    text: "",
+    id: 277,
+    text: "Hey! *Enters room* Have you seen Kingston? I do not know where he is?",
     options: [{
       continue: { cont: true },
-      nextText: 35,
+      nextText: 279,
+      character: 'Selphie'
+    }
+    ]
+  },
+  {
+    id: 278,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 279,
       character: 'Tesmond'
     }
     ]
   },
   {
-    id: 67,
-    text: "",
+    id: 279,
+    text: "I have not... strange how he is lost... Come let us find him.",
     options: [{
       continue: { cont: true },
-      nextText: 35,
+      nextText: 280,
       character: 'Tesmond'
     }
     ]
   },
   {
-    id: 57,
-    text: "",
+    id: 280,
+    text: "Tesmond, Selphie, and the recruit searched throughout the shrine... where could Kingston be?",
     options: [{
       continue: { cont: true },
-      nextText: 58,
+      nextText: 281,
+      character: 'Narrator'
+    }
+    ]
+  },
+  {
+    id: 281,
+    text: "*Stops* Kingston, where have you been? We have been looki-",
+    options: [{
+      continue: { cont: true },
+      nextText: 282,
       character: 'Tesmond'
     }
     ]
   },
   {
-    id: 58,
-    text: "",
+    id: 282,
+    text: "Quiet... Let me finish my prayer. *Stands up*",
     options: [{
       continue: { cont: true },
-      nextText: 59,
+      nextText: 283,
+      character: 'Braedon'
+    }
+    ]
+  },
+  {
+    id: 283,
+    text: "*Looks at monument* A friend of yours?",
+    options: [{
+      continue: { cont: true },
+      nextText: 284,
+      character: 'Selphie'
+    }
+    ]
+  },
+  {
+    id: 284,
+    text: "A good one at that. Hew the Undefeated, a friend I will never forget. He was known for his menacing appearance, yet he was the kindest soul. He reminds me of you, Tesmond.",
+    options: [{
+      continue: { cont: true },
+      nextText: 285,
+      character: 'Braedon'
+    }
+    ]
+  },
+  {
+    id: 285,
+    text: "How so?",
+    options: [{
+      continue: { cont: true },
+      nextText: 286,
       character: 'Tesmond'
     }
     ]
   },
   {
-    id: 59,
-    text: "",
+    id: 286,
+    text: "He holds an act, just like you. Aight, enough of that. Seems like everyone is done. *Looks at the recruit* Now where did ya get those leggin’?",
     options: [{
       continue: { cont: true },
-      nextText: 60,
+      nextText: 287,
+      character: 'Braedon'
+    }
+    ]
+  },
+  {
+    id: 287,
+    text: "The recruit explains to Kingston the experience he encountered earlier in the shrine.",
+    options: [{
+      continue: { cont: true },
+      nextText: 288,
       character: 'Tesmond'
     }
     ]
   },
   {
-    id: 60,
-    text: "",
+    id: 288,
+    text: "… Aight... then it must be a sign to keep 'em, who knows what consequence will happen without 'em. So, let's go back to Stagcross n hand over our finished quests.",
     options: [{
       continue: { cont: true },
-      nextText: 35,
+      nextText: 289,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  /*
+  guild
+  */
+  {
+    id: 289,
+    text: "Ah... We have arrived back in Stagcross. … And it seems my stomach is rumbling. Kingston if you would be so kind as to procure our payment in the guild while I dine?",
+    options: [{
+      continue: { cont: true },
+      nextText: 290,
       character: 'Tesmond'
     }
     ]
   },
   {
-    id: 61,
-    text: "",
+    id: 290,
+    text: "Sure! Ya get yer fill Tesmond while the rest of us finish our end n afterwards will join ya.",
     options: [{
       continue: { cont: true },
-      nextText: 35,
+      nextText: 291,
+      character: 'Braedon'
+    }
+    ]
+  },
+  {
+    id: 291,
+    text: "In fact, I might not join you, Kingston. I need to use the lavatory. Like... now! *Zooms off*",
+    options: [{
+      continue: { cont: true },
+      nextText: 292,
+      character: 'Selphie'
+    }
+    ]
+  },
+  {
+    id: 292,
+    text: "Ooookay... then it's just you n me, rook! *Pats back* Hahaha. Let's go to the guild!",
+    options: [{
+      continue: { cont: true },
+      nextText: 293,
       character: 'Tesmond'
     }
     ]
   },
   {
-    id: 62,
-    text: "",
+    id: 293,
+    text: "Here is your payment! Please come again!",
     options: [{
       continue: { cont: true },
-      nextText: 35,
+      nextText: 294,
+      character: 'Clerk'
+    }
+    ]
+  },
+  {
+    id: 294,
+    text: "Aight, got the gold. Now let's head back to Tesmond!",
+    options: [{
+      continue: { cont: true },
+      nextText: 295,
+      character: 'Braedon'
+    }
+    ]
+  },
+  //if previous scenario was the lake needs a conditional statement
+  {
+    id: 295,
+    text: "As Kingston and the recruit were leaving the guild, they overhead something... interesting...",
+    options: [{
+      continue: { cont: true },
+      nextText: 296,
+      character: 'Narrator'
+    }
+    ]
+  },
+  {
+    id: 296,
+    text: "Hey did ya hear? Supposedly an adventurer came screaming about finding the tomb of one of those knights of the Fallen Order!",
+    options: [{
+      continue: { cont: true },
+      nextText: 297,
+      character: 'Group'
+    }
+    ]
+  },
+  {
+    id: 297,
+    text: "No, I didn't. Did anyone figure out what was inside?",
+    options: [{
+      continue: { cont: true },
+      nextText: 298,
+      character: 'Group'
+    }
+    ]
+  },
+  {
+    id: 298,
+    text: "Nah. Many folks already left and went in, but none of them returned. ",
+    options: [{
+      continue: { cont: true },
+      nextText: 299,
+      character: 'Group'
+    }
+    ]
+  },
+  {
+    id: 299,
+    text: "Then maybe we can give it a shot! No one has ever found a knight’s burial site. There might be some good loot.",
+    options: [{
+      continue: { cont: true },
+      nextText: 300,
+      character: 'Group'
+    }
+    ]
+  },
+  {
+    id: 301,
+    text: "Fuhgettaboutit. There's no way.",
+    options: [{
+      continue: { cont: true },
+      nextText: 302,
       character: 'Tesmond'
     }
     ]
   },
   {
-    id: 63,
-    text: "",
+    id: 302,
+    text: "Come on! *Nudge* We won't lose anything!",
     options: [{
       continue: { cont: true },
-      nextText: 35,
+      nextText: 303,
+      character: 'Group'
+    }
+    ]
+  },
+  {
+    id: 303,
+    text: "Except our lives...",
+    options: [{
+      continue: { cont: true },
+      nextText: 304,
+      character: 'Group'
+    }
+    ]
+  },
+  {
+    id: 304,
+    text: "Interestin'. *Looks at the recruit* Suppose this is a sign... wouldn't ya think, rook?",
+    options: [{
+      continue: { cont: true },
+      nextText: 305,
+      character: 'Braedon'
+    }
+    ]
+  },
+  {
+    id: 305,
+    text: "The recruit nods.",
+    options: [{
+      continue: { cont: true },
+      nextText: 319,
+      character: 'Narrator'
+    }
+    ]
+  },
+  //end of if went to lake scenario
+  {
+    id: 306,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 307,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  //if previous scenario was caverns or forest
+  {
+    id: 307,
+    text: "As Kingston and the recruit were leaving the guild, a young adventurer barged into the guild exclaiming...",
+    options: [{
+      continue: { cont: true },
+      nextText: 308,
+      character: 'Narrator'
+    }
+    ]
+  },
+  {
+    id: 308,
+    text: "I FOUND A TOMB OF ONE OF THE KNIGHTS OF THE FALLEN ORDER!",
+    options: [{
+      continue: { cont: true },
+      nextText: 309,
+      character: 'Random'
+    }
+    ]
+  },
+  {
+    id: 309,
+    text: "What is all this racket? Ya makin' everyone angsty.",
+    options: [{
+      continue: { cont: true },
+      nextText: 310,
+      character: 'Bellecote'
+    }
+    ]
+  },
+  {
+    id: 310,
+    text: "I discovered a knight of the Fallen Order's tomb. And I need a group to help me explore the inside.",
+    options: [{
+      continue: { cont: true },
+      nextText: 311,
+      character: 'Random'
+    }
+    ]
+  },
+  {
+    id: 311,
+    text: "So, it seems... Anyone here want to join the young man?",
+    options: [{
+      continue: { cont: true },
+      nextText: 312,
+      character: 'Bellecote'
+    }
+    ]
+  },
+  {
+    id: 312,
+    text: "*Looks at recruit* I bet ya wanna join him. This offer sounds temptin'.",
+    options: [{
+      continue: { cont: true },
+      nextText: 313,
+      character: 'Braedon'
+    }
+    ]
+  },
+  {
+    id: 313,
+    text: "The recruit nods.",
+    options: [{
+      continue: { cont: true },
+      nextText: 314,
+      character: 'Narrator'
+    }
+    ]
+  },
+  {
+    id: 314,
+    text: "Then it's settled. *Raises hand* We wanna join, Bellecote!",
+    options: [{
+      continue: { cont: true },
+      nextText: 315,
       character: 'Tesmond'
     }
     ]
   },
   {
-    id: 64,
-    text: "",
+    id: 315,
+    text: "Ah my good friend! *Looks at adventurer* Now you have your group, young adventurer.",
     options: [{
       continue: { cont: true },
-      nextText: 35,
+      nextText: 316,
+      character: 'Bellecote'
+    }
+    ]
+  },
+  {
+    id: 316,
+    text: "*Bows* Thank you very much GuildMaster. *Walks over* Hello my name is Azazel. I hope you will enjoy my selfish request.",
+    options: [{
+      continue: { cont: true },
+      nextText: 317,
+      character: 'Random'
+    }
+    ]
+  },
+  {
+    id: 317,
+    text: "No worries, we were already interested! Oh, and my name is Kingston. *Puts hand on shoulder* And this here is the rookie for my group. I also have two others named Tesmond and Selphie. If it's alright with you, we were plannin' on eatin'.",
+    options: [{
+      continue: { cont: true },
+      nextText: 318,
       character: 'Tesmond'
     }
     ]
   },
   {
-    id: 65,
-    text: "",
+    id: 318,
+    text: "That is fine. ",
     options: [{
       continue: { cont: true },
-      nextText: 35,
+      nextText: 319,
+      character: 'Random'
+    }
+    ]
+  },
+  //end of if previous scenario was lake or forests
+  //need conditional statement to determine knight trial path
+  {
+    id: 319,
+    text: "Then it's settled! Let's meet back with Tesmond n eat before we go... I wonder if Selphie is alright...",
+    options: [{
+      continue: { cont: true },
+      nextText: 320,
+      character: 'Braedon'
+    }
+    ]
+  },
+  /*
+  knight trial intro
+  */
+ //if previous was caverns or forest
+  {
+    id: 320,
+    text: "So, how’d ya find this tomb, Azazel?",
+    options: [{
+      continue: { cont: true },
+      nextText: 321,
+      character: 'Braedon'
+    }
+    ]
+  },
+  {
+    id: 321,
+    text: "It was by chance. I just happened to find the tomb while I was completing my herb collecting quest and thought this would be a good opportunity to explore it.",
+    options: [{
+      continue: { cont: true },
+      nextText: 322,
       character: 'Tesmond'
     }
     ]
   },
   {
-    id: 66,
-    text: "",
+    id: 322,
+    text: "That it is. No one has found the tomb of a knight of the Fallen Order for generations. You are very lucky. ",
     options: [{
       continue: { cont: true },
-      nextText: 35,
+      nextText: 323,
       character: 'Tesmond'
     }
     ]
   },
   {
-    id: 67,
-    text: "",
+    id: 323,
+    text: "*Shrugs* You praise me too much... anyways here it is. So, how about we go in?",
     options: [{
       continue: { cont: true },
-      nextText: 35,
+      nextText: 324,
+      character: 'Azazel'
+    }
+    ]
+  },
+  {
+    id: 324,
+    text: "Certainly! *Eyes sparkle*",
+    options: [{
+      continue: { cont: true },
+      nextText: 325,
+      character: 'Selphie'
+    }
+    ]
+  },
+  //end of if previous was caverns or forest
+
+  //if previous was lake
+  {
+    id: 325,
+    text: "Hmmm... supposedly the tomb is 'round here...",
+    options: [{
+      continue: { cont: true },
+      nextText: 326,
+      character: 'Braedon'
+    }
+    ]
+  },
+  {
+    id: 326,
+    text: "Supposedly? I think this is a sham, especially when you rely on information received by lower ranked adventurers.",
+    options: [{
+      continue: { cont: true },
+      nextText: 327,
       character: 'Tesmond'
     }
     ]
   },
   {
-    id: 57,
-    text: "",
+    id: 327,
+    text: "*Saddened*",
     options: [{
       continue: { cont: true },
-      nextText: 58,
+      nextText: 328,
+      character: 'Selphie'
+    }
+    ]
+  },
+  {
+    id: 328,
+    text: "And you are making Selphie cry... she unequivocally wanted to seize the treasures inside and now look at her.",
+    options: [{
+      continue: { cont: true },
+      nextText: 329,
       character: 'Tesmond'
     }
     ]
   },
   {
-    id: 58,
-    text: "",
+    id: 329,
+    text: "Aight, sorry Selphie. Well, maybe me n the recruit was wrong 'bout this tomb business.",
     options: [{
       continue: { cont: true },
-      nextText: 59,
+      nextText: 330,
+      character: 'Braedon'
+    }
+    ]
+  },
+  {
+    id: 330,
+    text: "Or was he... just over the hill a mysterious young adventurer sprinted in their direction...",
+    options: [{
+      continue: { cont: true },
+      nextText: 331,
+      character: 'Narrator'
+    }
+    ]
+  },
+  {
+    id: 331,
+    text: "HOY! *Runs over* *Pant* *Pant* Quickly! I need help, my group is stuck in the tomb of one of the knights of the Fallen Order! ",
+    options: [{
+      continue: { cont: true },
+      nextText: 332,
+      character: 'Azazel'
+    }
+    ]
+  },
+  {
+    id: 332,
+    text: "Sure! Show the way son. Everyone follow him.",
+    options: [{
+      continue: { cont: true },
+      nextText: 333,
+      character: 'Braedon'
+    }
+    ]
+  },
+  {
+    id: 333,
+    text: "Thank you! And my name is Azazel.",
+    options: [{
+      continue: { cont: true },
+      nextText: 334,
       character: 'Tesmond'
     }
     ]
   },
   {
-    id: 59,
-    text: "",
+    id: 334,
+    text: "Kingston",
     options: [{
       continue: { cont: true },
-      nextText: 60,
+      nextText: 335,
+      character: 'Braedon'
+    }
+    ]
+  },
+  {
+    id: 335,
+    text: "Tesmond",
+    options: [{
+      continue: { cont: true },
+      nextText: 336,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  //need to add the link for the minigame to this
+  {
+    id: 336,
+    text: "Selphie and the quiet companion is our recruit.",
+    options: [{
+      continue: { cont: true },
+      nextText: 337,
+      character: 'Selphie'
+    }
+    ]
+  },
+  //end of if lake scenario
+  /*
+  knight riddles opens a new file
+
+  knight conclusion
+  */
+
+  {
+    id: 337,
+    text: "Tesmond, Azazel, and the recruit ran into the new room, along with Kingston and Selphie who came out of another room on the right. ",
+    options: [{
+      continue: { cont: true },
+      nextText: 338,
+      character: 'Narrator'
+    }
+    ]
+  },
+  {
+    id: 338,
+    text: "Welp, both me n Selphie had to race up a slope ‘fore we drowned. Luckily, Selphie’s frost breath slowed the water for me.",
+    options: [{
+      continue: { cont: true },
+      nextText: 339,
+      character: 'Braedon'
+    }
+    ]
+  },
+  {
+    id: 339,
+    text: "Kingston! Selphie! How did you both get here.",
+    options: [{
+      continue: { cont: true },
+      nextText: 340,
       character: 'Tesmond'
     }
     ]
   },
   {
-    id: 60,
-    text: "",
+    id: 340,
+    text: "Yes. What obstacles did you overcome, Tesmond?",
     options: [{
       continue: { cont: true },
-      nextText: 35,
+      nextText: 341,
+      character: 'Selphie'
+    }
+    ]
+  },
+  {
+    id: 341,
+    text: "Well Azazel, the recruit, and I had to solve three riddles with holy water.",
+    options: [{
+      continue: { cont: true },
+      nextText: 342,
       character: 'Tesmond'
     }
     ]
   },
   {
-    id: 61,
-    text: "",
+    id: 342,
+    text: " ",
     options: [{
       continue: { cont: true },
-      nextText: 35,
+      nextText: 343,
       character: 'Tesmond'
     }
     ]
   },
   {
-    id: 62,
-    text: "",
+    id: 343,
+    text: "Must be why Selphie's frost breath didn't freeze the water entirely. ",
     options: [{
       continue: { cont: true },
-      nextText: 35,
+      nextText: 344,
+      character: 'Braedon'
+    }
+    ]
+  },
+  {
+    id: 344,
+    text: "Uh guys... what is Azazel doing?",
+    options: [{
+      continue: { cont: true },
+      nextText: 345,
+      character: 'Selphie'
+    }
+    ]
+  },
+  /*
+  dragon intro
+  */
+  {
+    id: 345,
+    text: "As the four peer to the edge of the room, Azazel was near a statue of a knight holding a sword, brazen with power. ",
+    options: [{
+      continue: { cont: true },
+      nextText: 346,
+      character: 'Narrator'
+    }
+    ]
+  },
+  {
+    id: 346,
+    text: "After a long time, at last I possess the Fleshripper, blade of woe and terror. ",
+    options: [{
+      continue: { cont: true },
+      nextText: 347,
+      character: 'Andurath'
+    }
+    ]
+  },
+  //needs a conditional statement
+  {
+    id: 347,
+    text: "I do not want to make assumptions, but I do believe we might be in trouble. ",
+    options: [{
+      continue: { cont: true },
+      nextText: 348,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  //if lake scenario
+  {
+    id: 348,
+    text: "Hey Azazel! There never was a group stuck in the tomb was there?",
+    options: [{
+      continue: { cont: true },
+      nextText: 349,
+      character: 'Braedon'
+    }
+    ]
+  },
+  {
+    id: 349,
+    text: "Why would there be? After all, they all died by my hands. Useless fodder I tell you. Each and every last one of them. ",
+    options: [{
+      continue: { cont: true },
+      nextText: 350,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  //end of lake scenario path
+  {
+    id: 350,
+    text: "So, this was all part of yer plan! To use us",
+    options: [{
+      continue: { cont: true },
+      nextText: 351,
+      character: 'Braedon'
+    }
+    ]
+  },
+  {
+    id: 351,
+    text: "Yes… Braedon Kingston.",
+    options: [{
+      continue: { cont: true },
+      nextText: 352,
+      character: 'Andurath'
+    }
+    ]
+  },
+  {
+    id: 352,
+    text: "*Shocked* How’d ya know my full name! I only gave ya my first!",
+    options: [{
+      continue: { cont: true },
+      nextText: 353,
+      character: 'Braedon'
+    }
+    ]
+  },
+  {
+    id: 353,
+    text: "How would I ever forget a friend who gave me this parting gift.",
+    options: [{
+      continue: { cont: true },
+      nextText: 354,
+      character: 'Andurath'
+    }
+    ]
+  },
+  {
+    id: 354,
+    text: "Azazel lifted his eyepatch, revealing his mutilated eye.",
+    options: [{
+      continue: { cont: true },
+      nextText: 355,
+      character: 'Narrator'
+    }
+    ]
+  },
+  {
+    id: 355,
+    text: "… *Realised face*",
+    options: [{
+      continue: { cont: true },
+      nextText: 356,
+      character: 'Braedon'
+    }
+    ]
+  },
+  {
+    id: 356,
+    text: "Who is it Kingston?",
+    options: [{
+      continue: { cont: true },
+      nextText: 357,
+      character: 'Selphie'
+    }
+    ]
+  },
+  {
+    id: 357,
+    text: "It is not who I am, it is what I am... a forgotten champion, a sacrifice, a warlord of Dark Lord Palentheous Irzaline's reign...",
+    options: [{
+      continue: { cont: true },
+      nextText: 358,
+      character: 'Andurath'
+    }
+    ]
+  },
+  {
+    id: 358,
+    text: "Impossible!",
+    options: [{
+      continue: { cont: true },
+      nextText: 359,
       character: 'Tesmond'
     }
     ]
   },
   {
-    id: 63,
-    text: "",
+    id: 359,
+    text: "Yes *Transforms* I am Andurath, the knightmare! *Roar* You mortals banished me to the realms of Palentheous Irzaline as your scapegoat! I was your hero! Now no more... I shall purge this world of their sins! ",
     options: [{
       continue: { cont: true },
-      nextText: 35,
+      nextText: 360,
+      character: 'Andurath'
+    }
+    ]
+  },
+  {
+    id: 360,
+    text: "*Panicked* Um... everyone... what do we do?",
+    options: [{
+      continue: { cont: true },
+      nextText: 361,
+      character: 'Selphie'
+    }
+    ]
+  },
+  {
+    id: 361,
+    text: "I'm going to die, I'm going to die, I'm going to die, I'm going to die, I'm going to die...",
+    options: [{
+      continue: { cont: true },
+      nextText: 362,
       character: 'Tesmond'
     }
     ]
   },
   {
-    id: 64,
-    text: "",
+    id: 362,
+    text: "Everyone calm down! *Turns* Rook! Do you have the resolution in you! Tell me, fight or run!",
     options: [{
       continue: { cont: true },
-      nextText: 35,
+      nextText: 363,
+      character: 'Braedon'
+    }
+    ]
+  },
+  {
+    id: 363,
+    text: "Fight or Run",
+    options: [{
+      text: '[Fight]',
+      continue: { cont: true },
+      nextText: 388,
+      character: 'Tesmond'
+    },
+    {
+      text: '[Run]',
+      continue: { cont: true },
+      nextText: 364,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  /*
+  Dragon scenarios
+  */
+ //if choose to run
+  {
+    id: 364,
+    text: "Knowing the dire situation, the recruit points towards the exit. The recruit would rather let everyone live than the possibility of dying.",
+    options: [{
+      continue: { cont: true },
+      nextText: 365,
+      character: 'Narrator'
+    }
+    ]
+  },
+  {
+    id: 365,
+    text: "I hope you know what you are doing! *Grabs Tesmond and Selphie* We need to go!",
+    options: [{
+      continue: { cont: true },
+      nextText: 366,
+      character: 'Braedon'
+    }
+    ]
+  },
+  {
+    id: 366,
+    text: "*Faints*",
+    options: [{
+      continue: { cont: true },
+      nextText: 367,
       character: 'Tesmond'
     }
     ]
   },
   {
-    id: 65,
-    text: "",
+    id: 367,
+    text: "If you truly believe I would let you mortals live... what a blunder would I take! I mean... the opportunity to kill you all is so alluring!",
     options: [{
       continue: { cont: true },
-      nextText: 35,
+      nextText: 368,
+      character: 'Andurath'
+    }
+    ]
+  },
+  {
+    id: 368,
+    text: "With a loud roar, Andurath puffed a foul breath of toxic venom towards the exit.",
+    options: [{
+      continue: { cont: true },
+      nextText: 369,
+      character: 'Narrator'
+    }
+    ]
+  },
+  {
+    id: 369,
+    text: "Run! I will be a distraction. Elements, acquire a gust of wind and take roots of earth... Boulder Rainfall!",
+    options: [{
+      continue: { cont: true },
+      nextText: 370,
+      character: 'Selphie'
+    }
+    ]
+  },
+  {
+    id: 370,
+    text: "Hahaha! Such simple pebbles only graze me! How about I give you an example of true power!",
+    options: [{
+      continue: { cont: true },
+      nextText: 371,
+      character: 'Andurath'
+    }
+    ]
+  },
+  {
+    id: 371,
+    text: "No, Selphie!",
+    options: [{
+      continue: { cont: true },
+      nextText: 372,
+      character: 'Braedon'
+    }
+    ]
+  },
+  {
+    id: 372,
+    text: "Andurath spurred a bolt of lightning with his jaws... BOOM... and ended Selphie...",
+    options: [{
+      continue: { cont: true },
+      nextText: 373,
+      character: 'Narrator'
+    }
+    ]
+  },
+  {
+    id: 373,
+    text: "*Awakes* We need to get out of here! Selpie's sacrifice won’t be in vain! ",
+    options: [{
+      continue: { cont: true },
+      nextText: 374,
       character: 'Tesmond'
     }
     ]
   },
   {
-    id: 66,
-    text: "",
+    id: 374,
+    text: "As if! Rookie! Get Tesmond out of here! Andurath is coming!",
     options: [{
       continue: { cont: true },
-      nextText: 35,
+      nextText: 375,
+      character: 'Braedon'
+    }
+    ]
+  },
+  {
+    id: 375,
+    text: "Kingston bolted upward towards Andurath. And with a loud crash, Kingston's warhammer hurled Andurath.",
+    options: [{
+      continue: { cont: true },
+      nextText: 376,
+      character: 'Narrator'
+    }
+    ]
+  },
+  {
+    id: 376,
+    text: "*Shriek* Braedon Kingston, your strength is still evident from your renowned days as a knight of the Fallen Order! But your age has paved the way for weakness. ",
+    options: [{
+      continue: { cont: true },
+      nextText: 377,
+      character: 'Andurath'
+    }
+    ]
+  },
+  {
+    id: 377,
+    text: "My age has only sharpened my judgment! If I were you Andurath, I would prioritize the opponent in front of me!",
+    options: [{
+      continue: { cont: true },
+      nextText: 378,
+      character: 'Braedon'
+    }
+    ]
+  },
+  {
+    id: 378,
+    text: "Have it your way! *Roar*",
+    options: [{
+      continue: { cont: true },
+      nextText: 379,
+      character: 'Andurath'
+    }
+    ]
+  },
+  {
+    id: 379,
+    text: "Kingston and Andurath clashed one another with heavy blows. All the more while Kingston’s battle was sought, Tesmond and the recruit encountered a hindrance.",
+    options: [{
+      continue: { cont: true },
+      nextText: 380,
+      character: 'Narrator'
+    }
+    ]
+  },
+  {
+    id: 380,
+    text: "The exit! It's closing! We need to leave quick, forget about Kingston!",
+    options: [{
+      continue: { cont: true },
+      nextText: 381,
       character: 'Tesmond'
     }
     ]
   },
   {
-    id: 67,
-    text: "",
+    id: 381,
+    text: "But the recruit was steadfast in his decision. The recruit would rather stay than see another friend die. ",
     options: [{
       continue: { cont: true },
-      nextText: 35,
+      nextText: 382,
+      character: 'Narrator'
+    }
+    ]
+  },
+  {
+    id: 382,
+    text: "Are you insane? No, I am not staying. Damn it all! *Runs away*",
+    options: [{
+      continue: { cont: true },
+      nextText: 383,
       character: 'Tesmond'
     }
     ]
   },
+  {
+    id: 383,
+    text: "*Turns around* What are you doing! Rook spare yourself!",
+    options: [{
+      continue: { cont: true },
+      nextText: 384,
+      character: 'Braedon'
+    }
+    ]
+  },
+  {
+    id: 384,
+    text: "*Bite* *Slash* ",
+    options: [{
+      continue: { cont: true },
+      nextText: 385,
+      character: 'Andurath'
+    }
+    ]
+  },
+  {
+    id: 385,
+    text: "Argh! *Cough*",
+    options: [{
+      continue: { cont: true },
+      nextText: 386,
+      character: 'Braedon'
+    }
+    ]
+  },
+  {
+    id: 386,
+    text: "Hahahaha! I thank you ignorant simpleton, your interaction costed Braedon Kingston his life! I must say… I do not know if this is bravery or a straightforward lack of intelligence, but I must repay you. ",
+    options: [{
+      continue: { cont: true },
+      nextText: 387,
+      character: 'Andurath'
+    }
+    ]
+  },
+  {
+    id: 387,
+    text: "Andurath huffed and puffed, forming a ball of fire the size of the sun. And with a quick blow, the recruit incinerated into ash… UP IN FLAMES. Afterwards, Andurath’s terror stormed onto the citizens of Stagcross, leaving no survivors… the details of Tesmond Uglar’s whereabouts are unknown and the state of Camuth is ablaze… The world needs a hero… but who can stop Andurath’s inferno?",
+    options: [{
+      continue: { cont: true },
+      nextText: 0,
+      character: 'Narrator'
+    }
+    ]
+  },
+  //end of bad dragon ending 1
+  //end of run option move to stats
+  /*
+  if option is to fight and has legendary armor
+  */
+  {
+    id: 388,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 389,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 389,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 390,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 390,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 391,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 391,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 392,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 392,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 393,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 393,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 394,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 394,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 395,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 395,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 396,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 396,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 397,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 397,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 398,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 398,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 399,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 399,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 400,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 400,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 401,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 401,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 402,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 402,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 403,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 403,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 404,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 404,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 405,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 405,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 406,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 406,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 407,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 407,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 408,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 408,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 409,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 409,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 410,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 410,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 411,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 411,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 412,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 412,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 413,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 413,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 414,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 414,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 415,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 415,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 416,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 416,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 417,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 417,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 418,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 418,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 419,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 419,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 420,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 420,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 421,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 421,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 422,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 422,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 423,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 423,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 424,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 424,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 425,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 425,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 426,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 426,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 427,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 427,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 428,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 428,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 429,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 429,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 430,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 430,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 431,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 431,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 432,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 432,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 433,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 433,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 434,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 434,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 435,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 435,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 436,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 436,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 437,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 437,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 438,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 438,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 439,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 439,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 440,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 440,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 441,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 441,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 442,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 442,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 443,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 443,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 444,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 444,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 445,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 445,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 446,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 446,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 447,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 447,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 448,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 448,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 449,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 449,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 450,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 450,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 451,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 451,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 452,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 452,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 453,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 453,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 454,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 454,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 455,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 455,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 456,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 456,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 457,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 457,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 458,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 458,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 459,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 459,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 460,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 460,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 461,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 461,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 462,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 462,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 463,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 463,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 464,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 464,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 465,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 465,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 466,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 466,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 467,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 467,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 468,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 468,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 469,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 469,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 470,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 470,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 471,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 471,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 472,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 472,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 473,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 473,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 474,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 474,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 475,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 475,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 476,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 476,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 477,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 477,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 478,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 478,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 479,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 479,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 480,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 480,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 481,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 481,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 482,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 482,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 483,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 483,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 484,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 484,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 485,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 485,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 486,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 486,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 487,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 487,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 488,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 488,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 489,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 489,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 490,
+      character: 'Tesmond'
+    }
+    ]
+  },
+  {
+    id: 490,
+    text: " ",
+    options: [{
+      continue: { cont: true },
+      nextText: 491,
+      character: 'Tesmond'
+    }
+    ]
+  }
 ];
 
 questions()
