@@ -241,14 +241,14 @@ let maze11 = [
 
 //global variables
 let currentLevel = maze2;
-let levels = [maze2, maze11,];
+let levels = [maze2, maze4,];
 let body = document.querySelector('body');
 let divTable = document.getElementById('cover');
 let tableEl = document.querySelector('table');
 //if button clicked it loads this function for info on keys
 let info = () => {
   let b1 = document.querySelector('#one')
-  b1.textContent = 'WASD to move mover and press me to play';
+  b1.textContent = 'WASD to move; press to play';
 };
 //if button clicked it loads the game
 let loadPage = () => {
@@ -283,6 +283,27 @@ let loadPage = () => {
     looseP.appendChild(h1);
     looseP.appendChild(para);
     looseP.appendChild(button);
+    body.style.justifyContent = 'center';
+  };
+  let winer = () => {
+    //needed variables for end condition
+    let winP = document.createElement('section');
+    let para2 = document.createElement('p');
+    let h2 = document.createElement('h1');
+    let button2 = document.createElement('button');
+    clearTable(tableEl);
+    //styles for end condition
+    mover.style.display = 'none';
+    h2.textContent = 'GAME OVER';
+    para2.textContent = 'You seem to have found your way back to the begining...try not to run into the walls they mess everything up';
+    button2.textContent = 'Move on';
+    button2.setAttribute('onclick', 'window.location.reload();');
+    button2.setAttribute('type', 'button');
+    //adding end para to body and other child elements
+    body.appendChild(looseP);
+    winP.appendChild(h1);
+    winP.appendChild(para);
+    winP.appendChild(button);
     body.style.justifyContent = 'center';
   };
 
@@ -331,9 +352,6 @@ let loadPage = () => {
             break;
           case '!':
             tdEl.setAttribute('id', 'win');
-            break;
-          case '-':
-            tdEl.setAttribute('id', 'over');
             break;
 
 
@@ -395,6 +413,9 @@ let loadPage = () => {
       if (pos.x == 0) {
         lose();
       }
+    }
+    for (win){
+
     }
 
   });
