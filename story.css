@@ -30,11 +30,11 @@ p.dialogue{
 }*/
 
 #option1{
-    position: fixed;
+    position: absolute;
     right: 3%;
 }
 #option2{
-    position: fixed;
+    position: absolute;
     right: 1.5%;
 }
 
