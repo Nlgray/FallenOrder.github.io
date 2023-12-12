@@ -36,6 +36,11 @@ function selectYesOrNo(option) {
   displayQuestions(nextQ);
 }
 
+
+function displayImage(){
+  //var img = "";
+}
+
 const characters = ["Braedon", "Tesmond", "Selphie", "Belginoff", "Narrator"];
 const spItems = 5;
 const item = ["breastplate"];
@@ -47,9 +52,10 @@ const q2 = [
     // Begin intro IMG
     id: 1,
     text: "Before the lands of our time were molded into existence, a great calamity befell every being known within the grand cities of Camuth. The Dark Lord Palentheous Irzaline summoned his vast army of minions onto the peaceful citizens around the continent. Only a few brave souls dare challenge this irreversible catastrophe, they were known as the Knights of the Fallen Order. They overcame many of the Dark Lord's warlords: Paluth the wretched butcher, Molgon the horrid warlock, Thaulrod the devastating mortar, Zyroneeuch the tinkering puppeteer, and Andurath the knightmare. As the Knights of the Fallen Order defeated each warlord, one by one, they emerged towards their final fight with the Dark Lord Palentheous Irzaline. The fight was victorious yet costed heavily. Many knights died during the battle, and many others died after. Only a few knights still rest in tranquility... ",
+
     options: [
       {
-        text: 'yes',
+        text: 'Continue',
         continue: { cont: true },
         nextText: 2
       }
@@ -62,9 +68,10 @@ const q2 = [
     // Tavern1 IMG
     id: 2, // Braedon IMG
     text: "Well, that was true till the Ol boy Andurath reappear\'d back in Pleamore. ",
+    location: "/images/tavern1.JPG",
     options: [
       {
-        text: 'yes',
+        text: 'Continue',
         continue: { cont: true },
         nextText: 3,
         character: "Braedon"
@@ -76,7 +83,7 @@ const q2 = [
     text: 'Ah Kingston, you\'ve finally arrived. Now that everyone is here, let me reintroduce ourselves to the recruit. *Moves everyone into position* We are the Fearless Chevaliers, a guild comprised of the most accomplished mortals in all the seven regions of Camuth. I am Tesmond Ulgar, a halfing, the guild masster, the dashing swordsman, the heroic... ',
     options: [
       {
-        text: 'yes',
+        text: 'Continue',
         continue: { cont: true },
         nextText: 4,
         character: "Tesmond"
@@ -89,7 +96,7 @@ const q2 = [
     text: '*Pushes away Tesmond* Sorry about that. My name is Sephie Levi. I am the elementalist for this "guild", well more like the party of adventurers. I don\'t know how Tesmond always comes up with the most extravagant and exaggerated story. ',
     options: [
       {
-        text: 'yes',
+        text: 'Continue',
         continue: { cont: true },
         nextText: 5,
         character: 'Selphie'
@@ -100,7 +107,7 @@ const q2 = [
     id: 5, // Tesmond IMG
     text: 'Okay, true that our tiny band is not yet as outstretched as a guild, but it will be! Just you wait and see Selphie. We are going to be swimming in Camuth gold within our own domicile with an army waiting for ME to lead. ',
     options: [{
-      text: 'yes',
+      text: 'Continue',
       continue: { cont: true },
       nextText: 6,
       character: 'Tesmond'
@@ -112,7 +119,7 @@ const q2 = [
     text: "Ain\'t that quite aspirin\' Tes. Anyway kiddo, the names Braedon Kingston. I\'m the warrior of this merry gang. Or ya can refer to me as yer sturdy meat shield. Hahahahaha... ",
     options: [
       {
-        text: 'yes',
+        text: 'Continue',
         continue: { cont: true },
         nextText: 7,
         character: 'Braedon'
@@ -125,7 +132,7 @@ const q2 = [
     text: 'Now that the introductions are over, lets go... ',
     options: [
       {
-        text: 'yes',
+        text: 'Continue',
         continue: { cont: true },
         nextText: 8,
         character: 'Tesmond'
@@ -137,7 +144,7 @@ const q2 = [
     text: '*Ignores Tesmond**astonished/sulking Tesmond* Kingston, did you get any quests from the guild or were you just flirting with the Guild Master as you always do? ',
     options: [
       {
-        text: 'yes',
+        text: 'Continue',
         continue: { cont: true },
         nextText: 9,
         character: 'Selphie'
@@ -153,7 +160,7 @@ const q2 = [
     text: "Bah, did ya think I just went in the guild to flirt with the Guild Master n forget to grab any quests? *Everyone faced Kingston with a nod* Almost! Bahahahahah. Well, I grabbed two. *Opens and lays both quests on the table* one quest wants us to explore these newly \‘scovered caverns and the other wants to figure out the racket o'er at Pelna Forest. So, whats the vote? ",
     options: [
       {
-        text: 'yes',
+        text: 'Continue',
         continue: { cont: true },
         nextText: 10,
         character: 'Braedon'
@@ -166,7 +173,7 @@ const q2 = [
     text: 'I would like to investigate the disturbance in Pelna Forest. ',
     options: [
       {
-        text: 'yes',
+        text: 'Continue',
         continue: { cont: true },
         nextText: 11,
         character: 'Tesmond'
@@ -179,7 +186,7 @@ const q2 = [
     text: 'I do not know; I am leaning on the caverns. We might get some good loot! ',
     options: [
       {
-        text: 'yes',
+        text: 'Continue',
         continue: { cont: true },
         nextText: 13,
         character: 'Selphie'
@@ -191,7 +198,7 @@ const q2 = [
     text: 'It doesn\'t matter to me. How \‘bout we give the recruit the option? ',
     options: [
       {
-        text: 'yes',
+        text: 'Continue',
         continue: { cont: true },
         nextText: 13,
         character: 'Braedon'
@@ -203,7 +210,7 @@ const q2 = [
     text: 'That is a great idea!',
     options: [
       {
-        text: 'yes',
+        text: 'Continue',
         continue: { cont: true },
         nextText: 14,
         character: 'Selphie'
@@ -216,7 +223,7 @@ const q2 = [
     text: 'Now this is a great team exercise! One of the many reasons why we are the "Fearless Chevaliers!" *Selphie and Kingston pulled Tesmond aside and "properly" addressed Tesmond that their group is not named "The Fearless Chevaliers" * ',
     options: [
       {
-        text: 'yes',
+        text: 'Continue',
         continue: { cont: true },
         nextText: 15,
         character: 'Tesmond'
@@ -247,7 +254,7 @@ const q2 = [
     text: 'The recruit chose to take: Investigate Pelna Forest and its disturbance. ',
     options: [
       {
-        text: 'yes',
+        text: 'Continue',
         continue: { cont: true },
         nextText: 17,
         character: 'Narrator'
@@ -263,7 +270,7 @@ const q2 = [
     text: '*Pops out from being lectured by Selphie and Kingston* Then Pelna Forest it is!',
     options: [
       {
-        text: 'yes',
+        text: 'Continue',
         continue: { cont: true },
         nextText: 21,
         character: 'Tesmond'
@@ -277,6 +284,7 @@ const q2 = [
     id: 18,
     text: 'The recruit chose to take: Discover the Caverns. ',
     options: [{
+      text: 'Continue',
       continue: { cont: true },
       nextText: 19,
       character: 'Narrator'
@@ -290,6 +298,7 @@ const q2 = [
     id: 19, // Selphie IMG
     text: '*Turns around after lecturing Tesmond* Great answer recruit! Okay everyone stop the incomprehensible talking and let us get ready for the Caverns! ',
     options: [{
+      text: 'Continue',
       continue: { cont: true },
       nextText: 124, //when the player chooses the caverns
       character: 'Selphie'
@@ -306,6 +315,7 @@ const q2 = [
     id: 20, // Tesmond IMG
     text: 'Alright, is everyone well equipped and ready? *Everyone gestures, except you*',
     options: [{
+      text: 'Continue',
       continue: { cont: true },
       nextText: 21,
       character: 'Tesmond'
@@ -316,6 +326,7 @@ const q2 = [
     id: 21, // Selphie IMG
     text: 'Seems like the recruit does not have any equipment. I think we should go shopping in Stagcross for gear.',
     options: [{
+      text: 'Continue',
       continue: { cont: true },
       nextText: 22,
       character: 'Selphie'
@@ -326,6 +337,7 @@ const q2 = [
     id: 22, // Braedon IMG
     text: "Aight. Let's get this a move on. N ya betta not go shoppin\' for hours on end Selphie like last time. I don\'t want the same incident where we began shoppin\' during Father Sun and came back to our home till Mother Moon appear\'d. ",
     options: [{
+      text: 'Continue',
       continue: { cont: true },
       nextText: 23,
       character: 'Braedon'
@@ -339,6 +351,7 @@ const q2 = [
     id: 23,
     text: "The group exits the Tavern, named the Drunken Sow, and entered onto the streets of Stagcross. While strolling through the open air of commerce and festivity, Kingston and Selphie found their target... a store, well... various stores... and a mysterious vendor.",
     options: [{
+      text: 'Continue',
       continue: { cont: true },
       nextText: 24,
       character: 'Narrator'
@@ -349,6 +362,7 @@ const q2 = [
     id: 24, // Braedon IMG
     text: "Aight young recruit. Ya can choose one of the three. Don\'t really care, but they seem fi...",
     options: [{
+      text: 'Continue',
       continue: { cont: true },
       nextText: 25,
       character: 'Braedon'
@@ -359,6 +373,7 @@ const q2 = [
     id: 25, // Selphie IMG
     text: "*Excited and points at trader* Look! There's a man selling some interesting goods!",
     options: [{
+      text: 'Continue',
       continue: { cont: true },
       nextText: 26,
       character: 'Selphie'
@@ -369,6 +384,7 @@ const q2 = [
     id: 26, // Braedon IMG
     text: "Nope! Nope! Nope! Not this again! Tesmond, stop her will ya!",
     options: [{
+      text: 'Continue',
       continue: { cont: true },
       nextText: 27,
       character: 'Braedon'
@@ -379,6 +395,7 @@ const q2 = [
     id: 27, // Tesmond IMG
     text: 'Right... about that... it seems like she already is over there.',
     options: [{
+      text: 'Continue',
       continue: { cont: true },
       nextText: 28,
       character: 'Tesmond'
@@ -389,6 +406,7 @@ const q2 = [
     id: 28, // Selphie IMG
     text: "*Gesturing and touching everything* These trinkets are delightful! We should buy them!",
     options: [{
+      text: 'Continue',
       continue: { cont: true },
       nextText: 29,
       character: 'Selphie'
@@ -399,6 +417,7 @@ const q2 = [
     id: 29, // Belginoff IMG
     text: "Sorry young miss. But everything you see here is not on \"sale\". I go by a gambling rule, it makes everything interesting.",
     options: [{
+      text: 'Continue',
       continue: { cont: true },
       nextText: 30,
       character: 'Belginoff'
@@ -408,7 +427,7 @@ const q2 = [
   {
     id: 30, // Selphie IMG
     text: 'That makes it even better! How much?',
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 31,
       character: 'Selphie'
@@ -418,7 +437,7 @@ const q2 = [
   {
     id: 31, // Braedon IMG
     text: "Ah hell nah! Ya gonna spend all yer gold Selphie.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 32,
       character: 'Braedon'
@@ -428,7 +447,7 @@ const q2 = [
   {
     id: 32, // Tesmond IMG
     text: "Well, it does not affect or concern everyone Kingston, it is her share of gold, let her be. ",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 33,
       character: 'Tesmond'
@@ -438,7 +457,7 @@ const q2 = [
   {
     id: 33, // Braedon IMG
     text: "*Scoffs at Tesmond and whispers*Ain\'t ya just a swell leader...",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 34,
       character: 'Braedon'
@@ -448,7 +467,7 @@ const q2 = [
   {
     id: 34, // Tesmond IMG
     text: "*Confused and oblivious from Kingston\'s statement* What? Anyway, because this trip is for you recruit, how about you decide which choice best fits your needs. The gambling game with Selphie or the three shops with Kingston?",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 35,
       character: 'Tesmond'
@@ -457,7 +476,7 @@ const q2 = [
   },
   {
     id: 35,
-    text: '',
+    text: 'Selphie or Kingston',
     options: [{
       text: 'Selphie',
       continue: { cont: true },
@@ -467,7 +486,7 @@ const q2 = [
     {
       text: 'Kingston',
       continue: { cont: true },
-      nextText: 0,
+      nextText: 57,
       character: 'Narrator'
 
     }
@@ -483,7 +502,7 @@ const q2 = [
   {
     id: 36,
     text: "The recruit\'s choice involved: Accepting Selphie\'s addiction, SPENDING MONEY.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 37,
       character: 'Narrator'
@@ -493,7 +512,7 @@ const q2 = [
   {
     id: 37, // Selphie IMG 
     text: "Great! I knew our recruit would make the right choice. *Grins at Kingston* Now vendor, tell us how this \"gambling\" works?",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 38,
       character: 'Selphie'
@@ -504,7 +523,7 @@ const q2 = [
     //set the game picture to morning (Gamble1 IMG)
     id: 38, // Belginoff IMG
     text: "The rules are simple. All you have to do is roll this dice. If the dice lands on 1 through 4, you lose and you give me one of your valuables. If the dice lands on 5 through 6, you win and you can pick whatever I have!",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 39,
       character: 'Belginoff'
@@ -514,7 +533,7 @@ const q2 = [
   {
     id: 39, // Braedon IMG
     text: "Here goes another mistake of my lifetime. Kiddo, don\'t just stand there, time to roll the die. ",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 40,
       character: 'Braedon'
@@ -529,7 +548,7 @@ const q2 = [
     //if user wins 1st try
     id: 40, // Braedon IMG
     text: "Holy Stars, offsprings of Father Sun and Mother Moon! How\'d ya pull it off in one try?",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 41,
       character: 'Braedon'
@@ -539,7 +558,7 @@ const q2 = [
   {
     id: 41, // Selphie IMG
     text: "Never underestimate our recruit, Kingston! He just might be our blessed reason for living another day!",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 42,
       character: 'Selphie'
@@ -549,7 +568,7 @@ const q2 = [
   {
     id: 42, // Tesmond IMG
     text: "That sounds a little over the top, but nevertheless, I am impressed recruit.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 43,
       character: 'Tesmond'
@@ -560,7 +579,7 @@ const q2 = [
     //end of game if player wins 1st try
     id: 43, // Belginoff IMG
     text: "Dang! In all my travels, I have yet to be beaten so easily. You, are very lucky. Okay, pick your prize.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 53,
       character: 'Belginoff'
@@ -574,7 +593,7 @@ const q2 = [
   {
     id: 44, // Braedon IMG
     text: "At least ya got it in the end.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 35,
       character: 'Braedon'
@@ -584,7 +603,7 @@ const q2 = [
   {
     id: 45, // Selphie IMG
     text: "Well done recruit! Seems like it is your lucky day recruit.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 35,
       character: 'Selphie'
@@ -594,7 +613,7 @@ const q2 = [
   { 
     id: 46, // Tesmond IMG
     text: "Now that you won recruit, pick your prize from the vendor.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 35,
       character: 'Tesmond'
@@ -605,7 +624,7 @@ const q2 = [
     //end of 2nd - 4th roll dialogue still need to add the picture change for the 3rd roll
     id: 47, // Belginoff IMG
     text: "My wares expand from household items, unnecessary gadgets, intricate charms, to adventurous necessities. Pick your prize! ",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 53,
       character: 'Belginoff'
@@ -619,7 +638,7 @@ const q2 = [
   {
     id: 48, // Braedon IMG
     text: "See what ya did! I told ya\'ll so! Now we got nothin\' and lost everythin\'!",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 49,
       character: 'Braedon'
@@ -629,7 +648,7 @@ const q2 = [
   {
     id: 49, // Selphie IMG
     text: "Better luck next time young recruit.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 50,
       character: 'Selphie'
@@ -639,7 +658,7 @@ const q2 = [
   {
     id: 50, // Tesmond IMG
     text: "Now that we are in this predicament, I suggest we go back home and restore our equipment tomorrow morning. I bid you farewell and good night to you, vendor.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 51,
       character: 'Tesmond'
@@ -649,7 +668,7 @@ const q2 = [
   {
     id: 51, // Belginoff IMG
     text: "You too! I had fun while the game lasted. *Pushes merchant trolley away*",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 52,
       character: 'Belginoff'
@@ -664,7 +683,7 @@ const q2 = [
     // OPTIONAL: add death caption (Spent all day gambling)
     id: 52,
     text: "SPENT ALL DAY GAMBLING: the party of \"not so merry folk\" left the scene with gloom and despair as their equipment was gathered away by the travelling merchant. Such a shame, losing everything and accomplishing nothing... you might as well restart at the very beginning.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 20,
       character: 'Narrator'
@@ -677,7 +696,7 @@ const q2 = [
     // Use either Gamble1 or Gamble2 depending on when user wins (1st - 2nd: Gamble1) (3rd - 4th: Gamble2)
     id: 53,
     text: "The recruit points toward the glowing metal breastplate. Its aura emanated throughout the entire merchant\'s cart, causing a fascination to spur throughout every person\'s being, especially through Kingston.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 54,
       character: 'Narrator'
@@ -687,7 +706,7 @@ const q2 = [
   {
     id: 54, // Belginoff IMG
     text: "*Kingston\'s eyes widen* Quite the interesting item you chose for yourself young child. This chestplate here was previously owned by a knight. Seemed like he didn\'t want to keep it, so he gave it to me as well as the idea for the gambling game. *Gives chestplate to recruit* *Waves goodbye and pushes merchant trolley away*",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 55,
       character: 'Belginoff',
@@ -698,7 +717,7 @@ const q2 = [
   {
     id: 55, // Selphie IMG
     text: "This chestplate has been inscribed with various enchantments. I am surprised anyone would abandon this.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 56,
       character: 'Selphie'
@@ -708,9 +727,9 @@ const q2 = [
   {
     id: 56, // Tesmond IMG
     text: "Indeed, but with their disinterest at heart, we are now the owners of such fine craftsmanship. So, recruit, now that we have finished the task at hand, let us go to Pelna Forest! *Everyone walks toward the exit of Stagcross*",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
-      nextText: 35,
+      nextText: 220,
       character: 'Tesmond'
     }
     ]
@@ -725,7 +744,7 @@ const q2 = [
   {
     id: 57,
     text: "The recruit\'s choice involved: Accepting Kingston\'s wide array of shops.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 58,
       character: 'Narrator'
@@ -735,7 +754,7 @@ const q2 = [
   {
     id: 58, // Braedon IMG
     text: "Brilliant of ya rookie! *Pats heavily on the recruit\'s back and grins* Now I reckon with the gold ya got, ya can only choose one of \‘em to shop at. So, I suggest ya go to each shop n hear \‘em all out. Ya can decline whatever shop keeper that sounds fishy. And Selphie! Get o\'er here! We ain\'t feedin\' yer addiction.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 59,
       character: 'Braedon'
@@ -745,7 +764,7 @@ const q2 = [
   {
     id: 59, // Selphie IMG
     text: "Hmmph! I wanted those trinkets. *Pouts then clears sadness* Anyway this is for the recruit, so they might as well choose what they want. ",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 60,
       character: 'Selphie'
@@ -756,7 +775,7 @@ const q2 = [
   {
     id: 60, // Tesmond IMG
     text: "Then let us start with this shop... it seems to be called, \"The Unlucky Bear\". Not a good sign, but might be a good shop.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 61,
       character: 'Tesmond'
@@ -769,7 +788,7 @@ const q2 = [
   {
     id: 61, 
     text: "The group enters The Unlucky Bear and is greeted by a large individual, with pronounced posture. Clothed with a bold blue and pearly white garment while wearing small spectacles, you wonder, is he clearly to be trusted? And how is he seeing from such small eyewear?",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 62,
       character: 'Narrator'
@@ -779,7 +798,7 @@ const q2 = [
   {
     id: 62, // Brooker IMG
     text: "Hello, my name is Brooker Goodsman. I supervise this fine establisment. What can I interest you in? ",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 63,
       character: 'Brooker'
@@ -789,7 +808,7 @@ const q2 = [
   {
     id: 63, // Tesmond IMG
     text: "Yes, I would like your finest equipment and gear for my new founded recruit. Preferably chest armor would suffice.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 64,
       character: 'Tesmond'
@@ -799,7 +818,7 @@ const q2 = [
   {
     id: 64, 
     text: "Both Kingston and Selphie mysteriously vanished behind Tesmond and the recruit. Almost as if they were swallowed by every man\'s adversary: CAPITALISM.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 65,
       character: 'Narrator'
@@ -809,7 +828,7 @@ const q2 = [
   {
     id: 65, // Brooker IMG
     text: "*Digging through wares* *Hands chestplate to the recruit* This is our top of the line steel and bronze chestplate. A best seller! ",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 66,
       character: 'Brooker'
@@ -819,7 +838,7 @@ const q2 = [
   {
     id: 66, 
     text: "Inspecting closely, the armor was engraved with various inscriptions or rather decorations. Decorated with horns from a wild Markhor for each shoulder. A lining of cheap bronze and shoddy skill. Almost as if a \"factory in China\" created this... not that I know what a factory is... and neither a China. ",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 67,
       character: 'Narrator'
@@ -847,7 +866,7 @@ const q2 = [
   {
     id: 68,
     text: "And with a shake of the recruit\'s head from left to right, the owner\'s head turned droopy, knowing he had lost another customer. ",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 69,
       character: 'Narrator'
@@ -857,7 +876,7 @@ const q2 = [
   {
     id: 69, // Brooker IMG
     text: "How unfortunate, well do come again! We have other wares in stock! Namely, a brand new pot for your crusty stove! Just look at that glisten!",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 70,
       character: 'Brooker'
@@ -867,7 +886,7 @@ const q2 = [
   {
     id: 70,
     text: "As the rambling merchant went on and on about pots, pans, gadgets, trinkets, unnecessary items, and whatnot, the band of adventurers left... I would too from that damn annoying merchant... f%#k.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 74,
       character: 'Narrator'
@@ -878,7 +897,7 @@ const q2 = [
   {
     id: 71, 
     text: "And with a shake of the recruit\'s head from top to bottom, the owner\'s eyes widen and sparkle.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 72,
       character: 'Narrator'
@@ -888,7 +907,7 @@ const q2 = [
   {
     id: 72, // Brooker IMG
     text: "Oh customer, what an excellent purchase you have just given yourself! *The recruit hands the gold* *Owner registers the armor as sold* ",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 73,
       character: 'Brooker'
@@ -903,7 +922,7 @@ const q2 = [
   {
     id: 73,
     text: "SCAMMED: After walking away from the Unlucky Bear, the group discovered the purchased armor was not made of metal at all. It was made from wood, stained with brown for a copper design and grey for its steel appearance. You truly became the Unlucky Bear.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 67,
       character: 'Narrator'
@@ -917,7 +936,7 @@ const q2 = [
   {
     id: 74, // Tesmond IMG
     text: "What an awfully tacky shop that was. At least we did not purchase anything unnecessary... *Turns and stares at Selphie and Kingston with disgust*",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 75,
       character: 'Tesmond'
@@ -927,7 +946,7 @@ const q2 = [
   {
     id: 76, // Selphie IMG
     text: "*Holding useless trinkets* What? These will go great with my collection of interesting cubes!",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 77,
       character: 'Selphie'
@@ -937,7 +956,7 @@ const q2 = [
   {
     id: 77, // Braedon IMG
     text: "*Holding cookware* Same here! These pots n pans will pair well with some good steak.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 78,
       character: 'Braedon'
@@ -947,7 +966,7 @@ const q2 = [
   {
     id: 78, // Tesmond IMG
     text: "Fine, I will not question your purchases. Anyway, the next shop is the Hare\'s Tinctures and Tonics. Are you serious Kingston? This is a potion shop!",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 79,
       character: 'Tesmond'
@@ -957,7 +976,7 @@ const q2 = [
   {
     id: 79, // Braedon IMG
     text: "Ah quite yer yappin\' Tesmond! Just cause it\'s a potion shop don\'t mean it doesn\'t have gear! Trust me! I know many great armor smiths who also work as alchemists.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 80,
       character: 'Braedon'
@@ -967,7 +986,7 @@ const q2 = [
   {
     id: 80, // Selphie IMG
     text: "I agree with Kingston, it would not hurt to try the shop. Come recruit, let's head inside while those two argue.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 81,
       character: 'Selphie'
@@ -980,7 +999,7 @@ const q2 = [
   {
     id: 81,
     text: "While Tesmond and Kingston vigorously argue about the store\'s credibility, Selphie and the recruit headed into the Hare\'s Tinctures and Tonics. They saw an abundance of potions and armor scattered in disarray with nobody there to greet them. ",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 82,
       character: 'Narrator'
@@ -990,7 +1009,7 @@ const q2 = [
   {
     id: 82, // Radcliff IMG
     text: "*Rose from behind the countertops* Hello, my name is Radcliff Newton. I specialize in potions, but as I see you birdbrains, I bet you need better armor than my highly valued potions. Quite stupendous, aren\'t you? No matter, a customer is another person to take advantage of. *Walks to a pile of armor* Okay, I recommend this piece of armor. It is enchanted with very high durability, and a strong affinity to demonic powers. Wear it at your own risk. *Clasping hands in a sinister way* heheheheh.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 83,
       character: 'Radcliff'
@@ -1000,7 +1019,7 @@ const q2 = [
   {
     id: 83, // Selphie IMG
     text: "*Whispers* I do not think it is wise to accept the chest plate, recruit. I get a looming feeling of dread and fright. Maybe we should go to the next shop?",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 84,
       character: 'Selphie'
@@ -1027,7 +1046,7 @@ const q2 = [
   {
     id: 85,
     text: "As Selphie was making her way to the door to exit the Hare\'s Tinctures and Tonics, she turned around, seeing that the recruit took an interest at the piece of armor the skeptical salesman presented. And with a quick exchange, the recruit now owns this unknown breastplate.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 86,
       character: 'Narrator'
@@ -1040,7 +1059,7 @@ const q2 = [
   {
     id: 86, // Braedon IMG
     text: "*Selphie and the recruit walk out* *Ends squabble* Aye! Would ya look at that! Ain\'t I always right! *Smirking at Tesmond* So, what ya get?",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 87,
       character: 'Braedon'
@@ -1050,7 +1069,7 @@ const q2 = [
   {
     id: 87, // Selphie IMG
     text: "It is a chest plate, but it might be dangerous.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 88,
       character: 'Selphie'
@@ -1060,7 +1079,7 @@ const q2 = [
   {
     id: 88, // Tesmond IMG
     text: "Actually? In fairness it does not look possessed or rather demonic... now is it...?",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 89,
       character: 'Tesmond'
@@ -1074,7 +1093,7 @@ const q2 = [
   {
     id: 89,
     text: "As a matter of fact, Tesmond\'s question was answered the moment the recruit placed the breastplate onto his own body. POSSESSED: The demonic power surging through the recruit rejected its host, causing a misshape. The morphing armor engulfed the recruit\'s mind and transformed them into a horrifying creature. Should have listened to the shopkeeper's warning \"Wear at your own risk.\"",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 74,
       character: 'Narrator'
@@ -1088,7 +1107,7 @@ const q2 = [
   {
     id: 90,
     text: "Selphie and the recruit left the Hare\'s Tinctures and Tonics and came back towards the disorderly squabble between Kingston and Tesmond.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 91,
       character: 'Narrator'
@@ -1098,7 +1117,7 @@ const q2 = [
   {
     id: 91, // Tesmond IMG
     text: "*Ends squabble and looks at the recruit* Hah, Kingston! It seems that my intuition was correct. Selphie and the recruit did not acquire any equipment as they approach us. Almost as if a potion shop does not have any armor. *Irritated Kingston*",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 92,
       character: 'Tesmond'
@@ -1109,7 +1128,7 @@ const q2 = [
   {
     id: 92, 
     text: "Tesmond is technically not correct with his assumption of the Hare\'s Tinctures and Tonics\' dealing with potions exclusively, but for the most part correct. The final store looked old and decayed, like the story of the big bad wolf who just blew one of the three pigs\' home and left... just to spite them.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 93,
       character: 'Narrator'
@@ -1119,7 +1138,7 @@ const q2 = [
   {
     id: 93, // Tesmond IMG
     text: "Aight the final shop, the Blank Monkey! *Puts arm on the recruit\'s shoulder* And have faith in me fledglin\'! I swear on the celestial beings that this shop is the best. Now it may not look like it, but its charm is pushin\'.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 94,
       character: 'Tesmond'
@@ -1131,7 +1150,7 @@ const q2 = [
   {
     id: 94, // Selphie IMG
     text: "I will pass on this occasion. I just saw another merchant with interesting trinkets! *Scurries away*",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 95,
       character: 'Selphie'
@@ -1142,7 +1161,7 @@ const q2 = [
   {
     id: 95, // Tesmond IMG
     text: "Uhhm, then I best be on my way to stop Selphie from impulsively buying every trinket she sees. *Runs after Selphie*",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 96,
       character: 'Tesmond'
@@ -1152,7 +1171,7 @@ const q2 = [
   {
     id: 97, // Braedon IMG
     text: "Then it looks like it's just you and me. Aight, lets head inside.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 98,
       character: 'Braedon'
@@ -1165,7 +1184,7 @@ const q2 = [
   {
     id: 98,
     text: "As Kingston and the recruit enter the Blank Monkey, the air of dust and desolation filled the room, walls barely clinging onto its frame, contained in a tight and confined space with only a few goods displayed in the middle of the store. Behind the counter, the sound of continuous dings from the blacksmith's relentless hammering echoed throughout the store.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 99,
       character: 'Narrator'
@@ -1175,7 +1194,7 @@ const q2 = [
   {
     id: 99, // Ekur IMG
     text: "Greetings customer! Hol\' on for just one second. *Stops smithing, and enters the same room* My name is Ekur Yozu. What would like from this humble shop? *Smiles* ",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 101,
       character: 'Ekur'
@@ -1199,7 +1218,7 @@ const q2 = [
   {
     id: 101, // Braedon IMG
     text: "Yes, my companion here needs some proper good armor! Any suggestions?",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 102,
       character: 'Braedon'
@@ -1209,7 +1228,7 @@ const q2 = [
   {
     id: 102, // Ekur IMG
     text: "I recommend this piece here! It might not look as ornated than other shops, but for sure, it is exceedingly durable. I crafted it from the skin of young megalodons. It took me weeks to fully create it. ",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 103,
       character: 'Ekur'
@@ -1236,7 +1255,7 @@ const q2 = [
   {
     id: 104,
     text: "As the recruit was about to decline the shopkeeper\'s armor...",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 105,
       character: 'Narrator'
@@ -1246,7 +1265,7 @@ const q2 = [
   {
     id: 105, // Braedon IMG
     text: "We\'ll take it! *Smiles at the recruit* I knew this shop had remarkable wares. Megalodon skin is hard to come by, ya must\'ve gotten it for a hefty price.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 106,
       character: 'Braedon'
@@ -1256,7 +1275,7 @@ const q2 = [
   {
     id: 106, // Ekur IMG
     text: "Thank you, I hunted the meg myself. I was an adventurer too! Until I took an arrow to the knee. Now I blacksmith with the materials my mates give me and hone my craft. ",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 109,
       character: 'Ekur'
@@ -1266,7 +1285,7 @@ const q2 = [
   {
     id: 107, 
     text: "The recruit nods towards the shopkeeper. With delight, the shopkeeper rang the armor and sold it to the recruit.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 108,
       character: 'Narrator'
@@ -1276,7 +1295,7 @@ const q2 = [
   {
     id: 108, // Ekur IMG
     text: "Thank you very much! Please, do come again! *Waves goodbye*",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 109,
       character: 'Ekur'
@@ -1289,7 +1308,7 @@ const q2 = [
   {
     id: 109, // Braedon IMG
     text: "Now that we\'re done shoppin\', lets grab the others and get ready for Pelna Forest!",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 35,
       character: 'Braedon'
@@ -1303,7 +1322,7 @@ const q2 = [
   {
     id: 110, 
     text: "As everyone leaves and gets ready, Selphie barges with...",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 111,
       character: 'Narrator'
@@ -1313,7 +1332,7 @@ const q2 = [
   {
     id: 111, // Selphie IMG
     text: "I still do not recommend going to Pelna Forest. I believe it is wise that we should go into the Caverns.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 112,
       character: 'Selphie'
@@ -1323,7 +1342,7 @@ const q2 = [
   {
     id: 112, // Braedon IMG
     text: "Whatever is the problem, Selphie? I know ya like ya gold, but now addin\' on the fact ya get a sinkin\' feelin\' \‘bout Pelna Forest? *Takes a minute to think, turns to Tesmond and gestures an agreement, then turns to the recruit* Aight, rookie, final offer. Wanna keep goin\' to Pelna Forest or take the trip to the Caverns? Ya choice! Hahahahah.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 113,
       character: 'Braedon'
@@ -1351,7 +1370,7 @@ const q2 = [
   {
     id: 114, // Tesmond IMG
     text: "Excellent! Then for...",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 115,
       character: 'Tesmond'
@@ -1361,7 +1380,7 @@ const q2 = [
   {
     id: 115, // Braedon IMG
     text: "FORWARD we go! Ya take the lead on this one rookie. *Pats heavily on the recruit\'s back and grins* Hahahaha",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 116,
       character: 'Braedon'
@@ -1371,7 +1390,7 @@ const q2 = [
   {
     id: 116, // Selphie IMG
     text: "*Sigh* I hope we can finish this quest quickly.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 117,
       character: 'Selphie'
@@ -1382,7 +1401,7 @@ const q2 = [
   {
     id: 117,
     text: "With the band of the so called \"Fearless Cheveliars\", they departed the city of Stagcross. And approached the open entrance of Pelna Forest. To complete their quest: Investigate Pelna Forest and its disturbance.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 150,
       character: 'Narrator'
@@ -1393,7 +1412,7 @@ const q2 = [
   {
     id: 118, // Braedon IMG
     text: "Seems like ya persuasion got the best of the rookie, Selphie! *Points towards the direction for the Caverns* Aight, Onward! To the caverns.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 119,
       character: 'Braedon'
@@ -1403,7 +1422,7 @@ const q2 = [
   {
     id: 119, // Tesmond IMG
     text: "*Whispers to himself* Man... I really wanted to go to Pelna Forest. Could\'ve gotten a few elven babes.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 120,
       character: 'Tesmond'
@@ -1413,7 +1432,7 @@ const q2 = [
   {
     id: 120, // Selphie IMG
     text: "*Pops at Tesmond\'s shoulder* What did you say? *Grins*",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 121,
       character: 'Selphie'
@@ -1423,7 +1442,7 @@ const q2 = [
   {
     id: 121, // Tesmond IMG
     text: "Nothing of importance. *Clears throat* Well then, we best be on our way.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 122,
       character: 'Tesmond'
@@ -1433,7 +1452,7 @@ const q2 = [
   {
     id: 123,
     text: "With the band of the so called \"Fearless Chevaliers\", they departed the city of Stagcross. And with a swift decision, a detour was made to complete their quest: Discover the Caverns.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 124,
       character: 'Narrator'
@@ -1449,7 +1468,7 @@ const q2 = [
   {
     id: 124,
     text: "At long last! A long trip ensued for our group of adventurers to the entrance of the Caverns. Its dark, concealed entrance conveyed an unfathomable fear towards Tesmond, Selphie, and the recruit. But, with a quick motion, Kingston held a torch and lit it overhead.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 35,
       character: 'Narrator'
@@ -1459,7 +1478,7 @@ const q2 = [
   {
     id: 125, // Braedon IMG
     text: "Aight ya scared cats. Time to go in n explore! ",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 126,
       character: 'Braedon'
@@ -1469,7 +1488,7 @@ const q2 = [
   {
     id: 126, // Tesmond IMG 
     text: "*Legs shaking* Fine, but Selphie you go on ahead with Kingston. After all, you proposed this idea. ",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 127,
       character: 'Tesmond'
@@ -1479,7 +1498,7 @@ const q2 = [
   {
     id: 127, // Selphie IMG
     text: "Hummph! Okay, maybe I will. Come Kingston, let us lead this party of frightened deer. *Grabs Kingston\'s torch* *Starts sprinting into the Caverns*",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 128,
       character: 'Selphie'
@@ -1489,7 +1508,7 @@ const q2 = [
   {
     id: 128, // Braedon IMG
     text: "Hol' up missie! *Beckons Tesmond and the recruit* Hurry up! We\'re gonna lose her before ya know it! *Lights another torch*",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 129,
       character: 'Braedon'
@@ -1499,7 +1518,7 @@ const q2 = [
   {
     id: 129, 
     text: "The group attempted to reach Selphie, but encountered a difficult problem...",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 130,
       character: 'Narrator'
@@ -1512,7 +1531,7 @@ const q2 = [
   {
     id: 130, // Braedon IMG
     text: "*Stops running* Damn it! The path is split in two ways! If ya hadn\'t gotten Sephie all riled up just \‘cause she wanted to do this quest, we wouldn\'t be in this mess!",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 131,
       character: 'Braedon'
@@ -1522,7 +1541,7 @@ const q2 = [
   {
     id: 131, // Tesmond IMG
     text: "I believe it was not my intention. Ultimately, it was her decision to start sprinting into the dark caverns without us!",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 132,
       character: 'Tesmond'
@@ -1532,7 +1551,7 @@ const q2 = [
   {
     id: 132, // Braedon IMG
     text: "Quite yer petty excuses. *Thinks* Hmmph, I think we should go...",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 133,
       character: 'Braedon'
@@ -1542,7 +1561,7 @@ const q2 = [
   {
     id: 133,
     text: "As Kingston was about to point in the direction, he believes Selphie wandered off to, Tesmond pointed to the complete opposite direction.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 134,
       character: 'Narrator'
@@ -1552,7 +1571,7 @@ const q2 = [
   {
     id: 134, // Braedon IMG
     text: "THE RIGHT!",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 135,
       character: 'Braedon'
@@ -1562,7 +1581,7 @@ const q2 = [
   {
     id: 135, // Tesmond IMG
     text: "THE LEFT!",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 136,
       character: 'Tesmond'
@@ -1572,7 +1591,7 @@ const q2 = [
   {
     id: 136, // Braedon IMG
     text: "HUH! What the hell are you doing? *Facepalms* *Turns to the recruit* Seems like we are at a stalemate... recruit... you decide. Want to go left or right?",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 137,
       character: 'Braedon'
@@ -1600,7 +1619,7 @@ const q2 = [
   {
     id: 138,
     text: "The recruit pointed towards the: left.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 139,
       character: 'Narrator'
@@ -1610,7 +1629,7 @@ const q2 = [
   {
     id: 139, // Braedon IMG
     text: "Then left it is! *Points at Tesmond* And I do not want to hear you make a smirking remark! We got to get Selphie first!",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 142,
       character: 'Braedon'
@@ -1621,7 +1640,7 @@ const q2 = [
   {
     id: 140,
     text: "The recruit pointed towards the: right.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 141,
       character: 'Narrator'
@@ -1631,7 +1650,7 @@ const q2 = [
   {
     id: 141, // Braedon IMG
     text: "Then right it is! Let\'s hurry before something happens to Selphie!",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 183,
       character: 'Braedon'
@@ -1647,7 +1666,7 @@ const q2 = [
   {
     id: 142,
     text: "Kingston, Tesmond, and the recruit dashed towards the left passage in search of Selphie. 1 minute went by, then 2, then 10 minutes, then 30 minutes, until Kingston realized...",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 143,
       character: 'Narrator'
@@ -1657,7 +1676,7 @@ const q2 = [
   {
     id: 143, // Braedon IMG
     text: "Where is Selphie? We searched for countless minutes and still hadn\'t found her! *Thinks, then realizes* Can\'t be! *Turns to Tesmond and the recruit* *Groans* Well, it looks like we are in a maze.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 144,
       character: 'Braedon'
@@ -1667,7 +1686,7 @@ const q2 = [
   {
     id: 144, // Tesmond IMG
     text: "It appears so. Possibly, Selphie went in the other direction than this troublesome labyrinth. *Sighs* If only she could give us an indication on where she is... but that is highly unlikely.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 145,
       character: 'Tesmond'
@@ -1677,7 +1696,7 @@ const q2 = [
   {
     id: 145,
     text: "At that instant, the fortunate group heard a sound reverberating throughout the labyrinth.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 146,
       character: 'Narrator'
@@ -1687,7 +1706,7 @@ const q2 = [
   {
     id: 146, // Tesmond IMG
     text: "And there she is... deeper within the clawing arms of this perplexing labyrinth. Seeing how Kingston could not guide us to her, perhaps I can lead?",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 147,
       character: 'Tesmond'
@@ -1697,7 +1716,7 @@ const q2 = [
   {
     id: 147, // Braedon IMG
     text: "Oh no, Tesmond! Last time you led the way, we were trapped in a nest of goblins! I would feel better if the recruit led the way instead of you. *Looks at recruit* So it seems it's now up to you recruit! We can go left or forward, you decide.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 148,
       character: 'Braedon'
@@ -1728,7 +1747,7 @@ const q2 = [
   {
     id: 149, // Braedon IMG
     text: "*Everyone sprints, then halts* Seems like a dead end, let's head back and go forwards instead!",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 150,
       character: 'Braedon'
@@ -1742,7 +1761,7 @@ const q2 = [
   {
     id: 150, // Tesmond IMG
     text: "*Everyone sprints* This path appears correct; I hear Selphie getting closer. *Halts* Now another fork in our path, left or right?",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 151,
       character: 'Tesmond'
@@ -1773,7 +1792,7 @@ const q2 = [
   {
     id: 152, // Tesmond
     text: "Then let us proceed left. *Hastily ran, then stops* Tsk! An obstruction. *Turns around and starts rushing* Time to head back and go on the other path. ",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 153,
       character: 'Tesmond'
@@ -1787,7 +1806,7 @@ const q2 = [
   {
     id: 153, // Braedon IMG
     text: "Alright! She is getting louder. SELPHIE! SHOUT BACK! *Sees Selphie* HEY TURN AROUND! *Waves arms*",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 154,
       character: 'Braedon'
@@ -1800,7 +1819,7 @@ const q2 = [
   {
     id: 154,
     text: "Finally, the group found Selphie. As they breathed heavily from rushing to find her, Selphie pointed towards an interesting container...",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 155,
       character: 'Narrator'
@@ -1810,7 +1829,7 @@ const q2 = [
   {
     id: 155, // Braedon IMG
     text: "*Pant* *Pant* Selphie! Ya scared us! Don\'t go runnin\' off like that ever again! *Pant* And Tesmond, ya better apologize!",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 156,
       character: 'Braedon'
@@ -1820,7 +1839,7 @@ const q2 = [
   {
     id: 156, // Tesmond IMG
     text: "*Pant* *Pant* Selphie... in the darkest depths of my heart, I am truly sorry. I will not state another comment concerning your reasons for picking this quest. ",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 157,
       character: 'Tesmond'
@@ -1830,7 +1849,7 @@ const q2 = [
   {
     id: 157, // Selphie IMG
     text: "*Arms crossed* Very well, that apology satisfies me... for now. *Points forward* Anyways look, I found a chest! I can\'t open it, so maybe you can? *Looks at recruit*",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 158,
       character: 'Selphie'
@@ -1840,7 +1859,7 @@ const q2 = [
   {
     id: 158, // Braedon IMG
     text: "Let me interrupt ya Selphie. That chest could be trapped. Who knows what\'ll happen. Are ya sure ya still wanna open it?",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 159,
       character: 'Braedon'
@@ -1850,7 +1869,7 @@ const q2 = [
   {
     id: 159, // Selphie IMG
     text: "Of course! There is no possibility that this chest is forged to trap others! Even our recruit agrees, isn\'t that right?",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 160,
       character: 'Selphie'
@@ -1877,7 +1896,7 @@ const q2 = [
   {
     id: 161, 
     text: "The recruit bobs his head in complete ignorance to Kingston\'s warnings.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 162,
       character: 'Narrator'
@@ -1887,7 +1906,7 @@ const q2 = [
   {
     id: 162, // Selphie IMG
     text: "Way to go, recruit! Now lets see what is inside that chest!",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 163,
       character: 'Selphie'
@@ -1897,7 +1916,7 @@ const q2 = [
   {
     id: 163, // Braedon IMG
     text: "Now hold on! *Gestures to wait*",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 164,
       character: 'Braedon'
@@ -1911,7 +1930,7 @@ const q2 = [
   {
     id: 164,
     text: "Unfortunately, as Kingston exclaimed everyone to pause, the recruit opened the chest. GET MIMICKED: And with a quick snarl, the inanimate chest turned alive. *Crunch* *Crack* goes the recruit.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 154,
       character: 'Narrator'
@@ -1924,7 +1943,7 @@ const q2 = [
   {
     id: 165,
     text: "The recruit swayed his head in disapproval. For he was more interested in traveling deeper in this abyssal labyrinth. ",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 166,
       character: 'Narrator'
@@ -1934,7 +1953,7 @@ const q2 = [
   {
     id: 166, // Braedon IMG
     text: "Seems like he ain\'t buyin' yer talk, Selphie. Well, in my opinion, he\'s right. We got more priorities, like figurin\' out how this maze ends.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 167,
       character: 'Braedon'
@@ -1944,7 +1963,7 @@ const q2 = [
   {
     id: 167, // Tesmond IMG
     text: "Then let us carry on! I do not want to stay in this damp and bewildering labyrinth any longer.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 168,
       character: 'Tesmond'
@@ -1954,7 +1973,7 @@ const q2 = [
   {
     id: 168, // Selphie IMG
     text: "Humph! *Whispers to herself* What a shame to leave treasure behind...",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 169,
       character: 'Selphie'
@@ -1964,7 +1983,7 @@ const q2 = [
   {
     id: 169,
     text: "As the recollected group started walking away, a whimpering sound came behind them... plausibly due to the saddened chest... or mimic. What a lucky bunch.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 170,
       character: 'Narrator'
@@ -1977,7 +1996,7 @@ const q2 = [
   {
     id: 170, // Braedon IMG
     text: "*Halts* Another split. Aight rook, ya haven\'t failed us yet. So, what is it? Left or right?",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 58,
       character: 'Braedon'
@@ -2004,7 +2023,7 @@ const q2 = [
   {
     id: 172,
     text: "The recruit points: Left. Even when they knew the previous left turns led to hindrances, but what's stopping them. Not me, that\'s for sure... well more like I can\'t even if I wanted too.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 173,
       character: 'Narrator'
@@ -2014,7 +2033,7 @@ const q2 = [
   {
     id: 173, // Tesmond IMG
     text: "*Walks ahead* *Halts* Kingston... you will not like this...",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 174,
       character: 'Tesmond'
@@ -2024,7 +2043,7 @@ const q2 = [
   {
     id: 174, // Braedon IMG
     text: "What seems to be the trouble, Tesmond?",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 175,
       character: 'Braedon'
@@ -2037,7 +2056,7 @@ const q2 = [
   {
     id: 175,
     text: "There is another chest, but this time its lifted high onto a pedestal adorned with an engraving. *Leans in to look closer* This engraving appears to be a hand and... a sun?",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 176,
       character: 'Tesmond'
@@ -2047,7 +2066,7 @@ const q2 = [
   {
     id: 176,
     text: "*Gasp* Okay, we must open this chest! *Stares at Kingston*",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 177,
       character: 'Selphie'
@@ -2057,7 +2076,7 @@ const q2 = [
   {
     id: 177,
     text: "Aight aight, let me see. *Looks intently* Can it be? *Points* the hand n sun represents Father Sun\'s right hand. It usually symbolizes protection n might. This symbol is only worn on the paladins I\'ve seen back in Atlamond, the undersea city. Interestin\' how\'d it got here. *Looks at the recruit* I don\'t think this chest is trapped, so ya can open it rook!",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 178,
       character: 'Braedon'
@@ -2070,7 +2089,7 @@ const q2 = [
   {
     id: 178,
     text: "The recruit steps forward near the pedestal. With deft hands, the recruit swiftly unlocked the chest to reveal…",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 179,
       character: 'Narrator'
@@ -2080,7 +2099,7 @@ const q2 = [
   {
     id: 179,
     text: "Gauntlets? ",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 180,
       character: 'Selphie'
@@ -2090,7 +2109,7 @@ const q2 = [
   {
     id: 180,
     text: "Yep, gauntlets. By through his actions, the gauntlets proves a knight\'s valor n protection to the world.Ya can keep it, rook. It\'s size is too small for me.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 181,
       character: 'Braedon'
@@ -2100,7 +2119,7 @@ const q2 = [
   {
     id: 181,
     text: "Are we genuinely keeping such a gaudy piece of armor? ",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 182,
       character: 'Tesmond'
@@ -2110,7 +2129,7 @@ const q2 = [
   {
     id: 182,
     text: "Yes! This'll piece is a treasure meant for the highest order. Not somethin\' ya find anywhere. *Turns around* Now that we got ourselves some loot, let\'s go back the other way, got the feelin\' it might be the way out.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 204,
       character: 'Braedon'
@@ -2126,7 +2145,7 @@ const q2 = [
   {
     id: 183,
     text: "As the group traversed the extensive path, they heard a screech… plausibly from Selphie.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 184,
       character: 'Narrator'
@@ -2136,7 +2155,7 @@ const q2 = [
   {
     id: 184, // Braedon IMG
     text: "HURRY! I hear Selphie; it seems like she is in trouble!",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 185,
       character: 'Braedon'
@@ -2146,7 +2165,7 @@ const q2 = [
   {
     id: 185,
     text: "AHH! *Evade attack* *Calms down* elements of wind and fire, I summon thee to procure… Flame Slash!",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 186,
       character: 'Selphie'
@@ -2156,7 +2175,7 @@ const q2 = [
   {
     id: 186,
     text: "Arggghh! Ayyah! *Creeps in* euughh! hehehe!",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 187,
       character: 'Monsters'
@@ -2169,7 +2188,7 @@ const q2 = [
   {
     id: 187, // Braedon IMG
     text: "*Huff* HYAH! *boinks an enemy* SELPHIE! *Turns around* She is surrounded by kobolds and slugs. We need to help her! Tesmond, rookie, time to attack!",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 188,
       character: 'Braedon'
@@ -2179,7 +2198,7 @@ const q2 = [
   {
     id: 188, // Tesmond IMG
     text: "About time for excitement! Let us charge!",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 189,
       character: 'Tesmond'
@@ -2189,7 +2208,7 @@ const q2 = [
   {
     id: 189,
     text: "As you and Kingston lunge into action, you turn around to see Tesmond missing… seems like he charged into the wrong direction if you ask me.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 190,
       character: 'Narrator'
@@ -2199,7 +2218,7 @@ const q2 = [
   {
     id: 190, // Braedon IMG
     text: "Here rookie! Strike them!",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 191,
       character: 'Braedon'
@@ -2219,7 +2238,7 @@ const q2 = [
   {
     id: 191, // Tesmond IMG
     text: "*Reappears* Ahah! That will show those foul beasts the true strength of Tesmond Ulgar! Tis' but a scratch.",
-    options: [{
+    options: [{text: 'Continue',
       //text: '',
       continue: { cont: true },
       nextText: 192,
@@ -2230,7 +2249,7 @@ const q2 = [
   {
     id: 192, // Braedon IMG
     text: "*Ignores Tesmond* Selphie! *Runs to her* Are ya injured?",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 193,
       character: 'Braedon'
@@ -2240,7 +2259,7 @@ const q2 = [
   {
     id: 193, // Selphie IMG
     text: "I am fine. Minor injuries, nothing fatal.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 194,
       character: 'Selphie'
@@ -2250,7 +2269,7 @@ const q2 = [
   {
     id: 194, // Braedon IMG
     text: "That's good! That we lost ya! *Pauses and looks around* Now that everyone is here, let's see why these monsters were so adamant ‘bout this place...",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 195,
       character: 'Braedon'
@@ -2260,7 +2279,7 @@ const q2 = [
   {
     id: 195,
     text: "For hours, the party of adventurers searched thoroughly in the kobolds' den. Then, the recruit looked up.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 196,
       character: 'Narrator'
@@ -2273,7 +2292,7 @@ const q2 = [
   {
     id: 196, // Tesmond IMG
     text: "Fascinating... even for mere beasts the thought of hiding their pilfered goods above our heads is rather clever.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 197,
       character: 'Tesmond'
@@ -2283,7 +2302,7 @@ const q2 = [
   {
     id: 197, // Selphie IMG
     text: "*Climbs up* Ah! Everyone! Come up, I found an item quite riveting!",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 198,
       character: 'Selphie'
@@ -2293,7 +2312,7 @@ const q2 = [
   {
     id: 198, // Tesmond IMG
     text: "Gauntlets?",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 199,
       character: 'Tesmond'
@@ -2303,7 +2322,7 @@ const q2 = [
   {
     id: 199, // Braedon IMG
     text: "Interestin'! These gauntlets here were only worn by the paladins I've seen back in Atlamond, the undersea city. They represent might n protection. I wonder how'd it got here. *Looks around* Well, seein' how we're 'quipped with the best gear, I bet we should give this to the rook!",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 200,
       character: 'Braedon'
@@ -2313,7 +2332,7 @@ const q2 = [
   {
     id: 200, // Tesmond IMG
     text: "Are we genuinely keeping such a gaudy piece of armor?",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 201,
       character: 'Tesmond'
@@ -2323,7 +2342,7 @@ const q2 = [
   {
     id: 201, // Braedon IMG
     text: "Ya dang right! This'll piece is a treasure meant for the highest order. Not somethin' ya find anywhere. *Turns around* Now, is everyone done lootin'?",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 202,
       character: 'Braedon'
@@ -2333,7 +2352,7 @@ const q2 = [
   {
     id: 202, // Selphie IMG
     text: "*Scooping treasure* Yes! But unfortunately, I am unable to gather all the treasure.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 203,
       character: 'Selphie'
@@ -2343,7 +2362,7 @@ const q2 = [
   {
     id: 203, // Braedon IMG
     text: "Bah! We don't need 'em, Selphie! Aight! Time to go deeper in this cavern... hopefully we're near the end. ",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 204,
       character: 'Braedon'
@@ -2359,7 +2378,7 @@ const q2 = [
   {
     id: 204,
     text: "After their long encounter inside the caverns, the group of adventurers emerged from the darkness into the bright luminescence of Father Sun.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 205,
       character: 'Narrator'
@@ -2372,7 +2391,7 @@ const q2 = [
   {
     id: 205, // Tesmond IMG
     text: "At long last! We have surfaced back to the outside. And it is quite stunning!",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 206,
       character: 'Tesmond'
@@ -2382,7 +2401,7 @@ const q2 = [
   {
     id: 206, // Braedon IMG
     text: "That's how it is when yer down underground fer too long! Hahaha! *Growls* Ah! It appears that my hunger acts like a wild animal! *Turns to everyone* Why don't we go back to the guild to accept payment for the quest n go devour some food?",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 207,
       character: 'Braedon'
@@ -2392,7 +2411,7 @@ const q2 = [
   {
     id: 207, // Selphie IMG
     text: "That sounds like a lovely idea! Let us go now.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 208,
       character: 'Selphie'
@@ -2402,7 +2421,7 @@ const q2 = [
   {
     id: 208, // Tesmond ING
     text: "Wait... is it just me, or are we in Pelna Forest? It seems that The exit of the caverns stretches underground into Pelna Forest.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 209,
       character: 'Tesmond'
@@ -2412,7 +2431,7 @@ const q2 = [
   {
     id: 209, // Braedon IMG
     text: "Hmm... looks like yer right Tesmond! *Thinks* Ya know, now that we're here, we could finish that other quest; investigate Pelna Forest n its disturbance before we go back.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 210,
       character: 'Braedon '
@@ -2422,7 +2441,7 @@ const q2 = [
   {
     id: 210, // Selphie IMG
     text: "Hmmmm... *Slightly sweats* I do believe there is no reason to go any further. Most importantly we are starving, so it is better for us to go back and recover.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 211,
       character: 'Selphie'
@@ -2432,7 +2451,7 @@ const q2 = [
   {
     id: 211, // Braedon IMG
     text: "Now hold on Selphie that's nonsense! Besides, I got us some dried meat in case we're in a terrible situation. How 'bout you rook? Wanna end it here or keep goin'?",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 212,
       character: 'Braedon'
@@ -2462,7 +2481,7 @@ const q2 = [
   {
     id: 213,
     text: "In excitement, the recruit accepted Kingston's invitation to thrust ahead onto their next quest: Investigate Pelna Forest and its disturbance.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 214,
       character: 'Narrator'
@@ -2472,7 +2491,7 @@ const q2 = [
   {
     id: 214, // Braedon IMG
     text: "Then it's settled! Let's first sit down n recover 'fore our next adventure.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 215,
       character: 'Braedon'
@@ -2482,7 +2501,7 @@ const q2 = [
   {
     id: 215, // Tesmond IMG
     text: "*Sigh* I much rather feast on sirloin and tender poultry than this preserved meat...",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 216,
       character: 'Tesmond'
@@ -2492,7 +2511,7 @@ const q2 = [
   {
     id: 216, // Selphie IMG
     text: "I am not going to enjoy this...",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 220,
       character: 'Tesmond'
@@ -2505,7 +2524,7 @@ const q2 = [
   {
     id: 217, // Braedon IMG
     text: "Aight! Then let's march back down to Stagcross!",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 218,
       character: 'Braedon'
@@ -2515,7 +2534,7 @@ const q2 = [
   {
     id: 218, // Tesmond IMG
     text: "Delicious sirloin and tender poultry, here I come!",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 219,
       character: 'Tesmond'
@@ -2525,7 +2544,7 @@ const q2 = [
   {
     id: 219, // Selphie IMG
     text: "*Relieved sigh* Okay, let us so.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 270,
       character: 'Selphie'
@@ -2541,7 +2560,7 @@ const q2 = [
   {
     id: 220,
     text: "The rustling of leaves trailed behind our fabled adventurers. *Stomp* *Crackle* *Pause* our adventurers went and went until they stopped. They paused and gazed onto their sights of a magnificent village atop and within a grand tree.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 221,
       character: 'Narrator'
@@ -2554,7 +2573,7 @@ const q2 = [
   {
     id: 221, // Braedon IMG
     text: "*Looks forward* Now this is a lovely village. I wonder who these people livin' here are?",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 222,
       character: 'Braedon'
@@ -2567,7 +2586,7 @@ const q2 = [
   {
     id: 222,
     text: "As Kingston looked closer... he saw the inhabitants within Pelna Forest... elves of all races. Sky elves flying carefree, water elves treading through water, wood elves building, and many more.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 223,
       character: 'Narrator'
@@ -2577,7 +2596,7 @@ const q2 = [
   {
     id: 223, // Tesmond IMG
     text: "*Looks at village* *Looks back to Selphie* So this is the reason for your worry... you must have a history with this village.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 224,
       character: 'Tesmond'
@@ -2587,7 +2606,7 @@ const q2 = [
   {
     id: 224, // Selphie IMG
     text: "No no... there is no correlation with me or this village. Nothing ha-…",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 225,
       character: 'Selphie'
@@ -2597,7 +2616,7 @@ const q2 = [
   {
     id: 225, // Ulymar IMG
     text: "*Walks up* Hello travelers! I am Ulymar Levi, head of Pelna Forest, prophet to Evergreen Uavine. How may I assist you- SELPHIE? Where have you been, my child? ",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 226,
       character: 'Ulymar'
@@ -2607,7 +2626,7 @@ const q2 = [
   {
     id: 226, // Selpgie IMG
     text: "*Sweats* Hello... Father... how have you been?",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 227,
       character: 'Selphie'
@@ -2617,7 +2636,7 @@ const q2 = [
   {
     id: 227, // Braedon IMG
     text: "HUH? *Looks back and forth between Selphie and Ulymar* Well, ya do look akin. Should've known she was yers Ulymar.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 228,
       character: 'Braedon'
@@ -2627,7 +2646,7 @@ const q2 = [
   {
     id: 228, // Tesmond IMG
     text: "HUH?",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 229,
       character: 'Tesmond'
@@ -2637,7 +2656,7 @@ const q2 = [
   {
     id: 229, // Selphie IMG
     text: "HUH? You know my father?",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 230,
       character: 'Selphie'
@@ -2647,7 +2666,7 @@ const q2 = [
   {
     id: 230, // Ulymar IMG
     text: "Yes, Braedon Kingston helped me in years prior, but we should move into my residence to talk further. Come.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 231,
       character: 'Ulymar'
@@ -2657,7 +2676,7 @@ const q2 = [
   {
     id: 231, // Tesmond IMG
     text: "*Turns to recruit* Well recruit... I pressume we should accompany them.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 232,
       character: 'Tesmond'
@@ -2673,7 +2692,7 @@ const q2 = [
   {
     id: 232, // Ulymar IMG
     text: "Here we are. Please, make yourselves comfortable while I prepare with sustenance. Selphie... would you mind assisting me?",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 233,
       character: 'Ulymar'
@@ -2683,7 +2702,7 @@ const q2 = [
   {
     id: 233, // Selphie IMG
     text: "Sure Father... *Whispers* oh my stars... I wonder what he is going to say... *Walks away*",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 234,
       character: 'Selphie'
@@ -2693,7 +2712,7 @@ const q2 = [
   {
     id: 234, // Tesmond IMG
     text: "Quite earthy... decoration the elves embellish themselves.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 235,
       character: 'Tesmond'
@@ -2703,7 +2722,7 @@ const q2 = [
   {
     id: 235, // Braedon IMG
     text: "Yep! Heard they enjoy the native landscape compared to modern times, especially when they have such long life spans. Everything we do goes by too fast for 'em.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 236,
       character: 'Braedon'
@@ -2713,7 +2732,7 @@ const q2 = [
   {
     id: 236, // Ulymar IMG
     text: "*Walks in* That indeed it does. *Hands everyone tea* I remember the times before the Great Calamity my great, great grandfather spoke about. He was the first chosen guardian to oversee Evergreen Uavine, the creation of Father Sun and Mother Moon. He was blessed and tasked to protect and assist all that live on Camuth, or specifically Urth with his wisdom. His existence bears a significant role during the Great Calamity. ",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 237,
       character: 'Ulymar'
@@ -2723,7 +2742,7 @@ const q2 = [
   {
     id: 237, // Tesmond IMG
     text: "How so?",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 238,
       character: 'Tesmond'
@@ -2733,7 +2752,7 @@ const q2 = [
   {
     id: 238, // Ulymar IMG
     text: "Without Evergreen Uavine, the Knights of the Fallen Order would have never survived Dark Lord Palentheous Irzaline's regime. Pelna Forest was one of the last few remaining strongholds against the dark forces largely due to Evergreen Uavine's blessing.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 239,
       character: 'Ulymar'
@@ -2743,7 +2762,7 @@ const q2 = [
   {
     id: 239, // Selphie IMG
     text: "Okay father that is enough. Surely everyone knows that story.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 240,
       character: 'Selphie'
@@ -2753,7 +2772,7 @@ const q2 = [
   {
     id: 240, // Ulymar IMG
     text: "The world changes rapidly my dear. It is better to always remind every person of their history rather than forget. But you are correct, we have other matters to discuss no doubt... let us talk with Evergreen Uavine.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 241,
       character: 'Ulymar'
@@ -2763,7 +2782,7 @@ const q2 = [
   {
     id: 241, 
     text: "The band of adventurers guided by Ulymar Levi exited the residence and walked into a large gate residing in the grand tree. This large gate was guarded by elven knights which when opened, led the path to Evergreen Uavine.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 242,
       character: 'Narrator'
@@ -2776,7 +2795,7 @@ const q2 = [
   {
     id: 242,
     text: "Hmmmmmm... Ahhhh... adventurers of the newest age... I have waited for your arrival. I am Evergreen Uavine as you were told by Ulymar Levi. Hmmmm... the world has shaken once more... the reappearance of Andurath the knightmare is upon us. And with his coming, the emergence of a fatal catastrophe will strike once more. To prevent such passing, I must entrust the powers of old to anew. Which is why I startled the fauna of these lands... in search of a champion. Young child... your eyes glimmer with bravery yet you are inexperienced. For me to give such a relic to yourself... I must test you...",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 243,
       character: 'Evergreen'
@@ -2794,7 +2813,7 @@ const q2 = [
   {
     id: 243, // Ulymar IMG
     text: "It seems Evergreen Uavine has decided... what will you do now?",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 244,
       character: 'Ulymar'
@@ -2807,7 +2826,7 @@ const q2 = [
   {
     id: 244, // Braedon IMG
     text: "Well, it seems this whole adventure was decided by our chosen hero so he's gonna choose. *Pats back* Hahahaha! My boy! Looks like life with yer is gonna be full of surprises.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 245,
       character: 'Braedon'
@@ -2817,7 +2836,7 @@ const q2 = [
   {
     id: 245, // Selphie IMG
     text: "That it is. Who would have thought I would come back here, especially to confront my Father?",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 246,
       character: 'Selphie'
@@ -2827,7 +2846,7 @@ const q2 = [
   {
     id: 246, 
     text: "Young child... as I communicate within your mind... I must mention... for better or for worse... please venture deeper into Pelna Forest... for a shrine built in memory of a knight of the Fallen Order is occupied...",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 247,
       character: 'Evergreen'
@@ -2838,7 +2857,7 @@ const q2 = [
   {
     id: 247, // Tesmond IMG
     text: "Well, everything is finished here. Shall we head back to Stagcross everyone?",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 248,
       character: 'Tesmond'
@@ -2868,7 +2887,7 @@ const q2 = [
   {
     id: 249, // Braedon IMG
     text: "Aight! LETSAGOOOOOO! Bahahahahaha!",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 289,
       character: 'Braedon'
@@ -2879,7 +2898,7 @@ const q2 = [
   {
     id: 250, // Braedon IMG
     text: "What! We finished our quest, what else we gotta do, rook? Look at rocks?",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 251,
       character: 'Braedon'
@@ -2889,7 +2908,7 @@ const q2 = [
   {
     id: 251, // Tesmond IMG
     text: "Yes, recruit. What other objective entices you?",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 252,
       character: 'Tesmond'
@@ -2899,7 +2918,7 @@ const q2 = [
   {
     id: 252,
     text: "With a sharp turn to his left, the recruit points deeper into Pelna Forest. With my experience, people like the recruit know something... it must be involving a plot armor deal.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 253,
       character: 'Narrator'
@@ -2909,7 +2928,7 @@ const q2 = [
   {
     id: 253, // Selphie IMG 
     text: "What is deeper in Pelna Forest recruit? I see no need to-",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 254,
       character: 'Selphie'
@@ -2919,7 +2938,7 @@ const q2 = [
   {
     id: 254, // Ulymar IMG
     text: "A shrine is located there. Before you were born Selphie, we built a shrine for the lost knights of the Fallen Order. I suggest everyone go, especially when the chosen hero proposes it.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 255,
       character: 'Ulymar'
@@ -2929,7 +2948,7 @@ const q2 = [
   {
     id: 255, // Ulymar IMG
     text: "Then deeper we go! This could help me resolve a few things...",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 256,
       character: 'Braedon'
@@ -2945,7 +2964,7 @@ const q2 = [
   {
     id: 256,
     text: "Our adventurers trudged through the thick forest to discover the shrine built for the lost knights of the Fallen Order.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 257,
       character: 'Narrator'
@@ -2955,7 +2974,7 @@ const q2 = [
   {
     id: 257, // Tesmond IMG
     text: "How much longer till we achieve our destination? My sense of time has perceived this trip as prolonging...",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 258,
       character: 'Tesmond'
@@ -2965,7 +2984,7 @@ const q2 = [
   {
     id: 258, // Braedon IMG
     text: "Stop yer whinin'. I bet we're already close to the shrine.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 259,
       character: 'Braedon'
@@ -2975,7 +2994,7 @@ const q2 = [
   {
     id: 259, // Tesmond IMG
     text: "And how do you discern that fact?",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 260,
       character: 'Tesmond'
@@ -2985,7 +3004,7 @@ const q2 = [
   {
     id: 260, // Braedon IMG
     text: "By everyone else's reaction.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 261,
       character: 'Braedon'
@@ -2998,7 +3017,7 @@ const q2 = [
   {
     id: 261,
     text: "Everyone stopped, they saw a flash of blue that overcame the landscape. The glistening sounds of streams grew louder. Then the unfolding waterfall appeared in front of the group where the dazzling site of the shrine sat in the center of lake...",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 262,
       character: 'Narrator'
@@ -3008,7 +3027,7 @@ const q2 = [
   {
     id: 262, // Selphie IMG
     text: "Wow! What a marvelous location!",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 263,
       character: 'Selphie'
@@ -3018,7 +3037,7 @@ const q2 = [
   {
     id: 263, // Braedon IMG
     text: "*Grins* Whaddya say, Tesmond? Are we there yet?",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 264,
       character: 'Braedon'
@@ -3028,7 +3047,7 @@ const q2 = [
   {
     id: 264, // Tesmond IMG
     text: "Hmm... fine. Anywho, why must we gaze in front of the shrine, shall we go in and observe instead?",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 265,
       character: 'Tesmond'
@@ -3038,7 +3057,7 @@ const q2 = [
   {
     id: 265, // Selphie IMG
     text: "Yes! I hope there is treasure!",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 266,
       character: 'Selphie'
@@ -3048,7 +3067,7 @@ const q2 = [
   {
     id: 266, // Braedon IMG
     text: "Selphie... ya don't wanna disrespect the dead now do ya? Now I suggest ya leave everythin' alone.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 267,
       character: 'Braedon'
@@ -3058,7 +3077,7 @@ const q2 = [
   {
     id: 267, // Selphie IMG
     text: "Humph... okay.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 268,
       character: 'Selphie'
@@ -3074,7 +3093,7 @@ const q2 = [
   {
     id: 268, // Selphie IMG
     text: "What a beautiful interior! *Goes around and looks*",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 269,
       character: 'Selphie'
@@ -3084,7 +3103,7 @@ const q2 = [
   {
     id: 269, // Braedon IMG
     text: "Ya got that right. For the ones who saved the world I expected as much. Imma go around and see these memorials. *Walks away*",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 270,
       character: 'Braedon'
@@ -3094,7 +3113,7 @@ const q2 = [
   {
     id: 270, // Tesmond IMG
     text: "Same as for me. Recruit, whatsoever is the need for you in this shrine, I encourage you to start now. *Walks away* ",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 271,
       character: 'Tesmond'
@@ -3105,7 +3124,7 @@ const q2 = [
   {
     id: 271,
     text: "And so, the recruit looked. Why is this shrine necessary to visit? What is its importance? Why was the recruit called the chosen hero? Many questions filled the recruit's head... gO To tHE rOoM... The startled recruit questions to spoke, but there was no reply...",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 272,
       character: 'Narrator'
@@ -3118,7 +3137,7 @@ const q2 = [
   {
     id: 272,
     text: "Then a pulsating noise surrounded the recruit... It starts to beat faster... and faster... then it stopped. What was that noise, the recruit questioned? Being lost in thought at that moment, the recruit realized they were in front of an unfinished monument in the room the mysterious voice called. The monument was dressed with greaves and boots.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 276,
       character: 'Narrator'
@@ -3129,7 +3148,7 @@ const q2 = [
   {
     id: 273,
     text: "… The helm of insight lit up, illuminating the room. *Whispers* dO iT... TaKe hOLd... Of tHe lEGgiNgS oF sWIftNeSS... the voice faded away, as well as the light shining from the helm. Now with a sense of composure, the recruit deduced Evergreen Uavine sent the recruit to the shrine to wear the leggings of swiftness.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 274,
       character: 'Narrator'
@@ -3140,7 +3159,7 @@ const q2 = [
   {
     id: 274,
     text: "Suddenly the recruit's arms moved onto the leggings. Now for sure the recruit knows this was Evergreen Uavine's wish. ",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 276,
       character: 'Narrator'
@@ -3151,7 +3170,7 @@ const q2 = [
   {
     id: 275,
     text: "\"I know what my task is\" the recruit answered... \"I understand Evergreen Uavine\". \"I must\"...",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 276,
       character: 'Narrator'
@@ -3162,7 +3181,7 @@ const q2 = [
   {
     id: 276, // Tesmond IMG
     text: "Hello recruit *Waves* Are you here? *Recruit nods* Good, well I am done inspecting this shrine. *Looks at recruit* And it seems you are done as well. Let us gather everyone else. Hope Kingston does not get infuriated at you \"borrowing\" those leggings.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 277,
       character: 'Tesmond'
@@ -3172,7 +3191,7 @@ const q2 = [
   {
     id: 277, // Selphie IMG
     text: "Hey! *Enters room* Have you seen Kingston? I do not know where he is?",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 279,
       character: 'Selphie'
@@ -3196,7 +3215,7 @@ const q2 = [
   {
     id: 279, // Tesmond IMG
     text: "I have not... strange how he is lost... Come let us find him.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 280,
       character: 'Tesmond'
@@ -3209,7 +3228,7 @@ const q2 = [
   {
     id: 280,
     text: "Tesmond, Selphie, and the recruit searched throughout the shrine... where could Kingston be?",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 281,
       character: 'Narrator'
@@ -3222,7 +3241,7 @@ const q2 = [
   {
     id: 281, // Tesmond IMG
     text: "*Stops* Kingston, where have you been? We have been looki-",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 282,
       character: 'Tesmond'
@@ -3232,7 +3251,7 @@ const q2 = [
   {
     id: 282, // Braedon IMG
     text: "Quiet... Let me finish my prayer. *Stands up*",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 283,
       character: 'Braedon'
@@ -3242,7 +3261,7 @@ const q2 = [
   {
     id: 283, // Selphie IMG
     text: "*Looks at monument* A friend of yours?",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 284,
       character: 'Selphie'
@@ -3252,7 +3271,7 @@ const q2 = [
   {
     id: 284, // BRaedon IMG
     text: "A good one at that. Hew the Undefeated, a friend I will never forget. He was known for his menacing appearance, yet he was the kindest soul. He reminds me of you, Tesmond.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 285,
       character: 'Braedon'
@@ -3262,7 +3281,7 @@ const q2 = [
   {
     id: 285, // Tesmond IMG
     text: "How so?",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 286,
       character: 'Tesmond'
@@ -3272,7 +3291,7 @@ const q2 = [
   {
     id: 286, // Braedon IMG
     text: "He holds an act, just like you. Aight, enough of that. Seems like everyone is done. *Looks at the recruit* Now where did ya get those leggin'?",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 287,
       character: 'Braedon'
@@ -3282,7 +3301,7 @@ const q2 = [
   {
     id: 287,
     text: "The recruit explains to Kingston the experience he encountered earlier in the shrine.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 288,
       character: 'Narrator'
@@ -3292,7 +3311,7 @@ const q2 = [
   {
     id: 288, // Braedon IMG
     text: "… Aight... then it must be a sign to keep 'em, who knows what consequence will happen without 'em. So, let's go back to Stagcross n hand over our finished quests.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 289,
       character: 'Braedon'
@@ -3308,7 +3327,7 @@ const q2 = [
   {
     id: 289, // Tesmond IMG
     text: "Ah... We have arrived back in Stagcross. … And it seems my stomach is rumbling. Kingston if you would be so kind as to procure our payment in the guild while I dine?",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 290,
       character: 'Tesmond'
@@ -3318,7 +3337,7 @@ const q2 = [
   {
     id: 290, // Braedon IMG
     text: "Sure! Ya get yer fill Tesmond while the rest of us finish our end n afterwards will join ya.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 291,
       character: 'Braedon'
@@ -3328,7 +3347,7 @@ const q2 = [
   {
     id: 291, // Selphie IMG
     text: "In fact, I might not join you, Kingston. I need to use the lavatory. Like... now! *Zooms off*",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 292,
       character: 'Selphie'
@@ -3338,7 +3357,7 @@ const q2 = [
   {
     id: 292, // Braedon IMG
     text: "Ooookay... then it's just you n me, rook! *Pats back* Hahaha. Let's go to the guild!",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 293,
       character: 'Braeedon'
@@ -3351,7 +3370,7 @@ const q2 = [
   {
     id: 293,
     text: "Here is your payment! Please come again!",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 294,
       character: 'Clerk'
@@ -3361,7 +3380,7 @@ const q2 = [
   {
     id: 294, // Braedon IMG
     text: "Aight, got the gold. Now let's head back to Tesmond!",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 295,
       character: 'Braedon'
@@ -3372,7 +3391,7 @@ const q2 = [
   {
     id: 295,
     text: "As Kingston and the recruit were leaving the guild, they overhead something... interesting...",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 296,
       character: 'Narrator'
@@ -3382,7 +3401,7 @@ const q2 = [
   {
     id: 296,
     text: "Hey did ya hear? Supposedly an adventurer came screaming about finding the tomb of one of those knights of the Fallen Order!",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 297,
       character: 'Group'
@@ -3392,7 +3411,7 @@ const q2 = [
   {
     id: 297,
     text: "No, I didn't. Did anyone figure out what was inside?",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 298,
       character: 'Group'
@@ -3402,7 +3421,7 @@ const q2 = [
   {
     id: 298,
     text: "Nah. Many folks already left and went in, but none of them returned. ",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 299,
       character: 'Group'
@@ -3412,7 +3431,7 @@ const q2 = [
   {
     id: 299,
     text: "Then maybe we can give it a shot! No one has ever found a knight's burial site. There might be some good loot.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 300,
       character: 'Group'
@@ -3422,7 +3441,7 @@ const q2 = [
   {
     id: 301,
     text: "Fuhgettaboutit. There's no way.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 302,
       character: 'Tesmond'
@@ -3432,7 +3451,7 @@ const q2 = [
   {
     id: 302,
     text: "Come on! *Nudge* We won't lose anything!",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 303,
       character: 'Group'
@@ -3442,7 +3461,7 @@ const q2 = [
   {
     id: 303,
     text: "Except our lives...",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 304,
       character: 'Group'
@@ -3452,7 +3471,7 @@ const q2 = [
   {
     id: 304, // Braedon IMG
     text: "Interestin'. *Looks at the recruit* Suppose this is a sign... wouldn't ya think, rook?",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 305,
       character: 'Braedon'
@@ -3462,7 +3481,7 @@ const q2 = [
   {
     id: 305,
     text: "The recruit nods.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 319,
       character: 'Narrator'
@@ -3488,7 +3507,7 @@ const q2 = [
   {
     id: 307,
     text: "As Kingston and the recruit were leaving the guild, a young adventurer barged into the guild exclaiming...",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 308,
       character: 'Narrator'
@@ -3498,7 +3517,7 @@ const q2 = [
   {
     id: 308, // Azazel IMG
     text: "I FOUND A TOMB OF ONE OF THE KNIGHTS OF THE FALLEN ORDER!",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 309,
       character: 'Random'
@@ -3508,7 +3527,7 @@ const q2 = [
   {
     id: 309, // Bellecote IMG
     text: "What is all this racket? You are makin' everyone angsty.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 310,
       character: 'Bellecote'
@@ -3518,7 +3537,7 @@ const q2 = [
   {
     id: 310, // Azazel IMG
     text: "I discovered a knight of the Fallen Order's tomb. And I need a group to help me explore the inside.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 311,
       character: 'Random'
@@ -3528,7 +3547,7 @@ const q2 = [
   {
     id: 311, // Bellecote IMG
     text: "So, it seems... Anyone here want to join the young man?",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 312,
       character: 'Bellecote'
@@ -3538,7 +3557,7 @@ const q2 = [
   {
     id: 312, // Braedon IMG
     text: "*Looks at recruit* I bet ya wanna join him. This offer sounds temptin'.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 313,
       character: 'Braedon'
@@ -3548,7 +3567,7 @@ const q2 = [
   {
     id: 313,
     text: "The recruit nods.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 314,
       character: 'Narrator'
@@ -3558,7 +3577,7 @@ const q2 = [
   {
     id: 314, // Braedon IMG
     text: "Then it's settled. *Raises hand* We wanna join, Bellecote!",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 315,
       character: 'Braedon'
@@ -3568,7 +3587,7 @@ const q2 = [
   {
     id: 315, // Bellecote IMG
     text: "Ah my good friend! *Looks at adventurer* Now you have your group, young adventurer.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 316,
       character: 'Bellecote'
@@ -3578,7 +3597,7 @@ const q2 = [
   {
     id: 316, // Azazel IMG
     text: "*Bows* Thank you very much Guild Master. *Walks over* Hello my name is Azazel. I hope you will enjoy my selfish request.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 317,
       character: 'Random'
@@ -3588,7 +3607,7 @@ const q2 = [
   {
     id: 317, // Braedon IMG
     text: "No worries, we were already interested! Oh, and my name is Kingston. *Puts hand on shoulder* And this here is the rookie for my group. I also have two others named Tesmond and Selphie. If it's alright with you, we were plannin' on eatin'.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 318,
       character: 'Braedon'
@@ -3598,7 +3617,7 @@ const q2 = [
   {
     id: 318, // Azazel IMG
     text: "That is fine. ",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 319,
       character: 'Random'
@@ -3610,7 +3629,7 @@ const q2 = [
   {
     id: 319, // Braedon IMG
     text: "Then it's settled! Let's meet back with Tesmond n eat before we go... I wonder if Selphie is alright...",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 320,
       character: 'Braedon'
@@ -3627,7 +3646,7 @@ const q2 = [
   {
     id: 320, // Braedon IMG
     text: "So, how'd ya find this tomb, Azazel?",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 321,
       character: 'Braedon'
@@ -3637,7 +3656,7 @@ const q2 = [
   {
     id: 321, // Tesmond IMG
     text: "It was by chance. I just happened to find the tomb while I was completing my herb collecting quest and thought this would be a good opportunity to explore it.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 322,
       character: 'Tesmond'
@@ -3647,7 +3666,7 @@ const q2 = [
   {
     id: 322, // Tesmond IMG
     text: "That it is. No one has found the tomb of a knight of the Fallen Order for generations. You are very lucky. ",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 323,
       character: 'Tesmond'
@@ -3657,7 +3676,7 @@ const q2 = [
   {
     id: 323, // Azazel IMG
     text: "*Shrugs* You praise me too much... anyways here it is. So, how about we go in?",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 324,
       character: 'Azazel'
@@ -3667,7 +3686,7 @@ const q2 = [
   {
     id: 324, // Selphie IMG
     text: "Certainly! *Eyes sparkle*",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 325,
       character: 'Selphie'
@@ -3680,7 +3699,7 @@ const q2 = [
   {
     id: 325, // Braedon IMG
     text: "Hmmm... supposedly the tomb is 'round here...",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 326,
       character: 'Braedon'
@@ -3690,7 +3709,7 @@ const q2 = [
   {
     id: 326, // Tesmond IMG
     text: "Supposedly? I think this is a sham, especially when you rely on information received by lower ranked adventurers.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 327,
       character: 'Tesmond'
@@ -3700,7 +3719,7 @@ const q2 = [
   {
     id: 327, // Selphie IMG
     text: "*Saddened*",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 328,
       character: 'Selphie'
@@ -3710,7 +3729,7 @@ const q2 = [
   {
     id: 328, // Tesmond IMG
     text: "And you are making Selphie cry... she unequivocally wanted to seize the treasures inside and now look at her.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 329,
       character: 'Tesmond'
@@ -3720,7 +3739,7 @@ const q2 = [
   {
     id: 329, // Braedon IMG
     text: "Aight, sorry Selphie. Well, maybe me n the recruit was wrong 'bout this tomb business.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 330,
       character: 'Braedon'
@@ -3730,7 +3749,7 @@ const q2 = [
   {
     id: 330,
     text: "Or was he... just over the hill a mysterious young adventurer sprinted in their direction...",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 331,
       character: 'Narrator'
@@ -3740,7 +3759,7 @@ const q2 = [
   {
     id: 331, // Azazel IMG
     text: "HEY! *Runs over* *Pant* *Pant* Quickly! I need help, my group is stuck in the tomb of one of the knights of the Fallen Order! ",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 332,
       character: 'Azazel'
@@ -3750,7 +3769,7 @@ const q2 = [
   {
     id: 332, // Braedon IMG
     text: "Sure! Show the way son. Everyone follow him.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 333,
       character: 'Braedon'
@@ -3760,7 +3779,7 @@ const q2 = [
   {
     id: 333, // Azazel IMG
     text: "Thank you! And my name is Azazel.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 334,
       character: 'Azazel'
@@ -3770,7 +3789,7 @@ const q2 = [
   {
     id: 334, // Braedon IMG
     text: "Kingston",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 335,
       character: 'Braedon'
@@ -3780,7 +3799,7 @@ const q2 = [
   {
     id: 335, // Tesmond IMG
     text: "Tesmond",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 336,
       character: 'Tesmond'
@@ -3791,7 +3810,7 @@ const q2 = [
   {
     id: 336, // Selphie IMG
     text: "Selphie and the quiet companion is our recruit.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 337,
       character: 'Selphie'
@@ -3810,7 +3829,7 @@ const q2 = [
   {
     id: 337,
     text: "Tesmond, Azazel, and the recruit ran into the new room, along with Kingston and Selphie who came out of another room on the right. ",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 338,
       character: 'Narrator'
@@ -3820,7 +3839,7 @@ const q2 = [
   {
     id: 338, // Tesmond IMG
     text: "Kingston! Selphie! How did you both get here.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 340,
       character: 'Tesmond'
@@ -3830,7 +3849,7 @@ const q2 = [
   {
     id: 339, // Braedon IMG
     text: "Welp, both me n Selphie had to race up a slope ‘fore we drowned. Luckily, Selphie's frost breath slowed the water for me.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 339,
       character: 'Braedon'
@@ -3840,7 +3859,7 @@ const q2 = [
   {
     id: 340, // Selphie IMG
     text: "Yes. What obstacles did you overcome, Tesmond?",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 341,
       character: 'Selphie'
@@ -3850,9 +3869,9 @@ const q2 = [
   {
     id: 341, // Tesmond IMG
     text: "Well Azazel, the recruit, and I had to solve three riddles with holy water.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
-      nextText: 342,
+      nextText: 343,
       character: 'Tesmond'
     }
     ]
@@ -3884,7 +3903,7 @@ const q2 = [
   {
     id: 344, // Selphie IMG
     text: "Uh guys... what is Azazel doing?",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 345,
       character: 'Selphie'
@@ -3897,7 +3916,7 @@ const q2 = [
   {
     id: 345,
     text: "As the four peer to the edge of the room, Azazel was near a statue of a knight holding a sword, brazen with power. ",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 346,
       character: 'Narrator'
@@ -3907,7 +3926,7 @@ const q2 = [
   {
     id: 346,
     text: "After a long time, at last I possess the Fleshripper, blade of woe and terror. ",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 347,
       character: 'Andurath'
@@ -3918,7 +3937,7 @@ const q2 = [
   {
     id: 347, // Tesmond IMG
     text: "I do not want to make assumptions, but I do believe we might be in trouble. ",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 348,
       character: 'Tesmond'
@@ -3929,7 +3948,7 @@ const q2 = [
   {
     id: 348, // Braedon IMG
     text: "Hey Azazel! There never was a group stuck in the tomb was there?",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 349,
       character: 'Braedon'
@@ -3939,7 +3958,7 @@ const q2 = [
   {
     id: 349, // Azazel IMG
     text: "Why would there be? After all, they all died by my hands. Useless fodder I tell you. Each and every last one of them. ",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 350,
       character: 'Azazel'
@@ -3950,7 +3969,7 @@ const q2 = [
   {
     id: 350, // Braedon IMG
     text: "So, this was all part of yer plan! To use us",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 351,
       character: 'Braedon'
@@ -3960,7 +3979,7 @@ const q2 = [
   {
     id: 351, // Azazel IMG
     text: "Yes… Braedon Kingston.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 352,
       character: 'Andurath'
@@ -3970,7 +3989,7 @@ const q2 = [
   {
     id: 352, // Braedon IMG
     text: "*Shocked* How'd ya know my full name! I only gave ya my first!",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 353,
       character: 'Braedon'
@@ -3980,7 +3999,7 @@ const q2 = [
   {
     id: 353, // Azazel IMG
     text: "How would I ever forget a friend who gave me this parting gift.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 354,
       character: 'Andurath'
@@ -3990,7 +4009,7 @@ const q2 = [
   {
     id: 354, 
     text: "Azazel lifted his eyepatch, revealing his mutilated eye.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 355,
       character: 'Narrator'
@@ -4000,7 +4019,7 @@ const q2 = [
   {
     id: 355, // Braedon IMG
     text: "… *Realised face*",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 356,
       character: 'Braedon'
@@ -4010,7 +4029,7 @@ const q2 = [
   {
     id: 356, // Selphie IMG
     text: "Who is it Kingston?",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 357,
       character: 'Selphie'
@@ -4020,7 +4039,7 @@ const q2 = [
   {
     id: 357, // Azazel IMG
     text: "It is not who I am, it is what I am... a forgotten champion, a sacrifice, a warlord of Dark Lord Palentheous Irzaline's reign...",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 358,
       character: 'Andurath'
@@ -4030,7 +4049,7 @@ const q2 = [
   {
     id: 358, // Tesmond IMG
     text: "Impossible!",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 359,
       character: 'Tesmond'
@@ -4040,7 +4059,7 @@ const q2 = [
   {
     id: 359, // Andurath IMG
     text: "Yes *Transforms* I am Andurath, the knightmare! *Roar* You mortals banished me to the realms Palentheous Irzaline owns as your scapegoat! I was your hero! Now no more... I shall purge this world of their sins! ",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 360,
       character: 'Andurath'
@@ -4050,7 +4069,7 @@ const q2 = [
   {
     id: 360, // Selphie IMG
     text: "*Panicked* Um... everyone... what do we do?",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 361,
       character: 'Selphie'
@@ -4060,7 +4079,7 @@ const q2 = [
   {
     id: 361, // Tesmond IMG
     text: "I'm going to die, I'm going to die, I'm going to die, I'm going to die, I'm going to die...",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 362,
       character: 'Tesmond'
@@ -4070,7 +4089,7 @@ const q2 = [
   {
     id: 362, // Braedon IMG
     text: "Everyone calm down! *Turns* Rook! Do you have the resolution in you! Tell me, fight or run!",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 363,
       character: 'Braedon'
@@ -4104,7 +4123,7 @@ const q2 = [
   {
     id: 364,
     text: "Knowing the dire situation, the recruit points towards the exit. The recruit would rather let everyone live than the possibility of dying.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 365,
       character: 'Narrator'
@@ -4114,7 +4133,7 @@ const q2 = [
   {
     id: 365, // Braedon IMG
     text: "I hope you know what you are doing! *Grabs Tesmond and Selphie* We need to go!",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 366,
       character: 'Braedon'
@@ -4124,7 +4143,7 @@ const q2 = [
   {
     id: 366, 
     text: "*Faints*",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 367,
       character: 'Tesmond'
@@ -4134,7 +4153,7 @@ const q2 = [
   {
     id: 367, // Andurath IMG
     text: "If you truly believe I would let you mortals live... what a blunder would I take! I mean... the opportunity to kill you all is so alluring!",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 368,
       character: 'Andurath'
@@ -4144,7 +4163,7 @@ const q2 = [
   {
     id: 368, 
     text: "With a loud roar, Andurath puffed a foul breath of toxic venom towards the exit.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 369,
       character: 'Narrator'
@@ -4154,7 +4173,7 @@ const q2 = [
   {
     id: 369, // Selphie IMG
     text: "Run! I will be a distraction. Elements, acquire a gust of wind and take roots of earth... Boulder Rainfall!",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 370,
       character: 'Selphie'
@@ -4164,7 +4183,7 @@ const q2 = [
   {
     id: 370, // Andurath IMG
     text: "Hahaha! Such simple pebbles only graze me! How about I give you an example of true power!",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 371,
       character: 'Andurath'
@@ -4174,7 +4193,7 @@ const q2 = [
   {
     id: 371, // Braedon IMG
     text: "No, Selphie!",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 372,
       character: 'Braedon'
@@ -4184,7 +4203,7 @@ const q2 = [
   {
     id: 372,
     text: "Andurath spurred a bolt of lightning with his jaws... BOOM... and ended Selphie...",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 373,
       character: 'Narrator'
@@ -4194,7 +4213,7 @@ const q2 = [
   {
     id: 373, // Tesmond IMG
     text: "*Awakes* We need to get out of here! Selpie's sacrifice won't be in vain! ",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 374,
       character: 'Tesmond'
@@ -4204,7 +4223,7 @@ const q2 = [
   {
     id: 374, // Braedon IMG
     text: "As if! Rookie! Get Tesmond out of here! Andurath is coming!",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 375,
       character: 'Braedon'
@@ -4214,7 +4233,7 @@ const q2 = [
   {
     id: 375,
     text: "Kingston bolted upward towards Andurath. And with a loud crash, Kingston's warhammer hurled Andurath.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 376,
       character: 'Narrator'
@@ -4224,7 +4243,7 @@ const q2 = [
   {
     id: 376, // Andurath IMG
     text: "*Shriek* Braedon Kingston, your strength is still evident from your renowned days as a knight of the Fallen Order! But your age has paved the way for weakness. ",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 377,
       character: 'Andurath'
@@ -4234,7 +4253,7 @@ const q2 = [
   {
     id: 377, // Braedon IMG
     text: "My age has only sharpened my judgment! If I were you Andurath, I would prioritize the opponent in front of me!",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 378,
       character: 'Braedon'
@@ -4244,7 +4263,7 @@ const q2 = [
   {
     id: 378, // Andurath IMG
     text: "Have it your way! *Roar*",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 379,
       character: 'Andurath'
@@ -4254,7 +4273,7 @@ const q2 = [
   {
     id: 379,
     text: "Kingston and Andurath clashed one another with heavy blows. All the more while Kingston's battle was sought, Tesmond and the recruit encountered a hindrance.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 380,
       character: 'Narrator'
@@ -4264,7 +4283,7 @@ const q2 = [
   {
     id: 380, // Tesmond IMG
     text: "The exit! It's closing! We need to leave quick, forget about Kingston!",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 381,
       character: 'Tesmond'
@@ -4274,7 +4293,7 @@ const q2 = [
   {
     id: 381, 
     text: "But the recruit was steadfast in his decision. The recruit would rather stay than see another friend die. ",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 382,
       character: 'Narrator'
@@ -4284,7 +4303,7 @@ const q2 = [
   {
     id: 382, // Tesmond IMG
     text: "Are you insane? No, I am not staying. Damn it all! *Runs away*",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 383,
       character: 'Tesmond'
@@ -4294,7 +4313,7 @@ const q2 = [
   {
     id: 383, // Braedon IMG
     text: "*Turns around* What are you doing! Rook spare yourself!",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 384,
       character: 'Braedon'
@@ -4304,7 +4323,7 @@ const q2 = [
   {
     id: 384, 
     text: "*Bite* *Slash* ",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 385,
       character: 'Andurath'
@@ -4314,7 +4333,7 @@ const q2 = [
   {
     id: 385, 
     text: "Argh! *Cough*",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 386,
       character: 'Braedon'
@@ -4324,7 +4343,7 @@ const q2 = [
   {
     id: 386, // Andurath IMG
     text: "Hahahaha! I thank you ignorant simpleton, your interaction costed Braedon Kingston his life! I must say… I do not know if this is bravery or a straightforward lack of intelligence, but I must repay you. ",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 387,
       character: 'Andurath'
@@ -4338,7 +4357,7 @@ const q2 = [
   {
     id: 387,
     text: "Andurath huffed and puffed, forming a ball of fire the size of the sun. And with a quick blow, the recruit incinerated into ash… UP IN FLAMES. Afterwards, Andurath's terror stormed onto the citizens of Stagcross, leaving no survivors… the details of Tesmond Uglar's whereabouts are unknown and the state of Camuth is ablaze… The world needs a hero… but who can stop Andurath's inferno?",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 0,
       character: 'Narrator'
@@ -4356,7 +4375,7 @@ const q2 = [
   {
     id: 388,
     text: "The recruit readied his weapon. Urging the others to do the same.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 389,
       character: 'Narrator'
@@ -4366,7 +4385,7 @@ const q2 = [
   {
     id: 389, // Braedon IMG
     text: "Everyone! Get ready!",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 390,
       character: 'Braedon'
@@ -4376,7 +4395,7 @@ const q2 = [
   {
     id: 390, // Selphie IMG
     text: "Elements above high, lightning create Thunderbolt!",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 391,
       character: 'Selphie'
@@ -4386,7 +4405,7 @@ const q2 = [
   {
     id: 391, // Andurath IMG
     text: "Hahaha! This static is no more than trivial to me. Let me show you true power!",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 392,
       character: 'Andurath'
@@ -4396,7 +4415,7 @@ const q2 = [
   {
     id: 392, // Tesmond IMG
     text: "Ahhhh! We are going to die, we are going to die, we are going to die! ",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 393,
       character: 'Tesmond'
@@ -4406,7 +4425,7 @@ const q2 = [
   {
     id: 393, // Selphie IMG
     text: "Shut it, Tesmond! Help us out!",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 394,
       character: 'Selphie'
@@ -4416,7 +4435,7 @@ const q2 = [
   {
     id: 394, // Braedon IMG
     text: "*Clank* Hurgh! Ain't you a big boy, Andurath!",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 395,
       character: 'Braedon'
@@ -4426,7 +4445,7 @@ const q2 = [
   {
     id: 395, 
     text: "Andurath's tail hurled Kingston towards a wall, stopping Andurath from being pinned down. And with a mighty huff and puff, a sphere of fire the size of the sun was about to be...",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 396,
       character: 'Narrator'
@@ -4436,7 +4455,7 @@ const q2 = [
   {
     id: 396,
     text: "*Faints*",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 397,
       character: 'Tesmond'
@@ -4446,7 +4465,7 @@ const q2 = [
   {
     id: 397, // Selphie IMG
     text: "Hurry! *Looks around* Recruit! Assist me in stopping this attack!",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 398,
       character: 'Selphie'
@@ -4461,7 +4480,7 @@ const q2 = [
   {
     id: 398,
     text: "*Blast* Selphie and the recruit were unable to intercept Andurath's attack... Afterwards, Andurath's terror stormed onto the citizens of Stagcross, leaving no survivors… the details of Tesmond Uglar and Braedon Kingston's whereabouts are unknown and the state of Camuth is ablaze… The world needs a hero… but who can stop Andurath's inferno? This world UP IN FLAMES?",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 0,
       character: 'Narrator'
@@ -4475,7 +4494,7 @@ const q2 = [
   {
     id: 399,
     text: "*Cling* the recruit's armor radiated a bright light, invoking a dormant, hidden strength.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 400,
       character: 'Narrator'
@@ -4485,7 +4504,7 @@ const q2 = [
   {
     id: 400, // Andurath IMG
     text: "No! The glow of a knight of the Fallen Order! How did you get that! *Roar* Fleshripper invigorate me!",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 401,
       character: 'Andurath'
@@ -4495,7 +4514,7 @@ const q2 = [
   {
     id: 401, // Selphie IMG
     text: "We need to stop him! Elements, acquire a gust of wind and take roots of earth... Boulder Rainfall! Now!",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 402,
       character: 'Selphie'
@@ -4505,7 +4524,7 @@ const q2 = [
   {
     id: 402, 
     text: "*Shriek*",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 403,
       character: 'Andurath'
@@ -4515,7 +4534,7 @@ const q2 = [
   {
     id: 403, // Braedon IMG
     text: "*Wakes up* Urgh… let me help Selphie! ",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 404,
       character: 'Braedon'
@@ -4525,7 +4544,7 @@ const q2 = [
   {
     id: 404, 
     text: "*Wham* With Selphie's boulder rainfall and Kingston's heavy blows, Andurath was overwhelmed with a flurry of strikes. The recruit ran towards Andurath and gathered the determination to grab the Fleshripper from Andurath's claws for a final solid hit. *Slash*",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 405,
       character: 'Narrator'
@@ -4535,7 +4554,7 @@ const q2 = [
   {
     id: 405, // Andurath IMG
     text: "Ahh! *Shriek* Impossible! You mortals damage my impenetrable scales! *Looks around* I must retreat! You will not defeat me here!",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 406,
       character: 'Andurath'
@@ -4545,7 +4564,7 @@ const q2 = [
   {
     id: 406, // Braedon IMG
     text: "Get him! He's getting away!",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 407,
       character: 'Braedon'
@@ -4558,7 +4577,7 @@ const q2 = [
   {
     id: 407,
     text: "Andurath's withdraw was apparent. His escape was open. Could the recruit stop the rampage Andurath would unlease upon all of Camuth?… Find out next time on Knights of the Fallen Order …when you figure out the true ending…",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 0,
       character: 'Narrator'
@@ -4570,7 +4589,7 @@ const q2 = [
   {
     id: 408, 
     text: "*Wakes up* Huh? What happened?",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 409,
       character: 'Tesmond'
@@ -4580,7 +4599,7 @@ const q2 = [
   {
     id: 409,
     text: "No! You fool!",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 410,
       character: 'Andurath'
@@ -4590,7 +4609,7 @@ const q2 = [
   {
     id: 410,
     text: "Tesmond's untimely awakening alerted Andurath. He stumbled over Tesmond's body, leaving his body exposed… for a perfect opportunity.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 411,
       character: 'Narrator'
@@ -4600,7 +4619,7 @@ const q2 = [
   {
     id: 411,
     text: "Fire sprites and elements of wind, combine and transform into… Meteorite!",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 412,
       character: 'Selphie'
@@ -4610,7 +4629,7 @@ const q2 = [
   {
     id: 412,
     text: "With Selphie's powerful blast, the recruit shot toward Andurath's tangled body. *Slash* *Pierce* ",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 413,
       character: 'Narrator'
@@ -4623,7 +4642,7 @@ const q2 = [
   {
     id: 413,
     text: "Argh! This… is not… the last of… Andurath… neither… his legion… *Dies*",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 414,
       character: 'Andurath'
@@ -4636,7 +4655,7 @@ const q2 = [
   {
     id: 414, // Tesmond IMG
     text: "… I did it! I did it! I knew I was capable of dealing such a feat!",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 415,
       character: 'Tesmond'
@@ -4646,7 +4665,7 @@ const q2 = [
   {
     id: 415, // Braedon IMG
     text: "Yeah yeah! Anyways, well done rook! Ya finished Andurath, who would've thought the ‘ol tree was right ‘bout you bein' the chosen one. Then we can't wait, we gotta go to Pleamore.",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 416,
       character: 'Braedon'
@@ -4656,7 +4675,7 @@ const q2 = [
   {
     id: 416, // Selphie IMG
     text: "Why is that?",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 417,
       character: 'Selphie'
@@ -4666,7 +4685,7 @@ const q2 = [
   {
     id: 417, // Braedon IMG
     text: "'Cause Andurath muttered 'bout his legion and Evergreen Uavine mention Dark Lord Palentheous Irzaline's inevitable return. So, rook, ready for another adventure?",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 418,
       character: 'Braedon'
@@ -4676,7 +4695,7 @@ const q2 = [
   {
     id: 418,
     text: "And so, our adventures go out to the wilderness with sights set to the city of Pleamore in search of the reasons why Andurath's revival might stir a new generation of conflict. With our recruit, actually no… our grand hero ______ to save the world!",
-    options: [{
+    options: [{text: 'Continue',
       continue: { cont: true },
       nextText: 0,
       character: 'Narrator'
