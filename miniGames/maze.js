@@ -264,6 +264,28 @@ let loadPage = () => {
   };
   getRideOfMenu();
 
+  let winer = () =>{
+    let winerP = document.createElement('section2');
+    let para2 = document.createElement('p2');
+    let h2 = document.createElement('h2');
+    let button2 = document.createElement('button2');
+    clearTable(tableEl);
+    //styles for end condition
+    mover.style.display = 'none';
+    h2.textContent = 'Congrats!';
+    para2.textContent = 'Wow you actually found the legendary item!!!';
+    button2.textContent = 'Move on';
+    button2.setAttribute('onclick', 'window.open("../story.html")');
+    button2.setAttribute('type', 'button2');
+    //adding end para to body and other child elements
+    body.appendChild(winerP);
+    winerP.appendChild(h2);
+    winerP.appendChild(para2);
+    winerP.appendChild(button2);
+    body.style.justifyContent = 'center';
+   
+  }
+
   let lose = () => {
     //needed variables for end condition
     let looseP = document.createElement('section');
@@ -285,28 +307,7 @@ let loadPage = () => {
     looseP.appendChild(button);
     body.style.justifyContent = 'center';
   };
-  let winer = () => {
-    //needed variables for end condition
-    let winP = document.createElement('section');
-    let para2 = document.createElement('p');
-    let h2 = document.createElement('h1');
-    let button2 = document.createElement('button');
-    clearTable(tableEl);
-    //styles for end condition
-    mover.style.display = 'none';
-    h2.textContent = 'GAME OVER';
-    para2.textContent = 'You seem to have found your way back to the begining...try not to run into the walls they mess everything up';
-    button2.textContent = 'Move on';
-    button2.setAttribute('onclick', 'window.location.reload();');
-    button2.setAttribute('type', 'button');
-    //adding end para to body and other child elements
-    body.appendChild(looseP);
-    winP.appendChild(h1);
-    winP.appendChild(para);
-    winP.appendChild(button);
-    body.style.justifyContent = 'center';
-  };
-
+ 
 
   const clearTable = (tableEl) => {
     while (tableEl.firstChild) {
@@ -402,20 +403,13 @@ let loadPage = () => {
         lose();
       } else if (pos.x < wins.x + wins.width && pos.x + pos.width > wins.x && pos.y < wins.y + wins.height && pos.y + pos.height > wins.y) {
         for (let i = 0; i < levels.length; i++) {
-          currentLevel = levels[i]
-          clearTable(tableEl);
-          mover.style.left = '10px';
-          mover.style.top = '50px';
-          drawMaze(currentLevel);
+        winer();
 
         }
       }
       if (pos.x == 0) {
         lose();
       }
-    }
-    for (win){
-
     }
 
   });

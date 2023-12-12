@@ -1,111 +1,127 @@
 html {
-    box-sizing: border-box;
-  }
-  
-  *,* ::before, *::after {
-    box-sizing: border-box;
-  }
-  
-  body {
-    width: auto;
-    height: auto;
-    background: rgb(0, 0, 0);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-family: sans-serif;
-  }
-  
-  h1 {
-    font-weight: bold;
-    color: black;
-    height: 100px;
-    font-size: 40pt;
-  }
-  /*table styles*/
-  table {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    width: auto;
-    height: auto;
-    border-spacing: 0px;
-    border-collapse: initial;
-    position: absolute;
-  }
-  
-  div#cover {
-    position: none;
-  }
-  /*for the moving object*/
-  #player {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    display: block;
-    background-color: rgb(255, 255, 255);
-    color: rgb(255, 251, 251);
-    z-index: 10000;
-  }
-  
-  button {
-    background-color: rgb(39, 39, 39);
-    color: black;
-    font-size: 25pt;
-    border: 2px solid black;
-    width: 300px;
-    height: 150px;
-  }
-  /*section which is for end game scenario*/
-  section {
-    width: 600px;
-    height: 600px;
-    border: 1px solid black;
-    border-radius: 10px;
-    background-color: rgb(61, 61, 61);
-    z-index: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  p {
-    color: rgb(255, 255, 255);
-    font-size: 15pt;
-    height: 50px;
-  }
-  
-  tr {
-    border: none;
-  }
-  /*table element styles*/
-  td {
-    width: 25px;
-    height: 35px;
-    margin: 0px;
-    border: none;
-    padding: 0px;
-  }
-  
-  #win {
-    background-color: rgb(208, 255, 0);
-    color:rgb(208, 255, 0);
-  }
-  
-  .wall {
-    color:rgb(5, 5, 5);
-    background-color: rgb(5, 5, 5);
-  }
-  
-  .freespace {
-    color:rgb(0, 0, 0);
-    background-color: rgb(0, 0, 0);
-  }
-  
-  #start {
-    color:rgb(0, 19, 128);
-    background-color: rgb(0, 21, 128);
-  }
-  
+  box-sizing: border-box;
+}
+
+*,
+* ::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  width: auto;
+  height: auto;
+  background-image: url(Caverns2.JPG);
+  background-position: absolute;
+  background-size: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+}
+
+h1 {
+  font-weight: bold;
+  color: black;
+  height: 100px;
+  font-size: 40pt;
+}
+
+/*table styles*/
+table {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: auto;
+  height: auto;
+  border-spacing: 0px;
+  border-collapse: initial;
+  position: absolute;
+}
+
+div#cover {
+  position: none;
+}
+
+/*for the moving object*/
+#player {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  display: block;
+  background-color: rgb(255, 255, 255);
+  color: rgb(255, 251, 251);
+  z-index: 10000;
+}
+
+button {
+  background-image: url(Maze3.JPG);
+  background-size: 100%;
+  color: rgb(0, 0, 0);
+  font-size: 25pt;
+  border: 7px solid black;
+  width: 300px;
+  height: 150px;
+}
+
+
+
+
+/*section which is for end game scenario*/
+section {
+  width: 600px;
+  height: 600px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-image: url(Mimicked.JPG);
+  background-size: 120%;
+  background-position: top, center;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  color: rgb(12, 12, 12);
+  font-size: 25pt;
+  height: 80px;
+  font-style: bold;
+}
+
+tr {
+  border: none;
+}
+
+/*table element styles*/
+td {
+  width: 25px;
+  height: 35px;
+  margin: 0px;
+  border: none;
+  padding: 0px;
+}
+
+#win {
+  background-image: url(Maze5.JPG);
+  background-size: 220%;
+  background-position: center;
+  color: rgb(50, 24, 2);
+}
+
+.wall {
+  color: rgb(5, 5, 5);
+  background-color: rgb(5, 5, 5);
+}
+
+.freespace {
+  color: rgb(0, 0, 0);
+  background-color: rgb(0, 0, 0);
+}
+
+#start {
+  color: rgb(0, 19, 128);
+  background-color: rgb(0, 21, 128);
+}
