@@ -1,15 +1,45 @@
-div img{
+img{
     position: absolute;
     bottom: 2.5%;
     z-index: -1;
     width: 100%;
-    max-height: 25%;
+    max-height: 30%;
     /*left: 25%;*/
 }
 
 /*changes the position of the dialogue*/
 p.dialogue{
     position: absolute;
-    bottom: 2.5%;
+    bottom: 8%;
+    left: 12.5%;
     z-index: 1;
+    width: 75%;
+}
+/*text color*/
+p.dialogue{
+    color: white;
+    font-size: 22.5px;
+    
+}
+
+/*buttons*/
+/*
+#choiceButtons{
+    position: fixed;
+    bottom: 3%;
+}*/
+
+#option1{
+    position: fixed;
+    right: 3%;
+}
+#option2{
+    position: fixed;
+    right: 1.5%;
+}
+
+#home{
+    position: fixed;
+    top: 5%;
+    right: 5%;
 }
