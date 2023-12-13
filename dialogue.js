@@ -693,7 +693,7 @@ const q2 = [
     // OPTIONAL: add death caption (Spent all day gambling)
     id: 52,
     text: "Narrator\n\nSPENT ALL DAY GAMBLING: the party of \"not so merry folk\" left the scene with gloom and despair as their equipment was gathered away by the travelling merchant. Such a shame, losing everything and accomplishing nothing... you might as well restart at the very beginning.",
-    options: [{text: 'Continue',
+    options: [{text: 'Return',
       continue: { cont: true },
       nextText: 20,
       character: 'Narrator'
@@ -932,7 +932,7 @@ const q2 = [
   {
     id: 73,
     text: "Narrator\n\nSCAMMED: After walking away from the Unlucky Bear, the group discovered the purchased armor was not made of metal at all. It was made from wood, stained with brown for a copper design and grey for its steel appearance. You truly became the Unlucky Bear.",
-    options: [{text: 'Continue',
+    options: [{text: 'Return',
       continue: { cont: true },
       nextText: 67,
       character: 'Narrator'
@@ -1103,7 +1103,7 @@ const q2 = [
   {
     id: 89,
     text: "Narrator\n\nAs a matter of fact, Tesmond\'s question was answered the moment the recruit placed the breastplate onto his own body. POSSESSED: The demonic power surging through the recruit rejected its host, causing a misshape. The morphing armor engulfed the recruit\'s mind and transformed them into a horrifying creature. Should have listened to the shopkeeper's warning \"Wear at your own risk.\"",
-    options: [{text: 'Continue',
+    options: [{text: 'Return',
       continue: { cont: true },
       nextText: 74,
       character: 'Narrator'
@@ -1454,7 +1454,7 @@ const q2 = [
     text: "Tesmond\n\nNothing of importance. *Clears throat* Well then, we best be on our way.",
     options: [{text: 'Continue',
       continue: { cont: true },
-      nextText: 122,
+      nextText: 123,
       character: 'Tesmond'
     }
     ]
@@ -1940,7 +1940,7 @@ const q2 = [
   {
     id: 164,
     text: "Narrator\n\nUnfortunately, as Kingston exclaimed everyone to pause, the recruit opened the chest. GET MIMICKED: And with a quick snarl, the inanimate chest turned alive. *Crunch* *Crack* goes the recruit.",
-    options: [{text: 'Continue',
+    options: [{text: 'Return',
       continue: { cont: true },
       nextText: 154,
       character: 'Narrator'
