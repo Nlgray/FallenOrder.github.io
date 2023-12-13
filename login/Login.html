@@ -23,6 +23,7 @@
                     <span>password</span>
                 </div>
                 <input type="submit" value="submit" class="sub" id="submit">
+                <input type="submit" value="create" class="new" id="create">
             </form>
         </div>
     </div>
@@ -47,7 +48,27 @@
 
         //get ref to database services
         const db = firebase.firestore();
+        const auth = firebase.auth();
         //db.collection("userest").add({item:"good"});
+
+        document.getElementById("create").addEventListener('click', function (e){
+            e.preventDefault();
+
+            var username = document.getElementById("username").value;
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+            console.log(email,password);
+            console.log(firebase.auth());
+
+
+//sign in with firebase auth
+const promise = auth.createUserWithEmailAndPassword(email, password).then(user => {
+    alert("Signup Successful :)")
+}).catch(err => {
+    alert(err.message);
+});
+        
+});
 
         document.getElementById("submit").addEventListener('click', function (e) {
             e.preventDefault();
