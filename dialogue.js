@@ -197,7 +197,7 @@ const q2 = [
       {
         text: 'Continue',
         continue: { cont: true },
-        nextText: 13,
+        nextText: 12,
         character: 'Selphie'
       }
     ]
