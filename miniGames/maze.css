@@ -11,7 +11,7 @@ html {
 body {
   width: auto;
   height: auto;
-  background-image: url(Caverns2.JPG);
+  background-image: url(Caverns3.JPG);
   background-position: absolute;
   background-size: 100%;
   display: flex;
@@ -56,7 +56,7 @@ div#cover {
 }
 
 button {
-  background-image: url(Maze3.JPG);
+  background-image: url(Caverns2.JPG);
   background-size: 100%;
   color: rgb(0, 0, 0);
   font-size: 25pt;
@@ -122,6 +122,7 @@ td {
 }
 
 #start {
-  color: rgb(0, 19, 128);
-  background-color: rgb(0, 21, 128);
+  color: rgb(255, 255, 255);
+  background-image: url("Maze6.JPG");
+  background-size:100% ;
 }

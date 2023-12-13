@@ -1,42 +1,46 @@
 <!DOCTYPE html>
 <html>
+
 <body>
     <link rel="stylesheet" href="dice.css">
     <div class="Gamba">
         <style>
-            body{
+            body {
                 background-image: url("Gamble1.JPG");
                 background-size: 100%;
                 background-image: absolute;
             }
+        </style>
 
-</style>
 
-    
-    <script language="javascript">
-        
-        function rolldice() {
-            while (true) {
-                die = (Math.floor(1 + Math.random() * 6));
-                {
-                    document.write("<img src = \"" + die + ".png\" width = \"50\" height = \"50\" />");
-                    if (die == 5, die == 6) {
-                        document.write("You are gifted in the slight of hand i see...");
-                        break;
-                    } else if (die < 5) {
-                        document.write("I will see you againn.....");
-                        const newButton = document.createElement('button');
-                        newButton.textContent = 'oof...I assume your going again!';
-                        document.body.appendChild(newButton);
-                        newButton = 
-                        break;
+        <script language="javascript">
+
+            function rolldice() {
+                while (true) {
+                    die = (Math.floor(1 + Math.random() * 6));
+                    {
+                        document.write("<img src = \"" + die + ".png\" width = \"50\" height = \"50\" />");
+                        if (die == 5, die == 6) {
+                            document.body.style.backgroundImage = "url('gamble2.jpg')";
+                            document.write("You are gifted in the slight of hand i see...");
+                            var timer = setTimeout(function () {
+                                window.location = "url('story.html')"
+                            }, 3000);
+                            break;
+                        } else if (die < 4) {
+                            document.write("I will see you againn.....");
+                            document.body.style.backgroundImage = "url('gamble3.jpg')";
+                            var timer = setTimeout(function () {
+                                window.location = "url('diceRoller.html')"
+                            }, 3000);
+                            break;
+                        }
                     }
                 }
             }
-            window.onload=enableButtons();
-        }
-    </script>
+        </script>
     </div>
     <input type="button" value="Roll Dice" onclick="rolldice()">
 </body>
+
 </html>
