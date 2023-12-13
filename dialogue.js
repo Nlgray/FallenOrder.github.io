@@ -6,6 +6,7 @@ let cont = {};
 function questions() {
   cont = {};
   displayQuestions(1);
+  displayImage(1);
 }
 
 function displayQuestions(index) {
@@ -38,14 +39,14 @@ function selectYesOrNo(option) {
 
 
 function displayImage(i2){
-  var img = "";
+  var img1 = new Image();
+  var img2 = new Image();
   const locationImg = q2.find(locationImg => locationImg.location === i2);
   const characters = q2.find(characters => characters.character === i2);
 
-  q.innerText = textvalue.text;
-  while (choices.firstChild) {
-    choices.removeChild(choices.firstChild);
-  }
+  //img1.src = 'images/Intro.jpeg';//locationImg.location;
+  img2.src = locationImg.location;//locationImg.location;
+  document.body.appendChild(img1);
 }
 
 const characters = ["Braedon", "Tesmond", "Selphie", "Belginoff", "Narrator"];
@@ -59,12 +60,13 @@ const q2 = [
     // Begin intro IMG
     id: 1,
     text: "Narrator\n\nBefore the lands of our time were molded into existence, a great calamity befell every being known within the grand cities of Camuth. The Dark Lord Palentheous Irzaline summoned his vast army of minions onto the peaceful citizens around the continent. Only a few brave souls dare challenge this irreversible catastrophe, they were known as the Knights of the Fallen Order. They overcame many of the Dark Lord's warlords: Paluth the wretched butcher, Molgon the horrid warlock, Thaulrod the devastating mortar, Zyroneeuch the tinkering puppeteer, and Andurath the knightmare. As the Knights of the Fallen Order defeated each warlord, one by one, they emerged towards their final fight with the Dark Lord Palentheous Irzaline. The fight was victorious yet costed heavily. Many knights died during the battle, and many others died after. Only a few knights still rest in tranquility... ",
-
+    location: '../images/Intro.jpeg',
     options: [
       {
         text: 'Continue',
         continue: { cont: true },
         nextText: 2
+        
       }
     ]
   },
@@ -75,7 +77,7 @@ const q2 = [
     // Tavern1 IMG
     id: 2, // Braedon IMG
     text: "Braedon\n\nWell, that was true till the Ol boy Andurath reappear\'d back in Pleamore. ",
-    location: "/images/tavern1.JPG",
+    location: "../images/Tavern/tavern1.jpg",
     options: [
       {
         text: 'Continue',
@@ -1171,7 +1173,7 @@ const q2 = [
     text: "Tesmond\n\nUhhm, then I best be on my way to stop Selphie from impulsively buying every trinket she sees. *Runs after Selphie*",
     options: [{text: 'Continue',
       continue: { cont: true },
-      nextText: 96,
+      nextText: 97,
       character: 'Tesmond'
     }
     ]
@@ -1318,7 +1320,7 @@ const q2 = [
     text: "Braedon\n\nNow that we\'re done shoppin\', lets grab the others and get ready for Pelna Forest!",
     options: [{text: 'Continue',
       continue: { cont: true },
-      nextText: 35,
+      nextText: 110,
       character: 'Braedon'
     }
     ]
@@ -5437,4 +5439,4 @@ const q2 = [
 ];
 
 questions()
-addEventListener("click", displayQuestions, false);
+addEventListener("click", displayQuestions, displayImage, false);
