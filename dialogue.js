@@ -1480,7 +1480,7 @@ const q2 = [
     text: "Narrator\n\nAt long last! A long trip ensued for our group of adventurers to the entrance of the Caverns. Its dark, concealed entrance conveyed an unfathomable fear towards Tesmond, Selphie, and the recruit. But, with a quick motion, Kingston held a torch and lit it overhead.",
     options: [{text: 'Continue',
       continue: { cont: true },
-      nextText: 35,
+      nextText: 125,
       character: 'Narrator'
     }
     ]
