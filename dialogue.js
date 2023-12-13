@@ -6,6 +6,7 @@ let cont = {};
 function questions() {
   cont = {};
   displayQuestions(1);
+  displayImage(1);
 }
 
 function displayQuestions(index) {
@@ -38,14 +39,14 @@ function selectYesOrNo(option) {
 
 
 function displayImage(i2){
-  var img = "";
+  var img1 = new Image();
+  var img2 = new Image();
   const locationImg = q2.find(locationImg => locationImg.location === i2);
   const characters = q2.find(characters => characters.character === i2);
 
-  q.innerText = textvalue.text;
-  while (choices.firstChild) {
-    choices.removeChild(choices.firstChild);
-  }
+  //img1.src = 'images/Intro.jpeg';//locationImg.location;
+  img2.src = locationImg.location;//locationImg.location;
+  document.body.appendChild(img1);
 }
 
 const characters = ["Braedon", "Tesmond", "Selphie", "Belginoff", "Narrator"];
@@ -59,12 +60,13 @@ const q2 = [
     // Begin intro IMG
     id: 1,
     text: "Narrator\n\nBefore the lands of our time were molded into existence, a great calamity befell every being known within the grand cities of Camuth. The Dark Lord Palentheous Irzaline summoned his vast army of minions onto the peaceful citizens around the continent. Only a few brave souls dare challenge this irreversible catastrophe, they were known as the Knights of the Fallen Order. They overcame many of the Dark Lord's warlords: Paluth the wretched butcher, Molgon the horrid warlock, Thaulrod the devastating mortar, Zyroneeuch the tinkering puppeteer, and Andurath the knightmare. As the Knights of the Fallen Order defeated each warlord, one by one, they emerged towards their final fight with the Dark Lord Palentheous Irzaline. The fight was victorious yet costed heavily. Many knights died during the battle, and many others died after. Only a few knights still rest in tranquility... ",
-
+    location: '../images/Intro.jpeg',
     options: [
       {
         text: 'Continue',
         continue: { cont: true },
         nextText: 2
+        
       }
     ]
   },
@@ -75,7 +77,7 @@ const q2 = [
     // Tavern1 IMG
     id: 2, // Braedon IMG
     text: "Braedon\n\nWell, that was true till the Ol boy Andurath reappear\'d back in Pleamore. ",
-    location: "/images/tavern1.JPG",
+    location: "../images/Tavern/tavern1.jpg",
     options: [
       {
         text: 'Continue',
@@ -195,7 +197,7 @@ const q2 = [
       {
         text: 'Continue',
         continue: { cont: true },
-        nextText: 13,
+        nextText: 12,
         character: 'Selphie'
       }
     ]
@@ -691,7 +693,7 @@ const q2 = [
     // OPTIONAL: add death caption (Spent all day gambling)
     id: 52,
     text: "Narrator\n\nSPENT ALL DAY GAMBLING: the party of \"not so merry folk\" left the scene with gloom and despair as their equipment was gathered away by the travelling merchant. Such a shame, losing everything and accomplishing nothing... you might as well restart at the very beginning.",
-    options: [{text: 'Continue',
+    options: [{text: 'Return',
       continue: { cont: true },
       nextText: 20,
       character: 'Narrator'
@@ -930,7 +932,7 @@ const q2 = [
   {
     id: 73,
     text: "Narrator\n\nSCAMMED: After walking away from the Unlucky Bear, the group discovered the purchased armor was not made of metal at all. It was made from wood, stained with brown for a copper design and grey for its steel appearance. You truly became the Unlucky Bear.",
-    options: [{text: 'Continue',
+    options: [{text: 'Return',
       continue: { cont: true },
       nextText: 67,
       character: 'Narrator'
@@ -1101,7 +1103,7 @@ const q2 = [
   {
     id: 89,
     text: "Narrator\n\nAs a matter of fact, Tesmond\'s question was answered the moment the recruit placed the breastplate onto his own body. POSSESSED: The demonic power surging through the recruit rejected its host, causing a misshape. The morphing armor engulfed the recruit\'s mind and transformed them into a horrifying creature. Should have listened to the shopkeeper's warning \"Wear at your own risk.\"",
-    options: [{text: 'Continue',
+    options: [{text: 'Return',
       continue: { cont: true },
       nextText: 74,
       character: 'Narrator'
@@ -1171,7 +1173,7 @@ const q2 = [
     text: "Tesmond\n\nUhhm, then I best be on my way to stop Selphie from impulsively buying every trinket she sees. *Runs after Selphie*",
     options: [{text: 'Continue',
       continue: { cont: true },
-      nextText: 96,
+      nextText: 97,
       character: 'Tesmond'
     }
     ]
@@ -1318,7 +1320,7 @@ const q2 = [
     text: "Braedon\n\nNow that we\'re done shoppin\', lets grab the others and get ready for Pelna Forest!",
     options: [{text: 'Continue',
       continue: { cont: true },
-      nextText: 35,
+      nextText: 110,
       character: 'Braedon'
     }
     ]
@@ -1452,7 +1454,7 @@ const q2 = [
     text: "Tesmond\n\nNothing of importance. *Clears throat* Well then, we best be on our way.",
     options: [{text: 'Continue',
       continue: { cont: true },
-      nextText: 122,
+      nextText: 123,
       character: 'Tesmond'
     }
     ]
@@ -1478,7 +1480,7 @@ const q2 = [
     text: "Narrator\n\nAt long last! A long trip ensued for our group of adventurers to the entrance of the Caverns. Its dark, concealed entrance conveyed an unfathomable fear towards Tesmond, Selphie, and the recruit. But, with a quick motion, Kingston held a torch and lit it overhead.",
     options: [{text: 'Continue',
       continue: { cont: true },
-      nextText: 35,
+      nextText: 125,
       character: 'Narrator'
     }
     ]
@@ -1938,7 +1940,7 @@ const q2 = [
   {
     id: 164,
     text: "Narrator\n\nUnfortunately, as Kingston exclaimed everyone to pause, the recruit opened the chest. GET MIMICKED: And with a quick snarl, the inanimate chest turned alive. *Crunch* *Crack* goes the recruit.",
-    options: [{text: 'Continue',
+    options: [{text: 'Return',
       continue: { cont: true },
       nextText: 154,
       character: 'Narrator'
@@ -5437,4 +5439,4 @@ const q2 = [
 ];
 
 questions()
-addEventListener("click", displayQuestions, false);
+addEventListener("click", displayQuestions, displayImage, false);
