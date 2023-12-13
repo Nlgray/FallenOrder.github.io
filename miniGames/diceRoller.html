@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html>
+
 <body>
     <link rel="stylesheet" href="dice.css">
     <div class="Gamba">
         <style>
-            body{
+            body {
                 background-image: url("Gamble1.JPG");
                 background-size: 100%;
                 background-image: absolute;
             }
+        </style>
 
-</style>
 
-    
-    <script language="javascript">
-        
-        function rolldice() {
-            var min = 1;
-            var max = 6;
-            //while (true) 
-            for(var rolls = 0; rolls < 5; rolls++){
-                var die = Math.floor(Math.random()*(max - min + 1) + min);
-                //console.log(die);
-                //{
+        <script language="javascript">
+
+            function rolldice() {
+                var min = 1;
+                var max = 6;
+                //while (true) 
+                for (var rolls = 0; rolls < 5; rolls++) {
+                    var die = Math.floor(Math.random() * (max - min + 1) + min);
+                    //console.log(die);
+                    //{
                     document.write("<img src = \"" + die + ".png\" width = \"50\" height = \"50\" />");
                     if (die == 5 || die == 6 && rolls == 0) {
                         //document.write("You are gifted in the slight of hand i see...");
@@ -36,17 +36,18 @@
                         document.body.appendChild(newButton);
                         //break;
                     }
-                    else if(rolls < 5){
+                    else if (rolls < 5) {
                         window.location.href = "story.html";
                     }
+                    //}
+                }
                 //}
+                window.onload = enableButtons();
             }
-            //}
-            window.onload=enableButtons();
-        }
-    </script>
+        </script>
     </div>
     <div class="home"><button onclick="document.location='../index.html'">Home</button></div>
     <input type="button" value="Roll Dice" onclick="rolldice()">
 </body>
+
 </html>

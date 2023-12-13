@@ -57,7 +57,7 @@ const textNodes = [
         text: 'Father water and Mothr Fire',
         nextText: 2
       }
-      
+
     ]
   },
   {
@@ -66,7 +66,7 @@ const textNodes = [
     options: [
       {
         text: 'Dark Lord Palentheous Irzaline',
-        setState: {Second: true},
+        setState: { Second: true },
         nextText: 3
       },
       {
@@ -85,7 +85,7 @@ const textNodes = [
     options: [
       {
         text: 'Wisdom',
-        setState: {Third: true},
+        setState: { Third: true },
         nextText: 4
       },
       {
@@ -121,7 +121,7 @@ const textNodes = [
         text: 'You have recieved the Blessing',
         nextText: 5
       },
-     
+
     ]
   },
   {
@@ -131,7 +131,7 @@ const textNodes = [
       {
         text: 'what could be her reasoning...',
       },
-      
+
     ]
   },
 ]

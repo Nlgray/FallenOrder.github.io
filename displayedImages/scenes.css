@@ -44,7 +44,7 @@ p {
 }
 
 /* styling the home button */
-button{
+button {
     position: fixed;
     right: 15%;
     bottom: 30%;
@@ -53,19 +53,4 @@ button{
     font-size: 20px;
     margin: 10px 5px;
     z-index: 2;
-}
-
-/* styling the video */
-@media (min-aspect-ratio: 16/9) {
-    video {
-        width: 100%;
-        height: auto;
-    }
-}
-
-@media (max-aspect-ratio: 16/9) {
-    video {
-        width: auto;
-        height: 100%;
-    }
 }

@@ -57,7 +57,7 @@ const textNodes = [
         text: 'cryer',
         nextText: 2
       }
-      
+
     ]
   },
   {
@@ -66,7 +66,7 @@ const textNodes = [
     options: [
       {
         text: 'Protection',
-        setState: {First: true},
+        setState: { First: true },
         nextText: 4
       },
       {
@@ -85,7 +85,7 @@ const textNodes = [
     options: [
       {
         text: 'Protect',
-        setState: {First: true},
+        setState: { First: true },
         nextText: 4
       },
       {
@@ -94,7 +94,7 @@ const textNodes = [
       },
       {
         text: 'Me',
-        setState: {oops1: true},
+        setState: { oops1: true },
         nextText: 11
       }
     ]
@@ -105,7 +105,7 @@ const textNodes = [
     options: [
       {
         text: 'Courage',
-        setState: {Second: true},
+        setState: { Second: true },
         nextText: 7
       },
       {
@@ -124,7 +124,7 @@ const textNodes = [
     options: [
       {
         text: 'brave',
-        setState: {Second: true},
+        setState: { Second: true },
         nextText: 7
       },
       {
@@ -143,7 +143,7 @@ const textNodes = [
     options: [
       {
         text: 'Valor',
-        setState: {Second: true},
+        setState: { Second: true },
         nextText: 7
       },
       {
@@ -152,7 +152,7 @@ const textNodes = [
       },
       {
         text: 'The Ladiessss',
-        setState: {oops2: true},
+        setState: { oops2: true },
         nextText: 11
       }
     ]
@@ -163,7 +163,7 @@ const textNodes = [
     options: [
       {
         text: 'Honor',
-        setState: {Third: true},
+        setState: { Third: true },
         nextText: 10
       },
       {
@@ -182,7 +182,7 @@ const textNodes = [
     options: [
       {
         text: 'Honor',
-        setState: {Third: true},
+        setState: { Third: true },
         nextText: 10
       },
       {
@@ -201,7 +201,7 @@ const textNodes = [
     options: [
       {
         text: 'Honor',
-        setState: {Third: true},
+        setState: { Third: true },
         nextText: 10
       },
       {
@@ -210,7 +210,7 @@ const textNodes = [
       },
       {
         text: 'Valor',
-        setState: {oops3: true},
+        setState: { oops3: true },
         nextText: 11
       },
     ]
